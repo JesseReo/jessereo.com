@@ -5,7 +5,7 @@ export default function Main(props) {
     <div
       className={styles.main}
       style={{
-        maxWidth: props.fullWidth ? "100%" : "inherit",
+        ...(props.fullWidth && { maxWidth: "100%" }),
       }}
     >
       {props.children}
