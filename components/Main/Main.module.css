@@ -1,6 +1,7 @@
 .main {
   min-height: 100%;
-  max-width: 900px;
+  width: 100%;
+  max-width: 992px;
   margin: 0 auto;
   padding: 20px;
   flex-grow: 1;
