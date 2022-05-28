@@ -1,6 +1,6 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
-import VideoBlob from "../components/VideoBlob";
+import styles from "../../styles/VideoBlob.module.css";
+import VideoBlob from "../../components/VideoBlob";
 
 export default function Home() {
   return (
