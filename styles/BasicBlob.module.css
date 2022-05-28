@@ -1,0 +1,17 @@
+.pageContainer {
+  position: relative;
+  min-height: 100%;
+  min-width: 100%;
+  background: #000;
+  overflow: hidden;
+}
+
+.blobContainer {
+  position: absolute;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
