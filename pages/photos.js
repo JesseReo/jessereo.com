@@ -15,35 +15,27 @@ export default function Photos() {
         <meta name="description" content="Photos featuring Jesse Real" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-
-      <PageContainer>
-        <Navigation />
-
-        <Logo />
-
-        <Hero
-          title="Videos"
-          backgroundImage="url(/loan-7AIDE8PrvA0-unsplash.jpg)"
-        />
-
-        <Main fullWidth>
-          <div className={styles.photoGrid}>
-            {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((item, i) => {
-              return (
-                <div className={styles.photoGridItem}>
-                  <Image
-                    key={`photo-${i}`}
-                    src="/loan-7AIDE8PrvA0-unsplash.jpg"
-                    alt="alt"
-                    layout="fill"
-                    objectFit="cover"
-                  />
-                </div>
-              );
-            })}
-          </div>
-        </Main>
-      </PageContainer>
+      <Hero
+        title="Videos"
+        backgroundImage="url(/loan-7AIDE8PrvA0-unsplash.jpg)"
+      />
+      <Main fullWidth>
+        <div className={styles.photoGrid}>
+          {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((item, i) => {
+            return (
+              <div className={styles.photoGridItem}>
+                <Image
+                  key={`photo-${i}`}
+                  src="/loan-7AIDE8PrvA0-unsplash.jpg"
+                  alt="alt"
+                  layout="fill"
+                  objectFit="cover"
+                />
+              </div>
+            );
+          })}
+        </div>
+      </Main>
     </>
   );
 }

@@ -1,8 +1,6 @@
 import Head from "next/head";
 import styles from "../styles/Videos.module.css";
-import PageContainer from "../components/PageContainer";
-import Navigation from "../components/Navigation";
-import Logo from "../components/Logo";
+import Layout from "../components/Layout";
 import Hero from "../components/Hero";
 import Main from "../components/Main";
 
@@ -14,41 +12,32 @@ export default function Videos() {
         <meta name="description" content="Videos featuring Jesse Real" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-
-      <PageContainer>
-        <Navigation />
-
-        <Logo />
-
-        <Hero
-          title="Videos"
-          backgroundImage="url(/loan-7AIDE8PrvA0-unsplash.jpg)"
+      <Hero
+        title="Videos"
+        backgroundImage="url(/loan-7AIDE8PrvA0-unsplash.jpg)"
+      />
+      <Main>
+        <iframe
+          className={styles.videoEmbed}
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/l4GZah6WsOA"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
         />
-
-        <Main>
-          <iframe
-            className={styles.videoEmbed}
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/l4GZah6WsOA"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          />
-
-          <iframe
-            className={styles.videoEmbed}
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/l4GZah6WsOA"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          />
-        </Main>
-      </PageContainer>
+        <iframe
+          className={styles.videoEmbed}
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/l4GZah6WsOA"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        />
+      </Main>
     </>
   );
 }

@@ -11,7 +11,6 @@ export default function Blog() {
           content="Blog and articles written by Jesse Real for up and coming drummer"
         />
       </Head>
-      <Navigation />
       <main>
         <h1>Blog</h1>
       </main>

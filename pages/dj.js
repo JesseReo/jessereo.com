@@ -5,7 +5,7 @@ import Main from "../components/Main";
 
 export default function Dj() {
   return (
-    <Layout>
+    <>
       <Head>
         <title>DJ - JESSE REAL</title>
         <meta
@@ -28,6 +28,6 @@ export default function Dj() {
           eleifend quis. Donec sodales tincidunt aliquet.
         </p>
       </Main>
-    </Layout>
+    </>
   );
 }

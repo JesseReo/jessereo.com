@@ -1,10 +1,8 @@
 import { useState } from "react";
 import Link from "next/link";
-import { useRouter } from "next/router";
 import styles from "./Navigation.module.css";
 
 export default function Navighation() {
-  const router = useRouter();
   const [menuIsActive, setMenuIsActive] = useState(false);
 
   return (
@@ -32,9 +30,7 @@ export default function Navighation() {
               path={item.path}
               label={item.label}
               clickHandler={() => {
-                if (router.pathname === item.path) {
-                  setMenuIsActive(false);
-                }
+                setMenuIsActive(false);
               }}
             />
           );
