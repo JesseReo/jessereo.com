@@ -1,13 +1,13 @@
-import DocumentHead from "../components/DocumentHead";
+import Head from "next/head";
 import Navigation from "../components/Navigation";
 
-export default function Home() {
+export default function Photos() {
   return (
     <>
-      <DocumentHead
-        title="Photos - JESSE REAL LiVES"
-        metaDescription="Photos featuring Jesse Real"
-      />
+      <Head>
+        <title>Photos - JESSE REAL</title>
+        <meta name="description" content="Photos featuring Jesse Real" />
+      </Head>
       <Navigation />
       <main>
         <h1>Photos</h1>

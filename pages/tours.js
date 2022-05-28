@@ -1,13 +1,13 @@
-import DocumentHead from "../components/DocumentHead";
+import Head from "next/head";
 import Navigation from "../components/Navigation";
 
-export default function Home() {
+export default function Tours() {
   return (
     <>
-      <DocumentHead
-        title="Toours - JESSE REAL LiVES"
-        metaDescription="Tour Schedule for Jesse Real"
-      />
+      <Head>
+        <title>Tours - JESSE REAL</title>
+        <meta name="description" content="Tour Schedule for Jesse Real" />
+      </Head>
       <Navigation />
       <main>
         <h1>Tours</h1>

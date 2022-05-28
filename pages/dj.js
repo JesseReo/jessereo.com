@@ -1,13 +1,16 @@
-import DocumentHead from "../components/DocumentHead";
+import Head from "next/head";
 import Navigation from "../components/Navigation";
 
-export default function Home() {
+export default function Dj() {
   return (
     <>
-      <DocumentHead
-        title="DJ - JESSE REAL LiVES"
-        metaDescription="DJ mixes, music and information for Jesse Real"
-      />
+      <Head>
+        <title>DJ - JESSE REAL</title>
+        <meta
+          name="description"
+          content="DJ mixes, music and information for Jesse Real"
+        />
+      </Head>
       <Navigation />
       <main>
         <h1>DJ</h1>
