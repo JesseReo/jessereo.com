@@ -1,0 +1,11 @@
+.hero {
+  height: 50vh;
+  max-height: 600px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {}
