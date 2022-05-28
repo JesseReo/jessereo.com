@@ -4,6 +4,7 @@ import Navigation from "../components/Navigation";
 import PageContainer from "../components/PageContainer";
 import Logo from "../components/Logo";
 import Main from "../components/Main";
+import Hero from "../components/Hero";
 
 export default function Home() {
   return (
@@ -19,14 +20,10 @@ export default function Home() {
 
         <Logo />
 
-        <header
-          className={styles.header}
-          style={{
-            backgroundImage: "url(/loan-7AIDE8PrvA0-unsplash.jpg)",
-          }}
-        >
-          <h1 className={styles.title}>Bio</h1>
-        </header>
+        <Hero
+          title="Bio"
+          backgroundImage="url(/loan-7AIDE8PrvA0-unsplash.jpg)"
+        />
 
         <Main>
           <p>
