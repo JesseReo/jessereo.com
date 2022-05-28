@@ -1,12 +1,16 @@
 import { useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import styles from "./Navigation.module.css";
 
-function Navighation() {
+export default function Navighation() {
+  const router = useRouter();
   const [menuIsActive, setMenuIsActive] = useState(false);
+
   return (
     <>
       <div
+        role="buttob"
         className={styles.menuIcon}
         onClick={() => {
           setMenuIsActive(!menuIsActive);
@@ -21,49 +25,72 @@ function Navighation() {
           left: menuIsActive ? "0" : "100%",
         }}
       >
-        <li className={styles.listItem}>
-          <Link href="/home">
-            <a>Home</a>
-          </Link>
-        </li>
-        <li className={styles.listItem}>
-          <Link href="/bio">
-            <a>Bio</a>
-          </Link>
-        </li>
-        <li className={styles.listItem}>
-          <Link href="/videos">
-            <a>Videos</a>
-          </Link>
-        </li>
-        <li className={styles.listItem}>
-          <Link href="/photos">
-            <a>Photos</a>
-          </Link>
-        </li>
-        <li className={styles.listItem}>
-          <Link href="/dj">
-            <a>DJ</a>
-          </Link>
-        </li>
-        <li className={styles.listItem}>
-          <Link href="/tours">
-            <a>Tours</a>
-          </Link>
-        </li>
-        <li className={styles.listItem}>
-          <Link href="/blog">
-            <a>Blog</a>
-          </Link>
-        </li>
-        <li className={styles.listItem}>
-          <Link href="/contact">
-            <a>Contact</a>
-          </Link>
-        </li>
+        {linksData.map((item) => {
+          return (
+            <Listitem
+              key={item.label}
+              path={item.path}
+              label={item.label}
+              clickHandler={() => {
+                if (router.pathname === item.path) {
+                  setMenuIsActive(false);
+                }
+              }}
+            />
+          );
+        })}
       </ul>
     </>
   );
 }
 
-export default Navighation;
+const linksData = [
+  {
+    path: "/home",
+    label: "Home",
+  },
+  {
+    path: "/bio",
+    label: "bio",
+  },
+  {
+    path: "/videos",
+    label: "Videos",
+  },
+  {
+    path: "/photos",
+    label: "Photos",
+  },
+  {
+    path: "/dj",
+    label: "DJ",
+  },
+  {
+    path: "/tours",
+    label: "Tours",
+  },
+  {
+    path: "/blog",
+    label: "Blog",
+  },
+  {
+    path: "/contact",
+    label: "Contact",
+  },
+];
+
+function Listitem(props) {
+  return (
+    <li className={styles.listItem}>
+      <Link href={props.path}>
+        <a
+          onClick={() => {
+            props.clickHandler(props.path);
+          }}
+        >
+          {props.label}
+        </a>
+      </Link>
+    </li>
+  );
+}
