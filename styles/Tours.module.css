@@ -1,0 +1,77 @@
+.monthName {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.weekdays {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin: 0 auto;
+  margin-bottom: 1em;
+  max-width: 64em;
+  background-color: #fff;
+}
+
+.weekdays__item {
+  height: 4vw;
+  text-align: center;
+}
+
+@media all and (max-width: 800px) {
+  .weekdays__full {
+    font-size: 0;
+  }
+}
+
+/* /////////////////////////////////////////////////////////////////////////// */
+
+.dayGrid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 1px;
+  margin: 0 auto;
+  max-width: 64em;
+  padding: 1px;
+  background-color: #000;
+}
+
+.dayGrid__empty {
+  background-color: rgb(227, 227, 227);
+}
+
+.dayGrid__day {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  margin-left: 0;
+  font-size: calc(16px + (21 - 16) * ((100vw - 300px) / (1600 - 300)));
+  height: 12vw;
+  max-height: 125px;
+  background-color: #fff;
+}
+
+/* /////////////////////////////////////////////////////////////////////////// */
+
+.hr {
+  margin: 60px 0;
+}
+
+/* @media all and (max-width: 800px) {
+  ul,
+  ol {
+    grid-gap: 0;
+  }
+
+  ul.weekdays li {
+    font-size: 0;
+  }
+
+  .weekdays > li abbr:after {
+    content: attr(title);
+    font-size: calc(16px + (26 - 16) * ((100vw - 300px) / (1600 - 300)));
+    text-align: center;
+  }
+} */
