@@ -1,0 +1,12 @@
+.heading1 {
+  color: #fff;
+  font-size: 1rem;
+
+  /* https://clamp.font-size.app/?config=eyJyb290IjoiMTYiLCJtaW5XaWR0aCI6IjU3NnB4IiwibWF4V2lkdGgiOiIxMjAwcHgiLCJtaW5Gb250U2l6ZSI6IjMycHgiLCJtYXhGb250U2l6ZSI6IjUycHgifQ%3D%3D */
+  font-size: clamp(2rem, 0.8462rem + 3.2051vw, 3.25rem);
+  /* 32 > 52 */
+
+  /* https://clamp.font-size.app/?config=eyJyb290IjoiMTYiLCJtaW5XaWR0aCI6IjU3NnB4IiwibWF4V2lkdGgiOiIxMjAwcHgiLCJtaW5Gb250U2l6ZSI6IjQycHgiLCJtYXhGb250U2l6ZSI6IjcycHgifQ%3D%3D */
+  line-height: clamp(2.625rem, 0.8942rem + 4.8077vw, 4.5rem);
+  /* 42 > 72 */
+}
