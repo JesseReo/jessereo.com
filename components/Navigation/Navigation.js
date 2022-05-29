@@ -47,7 +47,7 @@ const linksData = [
   },
   {
     path: "/bio",
-    label: "bio",
+    label: "Bio",
   },
   {
     path: "/videos",

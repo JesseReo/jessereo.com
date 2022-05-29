@@ -2,6 +2,7 @@
   position: absolute;
   top: 20px;
   left: 50%;
+  z-index: 1;
   transform: translateX(-50%);
   width: 200px;
   height: 100px;
@@ -9,5 +10,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.svgPath {
+  fill: #fff;
 }

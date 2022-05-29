@@ -5,4 +5,7 @@
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
+  padding-top: 144px; /* size of logo */
+
+  background: radial-gradient(circle at center, #424242, #000);
 }

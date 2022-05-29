@@ -2,6 +2,8 @@ import Head from "next/head";
 import styles from "../styles/Contact.module.css";
 import Hero from "../components/Hero";
 import Main from "../components/Main";
+import Heading2 from "../components/Heading2";
+import Text from "../components/Text";
 
 export default function Contact() {
   return (
@@ -15,21 +17,21 @@ export default function Contact() {
         backgroundImage="url(/loan-7AIDE8PrvA0-unsplash.jpg)"
       />
       <Main>
-        <p className={styles.p}>
+        <Text>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
           hendrerit, diam in suscipit pulvinar.
-        </p>
+        </Text>
 
-        <p className={styles.p}>
+        <Text>
           Email:
           <a href="mailto:jesserehaut@gmail.com">jesserehaut@gmail.com</a>
-        </p>
+        </Text>
 
         <div className={styles.formContainer}>
-          <h2>Send a message</h2>
+          <Heading2>Send a message</Heading2>
           <form action="https://formspree.io/f/{form_id}" method="post">
-            <label for="email" className={styles.label}>
-              Your Email
+            <label htmlFor="email" className={styles.label}>
+              <Text>Your Email</Text>
             </label>
             <input
               name="Email"
@@ -37,8 +39,8 @@ export default function Contact() {
               type="email"
               className={styles.input}
             />
-            <label for="message" className={styles.label}>
-              Your Message
+            <label htmlFor="message" className={styles.label}>
+              <Text> Your Message</Text>
             </label>
             <textarea
               name="Message"
@@ -46,7 +48,7 @@ export default function Contact() {
               className={styles.message}
             ></textarea>
             <button type="submit" className={styles.submit}>
-              Submit
+              <Text> Submit</Text>
             </button>
           </form>
         </div>

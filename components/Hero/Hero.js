@@ -1,4 +1,5 @@
 import styles from "./Hero.module.css";
+import Heading1 from "../Heading1";
 
 export default function Hero(props) {
   return (
@@ -8,7 +9,7 @@ export default function Hero(props) {
         backgroundImage: props.backgroundImage ?? "none",
       }}
     >
-      {props.title && <h1 className={styles.title}>{props.title}</h1>}
+      {props.title && <Heading1>{props.title}</Heading1>}
       {props.children}
     </div>
   );

@@ -1,6 +1,5 @@
 import Head from "next/head";
 import styles from "../styles/Videos.module.css";
-import Layout from "../components/Layout";
 import Hero from "../components/Hero";
 import Main from "../components/Main";
 

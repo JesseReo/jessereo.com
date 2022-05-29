@@ -1,8 +1,7 @@
 import Head from "next/head";
-// import styles from "../styles/Bio.module.css";
-import Layout from "../components/Layout";
 import Main from "../components/Main";
 import Hero from "../components/Hero";
+import Text from "../components/Text";
 
 export default function Home() {
   return (
@@ -14,7 +13,7 @@ export default function Home() {
       </Head>
       <Hero title="Bio" backgroundImage="url(/loan-7AIDE8PrvA0-unsplash.jpg)" />
       <Main>
-        <p>
+        <Text>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
           hendrerit, diam in suscipit pulvinar, felis tortor viverra orci, vitae
           tincidunt augue velit eu lorem. Aliquam placerat cursus ante ac
@@ -25,7 +24,7 @@ export default function Home() {
           faucibus sagittis nec id justo. Duis efficitur libero sed dui
           ultricies blandit. Mauris accumsan nisi orci, quis auctor tellus
           eleifend quis. Donec sodales tincidunt aliquet.
-        </p>
+        </Text>
       </Main>
     </>
   );

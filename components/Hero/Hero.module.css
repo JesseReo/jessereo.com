@@ -1,5 +1,5 @@
 .hero {
-  height: 50vh;
+  height: 33vh;
   max-height: 600px;
   background-size: cover;
   background-position: center;
@@ -7,5 +7,3 @@
   align-items: center;
   justify-content: center;
 }
-
-.title {}

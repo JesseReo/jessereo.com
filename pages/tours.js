@@ -2,6 +2,7 @@ import Head from "next/head";
 import styles from "../styles/Tours.module.css";
 import Hero from "../components/Hero";
 import Main from "../components/Main";
+import Heading2 from "../components/Heading2";
 
 export default function Tours() {
   return (
@@ -16,8 +17,10 @@ export default function Tours() {
         backgroundImage="url(/loan-7AIDE8PrvA0-unsplash.jpg)"
       />
       <Main>
-        <div>
-          <div className={styles.monthName}>June 2022</div>
+        <div className={styles.month}>
+          <div className={styles.monthName}>
+            <Heading2>June 2022</Heading2>
+          </div>
           <Weekdays />
           <ol className={styles.dayGrid}>
             <li className={styles.dayGrid__empty}></li>
@@ -58,10 +61,10 @@ export default function Tours() {
           </ol>
         </div>
 
-        <hr className={styles.hr} />
-
-        <div>
-          <div className={styles.monthName}>July 2022</div>
+        <div className={styles.month}>
+          <div className={styles.monthName}>
+            <Heading2>July 2022</Heading2>
+          </div>
           <Weekdays />
           <ol className={styles.dayGrid}>
             <li className={styles.dayGrid__empty}></li>
@@ -102,14 +105,13 @@ export default function Tours() {
           </ol>
         </div>
 
-        <hr className={styles.hr} />
-
-        <div>
-          <div className={styles.monthName}>August 2022</div>
+        <div className={styles.month}>
+          <div className={styles.monthName}>
+            <Heading2>August 2022</Heading2>
+          </div>
           <Weekdays />
           <ol className={styles.dayGrid}>
             <li className={styles.dayGrid__empty}></li>
-
             <li className={styles.dayGrid__day}>1</li>
             <li className={styles.dayGrid__day}>2</li>
             <li className={styles.dayGrid__day}>3</li>

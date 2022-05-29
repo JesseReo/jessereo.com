@@ -3,7 +3,7 @@ import styles from "./BasicBlob.module.css";
 export default function VideoBlob() {
   return (
     <div className={styles.container}>
-      <img src="/loan-7AIDE8PrvA0-unsplash.jpg" className={styles.image} />
+      {/* <img src="/loan-7AIDE8PrvA0-unsplash.jpg" className={styles.image} /> */}
       <svg className={styles.svg} viewBox="0 0 1 1">
         <clipPath id="hommus" clipPathUnits="objectBoundingBox">
           <path
