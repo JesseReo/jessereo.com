@@ -23,9 +23,8 @@ export default function Photos() {
         <div className={styles.photoGrid}>
           {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((item, i) => {
             return (
-              <div className={styles.photoGridItem}>
+              <div className={styles.photoGridItem} key={`photo-${i}`}>
                 <Image
-                  key={`photo-${i}`}
                   src="/loan-7AIDE8PrvA0-unsplash.jpg"
                   alt="alt"
                   layout="fill"
@@ -39,4 +38,3 @@ export default function Photos() {
     </>
   );
 }
-
