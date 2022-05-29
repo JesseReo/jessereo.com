@@ -42,7 +42,7 @@ export default function Navighation() {
 
 const linksData = [
   {
-    path: "/home",
+    path: "/",
     label: "Home",
   },
   {
