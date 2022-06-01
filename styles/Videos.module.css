@@ -1,4 +1,11 @@
+.videoContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+}
+
 .videoEmbed {
+  display: block;
   width: 100%;
   max-width: 100%;
   height: auto;
