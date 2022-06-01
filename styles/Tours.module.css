@@ -1,6 +1,5 @@
-.month {
-  margin-bottom: 32px;
-}
+/* .month {
+} */
 
 .monthName {
   text-align: center;
@@ -16,15 +15,13 @@
   max-width: 64em;
   min-height: 20px;
   background-color: #fff;
-  border-radius: 8px;
 }
 
 .weekdays__item {
-  height: 4vw;
-  min-height: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
+  aspect-ratio: 2/1;
 }
 
 @media all and (max-width: 800px) {
@@ -41,48 +38,22 @@
   grid-template-columns: repeat(7, 1fr);
   grid-gap: 1px;
   margin: 0 auto;
-  max-width: 64em;
   padding: 1px;
-  background-color: #000;
-  border-radius: 8px;
-  overflow: hidden;
+  background-color: #aaa;
 }
 
+.dayGrid__day,
 .dayGrid__empty {
-  background-color: rgb(227, 227, 227);
-}
-
-.dayGrid__day {
   display: flex;
   align-items: center;
   justify-content: center;
   list-style: none;
   margin-left: 0;
   font-size: calc(16px + (21 - 16) * ((100vw - 300px) / (1600 - 300)));
-  height: 12vw;
-  max-height: 125px;
   background-color: #fff;
+  aspect-ratio: 1/1;
 }
 
-/* /////////////////////////////////////////////////////////////////////////// */
-
-.hr {
-  margin: 60px 0;
+.dayGrid__empty {
+  background-color: rgb(227, 227, 227);
 }
-
-/* @media all and (max-width: 800px) {
-  ul,
-  ol {
-    grid-gap: 0;
-  }
-
-  ul.weekdays li {
-    font-size: 0;
-  }
-
-  .weekdays > li abbr:after {
-    content: attr(title);
-    font-size: calc(16px + (26 - 16) * ((100vw - 300px) / (1600 - 300)));
-    text-align: center;
-  }
-} */

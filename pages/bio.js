@@ -1,9 +1,10 @@
 import Head from "next/head";
-import styles from "../styles/Bio.module.css";
+// import styles from "../styles/Bio.module.css";
 import Main from "../components/Main";
 import Hero from "../components/Hero";
 import Heading2 from "../components/Heading2";
 import Text from "../components/Text";
+import Stack from "../components/Stack";
 
 export default function Home() {
   return (
@@ -15,7 +16,7 @@ export default function Home() {
       </Head>
       <Hero title="Bio" backgroundImage="/loan-7AIDE8PrvA0-unsplash.jpg" />
       <Main>
-        <div className={styles.textContainer}>
+        <Stack>
           <Heading2 style={{ textAlign: "center" }}>
             JESSE 'REAL' REHAUT AKA (FUNK) <br />
             DRUMMER | DJ | ROOTS MUSICIAN
@@ -112,7 +113,7 @@ export default function Home() {
             enjoyment of making music flows through his beats and musical
             talents.
           </Text>
-        </div>
+        </Stack>
       </Main>
     </>
   );

@@ -1,15 +1,7 @@
-.p {
-  margin-bottom: 1rem;
-}
-
-.label {
-  display: block;
-}
-
-.input {
-  display: block;
-}
-
+.label,
+.email,
+.textarea,
 .submit {
   display: block;
+  width: 100%;
 }

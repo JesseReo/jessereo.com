@@ -2,6 +2,7 @@ import Head from "next/head";
 import styles from "../styles/Videos.module.css";
 import Hero from "../components/Hero";
 import Main from "../components/Main";
+import Stack from "../components/Stack";
 
 export default function Videos() {
   return (
@@ -13,7 +14,7 @@ export default function Videos() {
       </Head>
       <Hero title="VideoS" backgroundImage="/loan-7AIDE8PrvA0-unsplash.jpg" />
       <Main>
-        <div className={styles.videoContainer}>
+        <Stack>
           <iframe
             className={styles.videoEmbed}
             width="560"
@@ -57,7 +58,7 @@ export default function Videos() {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           />
-        </div>
+        </Stack>
       </Main>
     </>
   );

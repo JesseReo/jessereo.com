@@ -3,6 +3,7 @@ import styles from "../styles/Tours.module.css";
 import Hero from "../components/Hero";
 import Main from "../components/Main";
 import Heading2 from "../components/Heading2";
+import Stack from "../components/Stack";
 
 export default function Tours() {
   return (
@@ -14,138 +15,146 @@ export default function Tours() {
       </Head>
       <Hero title="Tours" backgroundImage="/loan-7AIDE8PrvA0-unsplash.jpg" />
       <Main>
-        <div className={styles.month}>
-          <div className={styles.monthName}>
-            <Heading2>June 2022</Heading2>
+        <Stack>
+          <div className={styles.month}>
+            <div className={styles.monthName}>
+              <Heading2>June 2022</Heading2>
+            </div>
+            <Weekdays />
+            <ol className={styles.dayGrid}>
+              <li className={styles.dayGrid__empty}></li>
+              <li className={styles.dayGrid__empty}></li>
+              <li className={styles.dayGrid__empty}></li>
+              <li className={styles.dayGrid__day}>1</li>
+              <li className={styles.dayGrid__day}>2</li>
+              <li className={styles.dayGrid__day}>3</li>
+              <li className={styles.dayGrid__day}>4</li>
+              <li className={styles.dayGrid__day}>5</li>
+              <li className={styles.dayGrid__day}>6</li>
+              <li className={styles.dayGrid__day}>7</li>
+              <li className={styles.dayGrid__day}>8</li>
+              <li className={styles.dayGrid__day}>9</li>
+              <li className={styles.dayGrid__day}>10</li>
+              <li className={styles.dayGrid__day}>11</li>
+              <li className={styles.dayGrid__day}>12</li>
+              <li className={styles.dayGrid__day}>13</li>
+              <li className={styles.dayGrid__day}>14</li>
+              <li className={styles.dayGrid__day}>15</li>
+              <li className={styles.dayGrid__day}>16</li>
+              <li className={styles.dayGrid__day}>17</li>
+              <li className={styles.dayGrid__day}>18</li>
+              <li className={styles.dayGrid__day}>19</li>
+              <li className={styles.dayGrid__day}>20</li>
+              <li className={styles.dayGrid__day}>21</li>
+              <li className={styles.dayGrid__day}>22</li>
+              <li className={styles.dayGrid__day}>23</li>
+              <li className={styles.dayGrid__day}>24</li>
+              <li className={styles.dayGrid__day}>25</li>
+              <li className={styles.dayGrid__day}>26</li>
+              <li className={styles.dayGrid__day}>27</li>
+              <li className={styles.dayGrid__day}>28</li>
+              <li className={styles.dayGrid__day}>29</li>
+              <li className={styles.dayGrid__day}>30</li>
+              <li className={styles.dayGrid__empty}></li>
+              <li className={styles.dayGrid__empty}></li>
+            </ol>
           </div>
-          <Weekdays />
-          <ol className={styles.dayGrid}>
-            <li className={styles.dayGrid__empty}></li>
-            <li className={styles.dayGrid__empty}></li>
-            <li className={styles.dayGrid__empty}></li>
-            <li className={styles.dayGrid__day}>1</li>
-            <li className={styles.dayGrid__day}>2</li>
-            <li className={styles.dayGrid__day}>3</li>
-            <li className={styles.dayGrid__day}>4</li>
-            <li className={styles.dayGrid__day}>5</li>
-            <li className={styles.dayGrid__day}>6</li>
-            <li className={styles.dayGrid__day}>7</li>
-            <li className={styles.dayGrid__day}>8</li>
-            <li className={styles.dayGrid__day}>9</li>
-            <li className={styles.dayGrid__day}>10</li>
-            <li className={styles.dayGrid__day}>11</li>
-            <li className={styles.dayGrid__day}>12</li>
-            <li className={styles.dayGrid__day}>13</li>
-            <li className={styles.dayGrid__day}>14</li>
-            <li className={styles.dayGrid__day}>15</li>
-            <li className={styles.dayGrid__day}>16</li>
-            <li className={styles.dayGrid__day}>17</li>
-            <li className={styles.dayGrid__day}>18</li>
-            <li className={styles.dayGrid__day}>19</li>
-            <li className={styles.dayGrid__day}>20</li>
-            <li className={styles.dayGrid__day}>21</li>
-            <li className={styles.dayGrid__day}>22</li>
-            <li className={styles.dayGrid__day}>23</li>
-            <li className={styles.dayGrid__day}>24</li>
-            <li className={styles.dayGrid__day}>25</li>
-            <li className={styles.dayGrid__day}>26</li>
-            <li className={styles.dayGrid__day}>27</li>
-            <li className={styles.dayGrid__day}>28</li>
-            <li className={styles.dayGrid__day}>29</li>
-            <li className={styles.dayGrid__day}>30</li>
-            <li className={styles.dayGrid__empty}></li>
-            <li className={styles.dayGrid__empty}></li>
-          </ol>
-        </div>
 
-        <div className={styles.month}>
-          <div className={styles.monthName}>
-            <Heading2>July 2022</Heading2>
+          <div className={styles.month}>
+            <div className={styles.monthName}>
+              <Heading2>July 2022</Heading2>
+            </div>
+            <Weekdays />
+            <ol className={styles.dayGrid}>
+              <li className={styles.dayGrid__empty}></li>
+              <li className={styles.dayGrid__empty}></li>
+              <li className={styles.dayGrid__empty}></li>
+              <li className={styles.dayGrid__empty}></li>
+              <li className={styles.dayGrid__empty}></li>
+              <li className={styles.dayGrid__day}>1</li>
+              <li className={styles.dayGrid__day}>2</li>
+              <li className={styles.dayGrid__day}>3</li>
+              <li className={styles.dayGrid__day}>4</li>
+              <li className={styles.dayGrid__day}>5</li>
+              <li className={styles.dayGrid__day}>6</li>
+              <li className={styles.dayGrid__day}>7</li>
+              <li className={styles.dayGrid__day}>8</li>
+              <li className={styles.dayGrid__day}>9</li>
+              <li className={styles.dayGrid__day}>10</li>
+              <li className={styles.dayGrid__day}>11</li>
+              <li className={styles.dayGrid__day}>12</li>
+              <li className={styles.dayGrid__day}>13</li>
+              <li className={styles.dayGrid__day}>14</li>
+              <li className={styles.dayGrid__day}>15</li>
+              <li className={styles.dayGrid__day}>16</li>
+              <li className={styles.dayGrid__day}>17</li>
+              <li className={styles.dayGrid__day}>18</li>
+              <li className={styles.dayGrid__day}>19</li>
+              <li className={styles.dayGrid__day}>20</li>
+              <li className={styles.dayGrid__day}>21</li>
+              <li className={styles.dayGrid__day}>22</li>
+              <li className={styles.dayGrid__day}>23</li>
+              <li className={styles.dayGrid__day}>24</li>
+              <li className={styles.dayGrid__day}>25</li>
+              <li className={styles.dayGrid__day}>26</li>
+              <li className={styles.dayGrid__day}>27</li>
+              <li className={styles.dayGrid__day}>28</li>
+              <li className={styles.dayGrid__day}>29</li>
+              <li className={styles.dayGrid__day}>30</li>
+              <li className={styles.dayGrid__day}>31</li>
+              <li className={styles.dayGrid__empty}></li>
+              <li className={styles.dayGrid__empty}></li>
+              <li className={styles.dayGrid__empty}></li>
+              <li className={styles.dayGrid__empty}></li>
+              <li className={styles.dayGrid__empty}></li>
+              <li className={styles.dayGrid__empty}></li>
+            </ol>
           </div>
-          <Weekdays />
-          <ol className={styles.dayGrid}>
-            <li className={styles.dayGrid__empty}></li>
-            <li className={styles.dayGrid__empty}></li>
-            <li className={styles.dayGrid__empty}></li>
-            <li className={styles.dayGrid__empty}></li>
-            <li className={styles.dayGrid__day}>1</li>
-            <li className={styles.dayGrid__day}>2</li>
-            <li className={styles.dayGrid__day}>3</li>
-            <li className={styles.dayGrid__day}>4</li>
-            <li className={styles.dayGrid__day}>5</li>
-            <li className={styles.dayGrid__day}>6</li>
-            <li className={styles.dayGrid__day}>7</li>
-            <li className={styles.dayGrid__day}>8</li>
-            <li className={styles.dayGrid__day}>9</li>
-            <li className={styles.dayGrid__day}>10</li>
-            <li className={styles.dayGrid__day}>11</li>
-            <li className={styles.dayGrid__day}>12</li>
-            <li className={styles.dayGrid__day}>13</li>
-            <li className={styles.dayGrid__day}>14</li>
-            <li className={styles.dayGrid__day}>15</li>
-            <li className={styles.dayGrid__day}>16</li>
-            <li className={styles.dayGrid__day}>17</li>
-            <li className={styles.dayGrid__day}>18</li>
-            <li className={styles.dayGrid__day}>19</li>
-            <li className={styles.dayGrid__day}>20</li>
-            <li className={styles.dayGrid__day}>21</li>
-            <li className={styles.dayGrid__day}>22</li>
-            <li className={styles.dayGrid__day}>23</li>
-            <li className={styles.dayGrid__day}>24</li>
-            <li className={styles.dayGrid__day}>25</li>
-            <li className={styles.dayGrid__day}>26</li>
-            <li className={styles.dayGrid__day}>27</li>
-            <li className={styles.dayGrid__day}>28</li>
-            <li className={styles.dayGrid__day}>29</li>
-            <li className={styles.dayGrid__day}>30</li>
-            <li className={styles.dayGrid__day}>31</li>
-          </ol>
-        </div>
 
-        <div className={styles.month}>
-          <div className={styles.monthName}>
-            <Heading2>August 2022</Heading2>
+          <div className={styles.month}>
+            <div className={styles.monthName}>
+              <Heading2>August 2022</Heading2>
+            </div>
+            <Weekdays />
+            <ol className={styles.dayGrid}>
+              <li className={styles.dayGrid__empty}></li>
+              <li className={styles.dayGrid__day}>1</li>
+              <li className={styles.dayGrid__day}>2</li>
+              <li className={styles.dayGrid__day}>3</li>
+              <li className={styles.dayGrid__day}>4</li>
+              <li className={styles.dayGrid__day}>5</li>
+              <li className={styles.dayGrid__day}>6</li>
+              <li className={styles.dayGrid__day}>7</li>
+              <li className={styles.dayGrid__day}>8</li>
+              <li className={styles.dayGrid__day}>9</li>
+              <li className={styles.dayGrid__day}>10</li>
+              <li className={styles.dayGrid__day}>11</li>
+              <li className={styles.dayGrid__day}>12</li>
+              <li className={styles.dayGrid__day}>13</li>
+              <li className={styles.dayGrid__day}>14</li>
+              <li className={styles.dayGrid__day}>15</li>
+              <li className={styles.dayGrid__day}>16</li>
+              <li className={styles.dayGrid__day}>17</li>
+              <li className={styles.dayGrid__day}>18</li>
+              <li className={styles.dayGrid__day}>19</li>
+              <li className={styles.dayGrid__day}>20</li>
+              <li className={styles.dayGrid__day}>21</li>
+              <li className={styles.dayGrid__day}>22</li>
+              <li className={styles.dayGrid__day}>23</li>
+              <li className={styles.dayGrid__day}>24</li>
+              <li className={styles.dayGrid__day}>25</li>
+              <li className={styles.dayGrid__day}>26</li>
+              <li className={styles.dayGrid__day}>27</li>
+              <li className={styles.dayGrid__day}>28</li>
+              <li className={styles.dayGrid__day}>29</li>
+              <li className={styles.dayGrid__day}>30</li>
+              <li className={styles.dayGrid__day}>31</li>
+              <li className={styles.dayGrid__empty}></li>
+              <li className={styles.dayGrid__empty}></li>
+              <li className={styles.dayGrid__empty}></li>
+            </ol>
           </div>
-          <Weekdays />
-          <ol className={styles.dayGrid}>
-            <li className={styles.dayGrid__empty}></li>
-            <li className={styles.dayGrid__day}>1</li>
-            <li className={styles.dayGrid__day}>2</li>
-            <li className={styles.dayGrid__day}>3</li>
-            <li className={styles.dayGrid__day}>4</li>
-            <li className={styles.dayGrid__day}>5</li>
-            <li className={styles.dayGrid__day}>6</li>
-            <li className={styles.dayGrid__day}>7</li>
-            <li className={styles.dayGrid__day}>8</li>
-            <li className={styles.dayGrid__day}>9</li>
-            <li className={styles.dayGrid__day}>10</li>
-            <li className={styles.dayGrid__day}>11</li>
-            <li className={styles.dayGrid__day}>12</li>
-            <li className={styles.dayGrid__day}>13</li>
-            <li className={styles.dayGrid__day}>14</li>
-            <li className={styles.dayGrid__day}>15</li>
-            <li className={styles.dayGrid__day}>16</li>
-            <li className={styles.dayGrid__day}>17</li>
-            <li className={styles.dayGrid__day}>18</li>
-            <li className={styles.dayGrid__day}>19</li>
-            <li className={styles.dayGrid__day}>20</li>
-            <li className={styles.dayGrid__day}>21</li>
-            <li className={styles.dayGrid__day}>22</li>
-            <li className={styles.dayGrid__day}>23</li>
-            <li className={styles.dayGrid__day}>24</li>
-            <li className={styles.dayGrid__day}>25</li>
-            <li className={styles.dayGrid__day}>26</li>
-            <li className={styles.dayGrid__day}>27</li>
-            <li className={styles.dayGrid__day}>28</li>
-            <li className={styles.dayGrid__day}>29</li>
-            <li className={styles.dayGrid__day}>30</li>
-            <li className={styles.dayGrid__day}>31</li>
-            <li className={styles.dayGrid__empty}></li>
-            <li className={styles.dayGrid__empty}></li>
-            <li className={styles.dayGrid__empty}></li>
-            <li className={styles.dayGrid__empty}></li>
-          </ol>
-        </div>
+        </Stack>
       </Main>
     </>
   );

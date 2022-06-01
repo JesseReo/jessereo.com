@@ -1,9 +1,10 @@
 import Head from "next/head";
-import styles from "../styles/Dj.module.css";
+// import styles from "../styles/Dj.module.css";
 import Hero from "../components/Hero";
 import Main from "../components/Main";
 import Text from "../components/Text";
 import EmailLink from "../components/EmailLink";
+import Stack from "../components/Stack";
 
 export default function Dj() {
   return (
@@ -17,7 +18,7 @@ export default function Dj() {
       </Head>
       <Hero title="DJ" backgroundImage="/loan-7AIDE8PrvA0-unsplash.jpg" />
       <Main>
-        <div className={styles.djMixes}>
+        <Stack>
           <iframe
             width="100%"
             height="300"
@@ -26,10 +27,10 @@ export default function Dj() {
             allow="autoplay"
             src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1269291343&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
           />
-        </div>
-        <Text style={{ textAlign: "center" }}>
-          To make a booking email: <EmailLink />
-        </Text>
+          <Text style={{ textAlign: "center" }}>
+            To make a booking email: <EmailLink />
+          </Text>
+        </Stack>
       </Main>
     </>
   );
