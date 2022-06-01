@@ -1,17 +1,7 @@
 .logo {
-  position: absolute;
-  top: 20px;
-  left: 50%;
-  z-index: 1;
-  transform: translateX(-50%);
-  width: 200px;
-  height: 100px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
 }
 
 .svgPath {
-  fill: #fff;
+  fill: #000;
 }
