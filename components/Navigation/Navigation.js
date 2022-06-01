@@ -1,10 +1,10 @@
 import { useState } from "react";
 import Link from "next/link";
 import styles from "./Navigation.module.css";
+import MenuIcon from "../MenuIcon/MenuIcon";
 
 export default function Navighation() {
   const [menuIsActive, setMenuIsActive] = useState(false);
-
   return (
     <>
       <div
@@ -14,7 +14,7 @@ export default function Navighation() {
           setMenuIsActive(!menuIsActive);
         }}
       >
-        {menuIsActive ? <>close</> : <>menu</>}
+        <MenuIcon active={menuIsActive} />
       </div>
 
       <ul
@@ -53,10 +53,10 @@ const linksData = [
     path: "/videos",
     label: "Videos",
   },
-  {
-    path: "/photos",
-    label: "Photos",
-  },
+  // {
+  //   path: "/photos",
+  //   label: "Photos",
+  // },
   {
     path: "/dj",
     label: "DJ",
@@ -65,10 +65,10 @@ const linksData = [
     path: "/tours",
     label: "Tours",
   },
-  {
-    path: "/blog",
-    label: "Blog",
-  },
+  // {
+  //   path: "/blog",
+  //   label: "Blog",
+  // },
   {
     path: "/contact",
     label: "Contact",

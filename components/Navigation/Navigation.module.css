@@ -1,9 +1,17 @@
 .menuIcon {
   position: fixed;
-  top: 20px;
-  right: 20px;
+  top: 5px;
+  right: 5px;
+  width: 50px;
   z-index: 3;
   cursor: pointer;
+}
+@media (min-width: 992px) {
+  .menuIcon {
+    top: 10px;
+    right: 10px;
+    width: 80px;
+  }
 }
 
 .list {
