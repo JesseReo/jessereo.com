@@ -15,7 +15,7 @@ export default function Dj() {
           content="DJ mixes, music and information for Jesse Real"
         />
       </Head>
-      <Hero title="DJ" backgroundImage="url(/loan-7AIDE8PrvA0-unsplash.jpg)" />
+      <Hero title="DJ" backgroundImage="/loan-7AIDE8PrvA0-unsplash.jpg" />
       <Main>
         <div className={styles.djMixes}>
           <iframe

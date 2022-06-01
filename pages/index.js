@@ -1,7 +1,9 @@
 import Head from "next/head";
+import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Main from "../components/Main";
 import Text from "../components/Text";
+import Hero from "../components/Hero";
 
 export default function Home() {
   return (
@@ -14,13 +16,14 @@ export default function Home() {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
+      <Hero backgroundImage="/images/Jesse+RUGS-3.jpg" />
       <Main />
       <footer className={styles.footer}>
         <Text>Your local weather</Text>
       </footer>
-      <video className={styles.video} autoPlay muted loop>
+      {/* <video className={styles.video} autoPlay muted loop>
         <source src="/SampleVideo_1280x720_1mb.mp4" type="video/mp4" />
-      </video>
+      </video> */}
     </>
   );
 }

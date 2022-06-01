@@ -14,10 +14,7 @@ export default function Blog() {
           content="Blog and articles written by Jesse Real for up and coming drummer"
         />
       </Head>
-      <Hero
-        title="Blog"
-        backgroundImage="url(/loan-7AIDE8PrvA0-unsplash.jpg)"
-      />
+      <Hero title="Blog" backgroundImage="/loan-7AIDE8PrvA0-unsplash.jpg" />
       <Main>
         <div className={styles.blogList}>
           <div className={styles.blogListItem}>

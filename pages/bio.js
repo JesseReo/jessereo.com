@@ -13,7 +13,7 @@ export default function Home() {
         <meta name="description" content="Biography for Jesse Real" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <Hero title="Bio" backgroundImage="url(/loan-7AIDE8PrvA0-unsplash.jpg)" />
+      <Hero title="Bio" backgroundImage="/loan-7AIDE8PrvA0-unsplash.jpg" />
       <Main>
         <div className={styles.textContainer}>
           <Heading2 style={{ textAlign: "center" }}>
