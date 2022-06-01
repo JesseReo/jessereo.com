@@ -1,7 +1,7 @@
 @font-face {
   font-family: "wildy_sansregular";
-  src: url("/fonts/wildy_sans-webfont.woff2") format("woff2"),
-    url("/fonts/wildy_sans-webfont.woff") format("woff");
+  src: url("/static/fonts/wildy_sans-webfont.woff2") format("woff2"),
+    url("/static/fonts/wildy_sans-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }

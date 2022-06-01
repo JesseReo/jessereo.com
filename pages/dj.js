@@ -16,7 +16,7 @@ export default function Dj() {
           content="DJ mixes, music and information for Jesse Real"
         />
       </Head>
-      <Hero title="DJ" backgroundImage="/images/Jesse+B_Roll-2.jpg" />
+      <Hero title="DJ" backgroundImage="/static/images/Jesse+B_Roll-2.jpg" />
       <Main>
         <Stack>
           <iframe
