@@ -12,7 +12,7 @@ export default function Videos() {
         <meta name="description" content="Videos featuring Jesse Real" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <Hero title="VideoS" backgroundImage="/loan-7AIDE8PrvA0-unsplash.jpg" />
+      <Hero title="VideoS" backgroundImage="/images/Jesse+RUGS-32.jpg" />
       <Main>
         <Stack>
           <iframe

@@ -13,7 +13,7 @@ export default function Tours() {
         <meta name="description" content="Tour Schedule for Jesse Real" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <Hero title="Tours" backgroundImage="/loan-7AIDE8PrvA0-unsplash.jpg" />
+      <Hero title="Tours" backgroundImage="/images/Jesse+RUGS-23.jpg" />
       <Main>
         <Stack>
           <div className={styles.month}>
