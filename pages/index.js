@@ -1,10 +1,10 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import styles from "../styles/Home.module.css";
-import Main from "../components/Main";
-import Text from "../components/Text";
-import Hero from "../components/Hero";
-import img from "../public/images/jesse-rugs-3.jpg";
+import imgHero from "../public/images/jesse-tri.jpg";
+import imgBottom from "../public/images/jesse-film-12.jpg";
+import Heading1 from "../components/Heading1";
 
 export default function Home() {
   return (
@@ -17,23 +17,58 @@ export default function Home() {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <Hero backgroundImage={img} />
-      <Main />
-      <Image
-        src={img}
-        alt="alt"
-        layout="fill"
-        objectFit="cover"
-        objectPosition="center top"
-        placeholder="blur"
-        priority
-      />
-      <footer className={styles.footer}>
-        <Text>Your local weather</Text>
-      </footer>
-      {/* <video className={styles.video} autoPlay muted loop>
-        <source src="/SampleVideo_1280x720_1mb.mp4" type="video/mp4" />
-      </video> */}
+      <div className={styles.sectionContainer}>
+        <Image
+          src={imgHero}
+          alt="alt"
+          layout="fill"
+          objectFit="cover"
+          objectPosition="center top"
+          placeholder="blur"
+          priority
+        />
+      </div>
+
+      <div className={styles.videoContainer}>
+        <video
+          className={styles.video}
+          loop
+          onClick={(e) =>
+            e.target.paused ? e.target.play() : e.target.pause()
+          }
+        >
+          <source src="/videos/intro-edit.mp4" type="video/mp4" />
+        </video>
+      </div>
+
+      <div className={styles.bigLinkContainer}>
+        <Image
+          src={imgBottom}
+          alt="alt"
+          layout="fill"
+          objectFit="cover"
+          objectPosition="center"
+          placeholder="blur"
+          priority
+        />
+        <Link href="/bio" scroll>
+          <a className={`${styles.bigLink} ${styles.bgRed}`}>
+            <Heading1>The dRummeR</Heading1>
+          </a>
+        </Link>
+        <Link href="/dj">
+          <a className={`${styles.bigLink} ${styles.bgYellow}`}>
+            <Heading1 style={{ color: "#000" }}>The dj</Heading1>
+          </a>
+        </Link>
+        <Link href="/contact">
+          <a className={`${styles.bigLink} ${styles.bgGreen}`}>
+            <Heading1>The Real mOtherfunker</Heading1>
+          </a>
+        </Link>
+      </div>
+
+      <div className={styles.bottomWhite}>&nbsp;</div>
     </>
   );
 }
