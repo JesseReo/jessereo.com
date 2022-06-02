@@ -25,6 +25,7 @@ export default function Home() {
         layout="fill"
         objectFit="cover"
         objectPosition="center top"
+        placeholder="blur"
         priority
       />
       <footer className={styles.footer}>

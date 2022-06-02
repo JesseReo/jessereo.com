@@ -12,6 +12,7 @@ export default function Hero(props) {
             alt="alt"
             layout="fill"
             objectFit="cover"
+            placeholder="blur"
             priority
           />
         </div>
