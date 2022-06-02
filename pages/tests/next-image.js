@@ -1,17 +1,30 @@
 import Image from "next/image";
 import img from "../../public/test-img.jpg";
+import img2 from "../../public/jesse3.jpg";
 
 const Page = () => {
   return (
-    <div className="outer">
-      <Image
-        src={img}
-        alt="alt"
-        layout="fill"
-        objectFit="cover"
-        objectPosition="center top"
-        priority
-      />
+    <>
+      <div className="outer">
+        <Image
+          src={img}
+          alt="alt"
+          layout="fill"
+          objectFit="cover"
+          objectPosition="center top"
+          priority
+        />
+      </div>
+      <div className="outer">
+        <Image
+          src={img2}
+          alt="alt"
+          layout="fill"
+          objectFit="cover"
+          objectPosition="center top"
+          priority
+        />
+      </div>
       <style jsx>{`
         .outer {
           position: relative;
@@ -19,7 +32,7 @@ const Page = () => {
           height: 500px;
         }
       `}</style>
-    </div>
+    </>
   );
 };
 
