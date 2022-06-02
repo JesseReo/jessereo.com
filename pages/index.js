@@ -33,6 +33,7 @@ export default function Home() {
         <video
           className={styles.video}
           loop
+          playsInline
           onClick={(e) =>
             e.target.paused ? e.target.play() : e.target.pause()
           }
@@ -41,16 +42,7 @@ export default function Home() {
         </video>
       </div>
 
-      <div className={styles.bigLinkContainer}>
-        <Image
-          src={imgBottom}
-          alt="alt"
-          layout="fill"
-          objectFit="cover"
-          objectPosition="center"
-          placeholder="blur"
-          priority
-        />
+      <div className={styles.bigLinks}>
         <Link href="/bio" scroll>
           <a className={`${styles.bigLink} ${styles.bgRed}`}>
             <Heading1>The dRummeR</Heading1>
@@ -67,8 +59,6 @@ export default function Home() {
           </a>
         </Link>
       </div>
-
-      <div className={styles.bottomWhite}>&nbsp;</div>
     </>
   );
 }

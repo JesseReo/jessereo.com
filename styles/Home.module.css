@@ -51,14 +51,11 @@
   cursor: pointer;
 }
 
-.bigLinkContainer {
-  /* height: 50%; */
+.bigLinks {
   position: relative;
 }
 
 .bigLink {
-  position: relative;
-  z-index: 1;
   height: 16vh;
   display: flex;
   align-items: center;
@@ -84,10 +81,4 @@
 
 .bgGreen {
   background-color: #00ba56;
-}
-
-.bottomWhite {
-  height: 25%;
-  background-color: #f9ffeb;
-  opacity: 0.8;
 }
