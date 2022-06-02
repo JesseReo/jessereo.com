@@ -5,6 +5,7 @@ import Main from "../components/Main";
 import Heading2 from "../components/Heading2";
 import Text from "../components/Text";
 import Stack from "../components/Stack";
+import img from "../public/images/jesse-film-12.jpg";
 
 export default function Contact() {
   return (
@@ -13,10 +14,7 @@ export default function Contact() {
         <title>Contact - JESSE REAL</title>
         <meta name="description" content="Contact details for Jesse Real" />
       </Head>
-      <Hero
-        title="Contact"
-        backgroundImage="/static/images/Jesse+Film-12.jpg"
-      />
+      <Hero title="Contact" backgroundImage={img} />
       <Main>
         <Stack>
           <Text>

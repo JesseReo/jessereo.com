@@ -8,7 +8,7 @@
   padding-top: 144px; /* size of logo */
 
   /* background: radial-gradient(circle at center, #424242, #000); */
-  background-image: url("/white_construction_paper_seamless.jpg");
+  background-image: url("../../public/images/white_construction_paper_seamless.jpg");
   background-attachment: fixed;
 }
 

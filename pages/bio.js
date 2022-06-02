@@ -5,6 +5,7 @@ import Hero from "../components/Hero";
 import Heading2 from "../components/Heading2";
 import Text from "../components/Text";
 import Stack from "../components/Stack";
+import img from "../public/images/jesse-rugs-5.jpg";
 
 export default function Home() {
   return (
@@ -14,7 +15,7 @@ export default function Home() {
         <meta name="description" content="Biography for Jesse Real" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <Hero title="Bio" backgroundImage="/static/images/Jesse+RUGS-5.jpg" />
+      <Hero title="Bio" backgroundImage={img} />
       <Main>
         <Stack>
           <Heading2 style={{ textAlign: "center" }}>

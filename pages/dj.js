@@ -5,6 +5,7 @@ import Main from "../components/Main";
 import Text from "../components/Text";
 import EmailLink from "../components/EmailLink";
 import Stack from "../components/Stack";
+import img from "../public/images/jesse-b-roll-2.jpg";
 
 export default function Dj() {
   return (
@@ -16,7 +17,7 @@ export default function Dj() {
           content="DJ mixes, music and information for Jesse Real"
         />
       </Head>
-      <Hero title="DJ" backgroundImage="/static/images/Jesse+B_Roll-2.jpg" />
+      <Hero title="DJ" backgroundImage={img} />
       <Main>
         <Stack>
           <iframe
