@@ -6,6 +6,7 @@ export default function Main(props) {
       className={styles.main}
       style={{
         ...(props.fullWidth && { maxWidth: "100%" }),
+        ...(props.style && { ...props.style }),
       }}
     >
       {props.children}

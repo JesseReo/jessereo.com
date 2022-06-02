@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Omage from "next/image";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Main from "../components/Main";
@@ -18,7 +19,16 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Hero backgroundImage={img} />
-      <Main />
+      <Main style={{ position: "relative" }}>
+        <Image
+          src={img}
+          alt="alt"
+          layout="fill"
+          objectFit="cover"
+          objectPosition="center top"
+          priority
+        />
+      </Main>
       <footer className={styles.footer}>
         <Text>Your local weather</Text>
       </footer>
