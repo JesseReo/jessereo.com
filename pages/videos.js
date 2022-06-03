@@ -4,6 +4,7 @@ import Hero from "../components/Hero";
 import Main from "../components/Main";
 import Stack from "../components/Stack";
 import img from "../public/images/jesse-rugs-32.jpg";
+import BigLink from "../components/BigLink";
 
 export default function Videos() {
   return (
@@ -13,7 +14,7 @@ export default function Videos() {
         <meta name="description" content="Videos featuring Jesse Real" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <Hero title="VideoS" backgroundImage={img} />
+      <Hero title="VideOS" backgroundImage={img} />
       <Main>
         <Stack>
           <iframe
@@ -61,6 +62,7 @@ export default function Videos() {
           />
         </Stack>
       </Main>
+      <BigLink href="/dj" color="#192cd1" label="dj" />
     </>
   );
 }

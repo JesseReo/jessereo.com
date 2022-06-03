@@ -39,14 +39,7 @@ export default function Home() {
           priority
         />
 
-        <div
-          className={styles.downArrow}
-          onClick={() => {
-            document
-              .querySelector(".videoAnchor")
-              .scrollIntoView({ behavior: "smooth" });
-          }}
-        >
+        <div className={styles.downArrow}>
           <Arrow />
         </div>
       </div>
@@ -77,12 +70,12 @@ export default function Home() {
       </div>
 
       <div className={styles.bigLinks}>
-        <Link href="/bio" scroll>
+        <Link href="/bio">
           <a className={`${styles.bigLink} ${styles.bgRed}`}>
             <Heading1>The dRummeR</Heading1>
           </a>
         </Link>
-        <Link href="/dj" scroll>
+        <Link href="/dj">
           <a className={`${styles.bigLink} ${styles.bgBlue}`}>
             <Heading1>The dj</Heading1>
           </a>

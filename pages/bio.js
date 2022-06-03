@@ -1,12 +1,11 @@
 import Head from "next/head";
-// import styles from "../styles/Bio.module.css";
 import Main from "../components/Main";
 import Hero from "../components/Hero";
 import Heading1 from "../components/Heading2";
-import Heading2 from "../components/Heading2";
 import Text from "../components/Text";
 import Stack from "../components/Stack";
 import img from "../public/images/jesse-rugs-5.jpg";
+import BigLink from "../components/BigLink";
 
 export default function Home() {
   return (
@@ -16,18 +15,13 @@ export default function Home() {
         <meta name="description" content="Biography for Jesse Real" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <Hero title="Bio" backgroundImage={img} />
+      <Hero title="bIO" backgroundImage={img} />
       <Main>
         <Stack>
           <Heading1 style={{ textAlign: "center" }}>
-            JeSSE &apos;ReAL&apos; ReHAUT AKA (FUNK) <br />
+            JeSSe &apos;ReAL&apos; RehAUT AKA (FUNK) <br />
             DRUMMER | DJ | ROOTS MUSICIAN
           </Heading1>
-
-          <Heading2 style={{ textAlign: "center" }}>
-            JeSSE &apos;ReAL&apos; ReHAUT AKA (FUNK) <br />
-            DRUMMER | DJ | ROOTS MUSICIAN
-          </Heading2>
           <Text style={{ textAlign: "center" }}>Naarm/Melbourne</Text>
           <br />
           <Text>
@@ -126,6 +120,7 @@ export default function Home() {
           </Text>
         </Stack>
       </Main>
+      <BigLink href="/videos" color="#eb1400" label="VideOs" />
     </>
   );
 }

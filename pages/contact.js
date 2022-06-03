@@ -6,6 +6,7 @@ import Heading2 from "../components/Heading2";
 import Text from "../components/Text";
 import Stack from "../components/Stack";
 import img from "../public/images/jesse-film-12.jpg";
+import EmailLink from "../components/EmailLink/EmailLink";
 
 export default function Contact() {
   return (
@@ -14,20 +15,21 @@ export default function Contact() {
         <title>Contact - JESSE REAL</title>
         <meta name="description" content="Contact details for Jesse Real" />
       </Head>
-      <Hero title="Contact" backgroundImage={img} />
+      <Hero title="CONtact" backgroundImage={img} />
       <Main>
-        <Stack>
-          <Text>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-            hendrerit, diam in suscipit pulvinar.
-          </Text>
+        <div className={styles.content}>
+          <Stack>
+            <Heading2 style={{ textAlign: "center" }}>get IN cOntact</Heading2>
 
-          <Text>
-            Email:
-            <a href="mailto:jesserehaut@gmail.com">jesserehaut@gmail.com</a>
-          </Text>
+            <Text style={{ textAlign: "center" }}>
+              Accepting offers for peace, love, puppies and / or rainbows.
+            </Text>
 
-          <div className={styles.formContainer}>
+            <Text style={{ textAlign: "center" }}>
+              <EmailLink />
+            </Text>
+
+            {/* <div className={styles.formContainer}>
             <form action="https://formspree.io/f/{form_id}" method="post">
               <fieldset>
                 <legend>
@@ -61,8 +63,9 @@ export default function Contact() {
                 </Stack>
               </fieldset>
             </form>
-          </div>
-        </Stack>
+          </div> */}
+          </Stack>
+        </div>
       </Main>
     </>
   );

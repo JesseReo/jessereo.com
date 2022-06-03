@@ -12,7 +12,7 @@ export default function Layout({ children }) {
 
   useEffect(() => {
     router.events.on(
-      "routeChangeStart",
+      "routeChangeComplete",
       () => (pageContainerRef.current.scrollTop = 0)
     );
   }, []);

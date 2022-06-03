@@ -5,6 +5,7 @@ import Main from "../components/Main";
 import Heading2 from "../components/Heading2";
 import Stack from "../components/Stack";
 import img from "../public/images/jesse-rugs-23.jpg";
+import BigLink from "../components/BigLink";
 
 export default function Tours() {
   return (
@@ -14,7 +15,7 @@ export default function Tours() {
         <meta name="description" content="Tour Schedule for Jesse Real" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <Hero title="Tours" backgroundImage={img} />
+      <Hero title="TOurs" backgroundImage={img} />
       <Main>
         <Stack>
           <div className={styles.month}>
@@ -157,6 +158,7 @@ export default function Tours() {
           </div>
         </Stack>
       </Main>
+      <BigLink href="/contact" color="#00ba56" label="COntaCt" />
     </>
   );
 }
