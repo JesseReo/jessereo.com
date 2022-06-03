@@ -15,6 +15,7 @@ export default function Layout({ children }) {
       "routeChangeComplete",
       () => (pageContainerRef.current.scrollTop = 0)
     );
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
