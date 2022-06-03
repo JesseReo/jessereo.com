@@ -38,9 +38,10 @@ export default function MenuIcon(props) {
         .line {
           fill: none;
           transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
-          stroke: #000;
+          stroke: #fff;
           stroke-width: 5.5;
           stroke-linecap: round;
+          filter: drop-shadow(0 0 21px rgba(0, 0, 0, 0.4));
         }
         .ham1 .top {
           stroke-dasharray: 40 139;
