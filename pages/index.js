@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>JESSE REAL LiVES</title>
+        <title>JESSE REAL LiVES </title>
         <meta
           name="description"
           content="The home page of Jesse Real the honest hommus adonis"
