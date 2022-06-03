@@ -1,0 +1,54 @@
+.blogList {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 567px) {
+  .blogList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .blogList {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.blogListItem {
+  width: 100%;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  transform: scale(1);
+  box-shadow: none;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: #fff;
+  transition: all 150ms ease-out;
+}
+
+.card:hover {
+  z-index: 1;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+  transform: scale(1.02);
+  transition: all 150ms ease-out;
+}
+
+.cardImage {
+  position: relative;
+  height: 40%;
+}
+
+.cardTitle {
+  padding: 1rem;
+}
+
+.cardDesc {
+  padding: 1rem;
+}

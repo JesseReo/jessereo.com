@@ -1,0 +1,59 @@
+/* .month {
+} */
+
+.monthName {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.weekdays {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin: 0 auto;
+  margin-bottom: 1em;
+  max-width: 64em;
+  min-height: 20px;
+  background-color: #fff;
+}
+
+.weekdays__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 2/1;
+}
+
+@media all and (max-width: 800px) {
+  .weekdays__full {
+    font-size: 0;
+  }
+}
+
+/* /////////////////////////////////////////////////////////////////////////// */
+
+.dayGrid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 1px;
+  margin: 0 auto;
+  padding: 1px;
+  background-color: #aaa;
+}
+
+.dayGrid__day,
+.dayGrid__empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  margin-left: 0;
+  font-size: calc(16px + (21 - 16) * ((100vw - 300px) / (1600 - 300)));
+  background-color: #fff;
+  aspect-ratio: 1/1;
+}
+
+.dayGrid__empty {
+  background-color: rgb(227, 227, 227);
+}

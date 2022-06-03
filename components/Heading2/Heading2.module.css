@@ -1,0 +1,14 @@
+.heading2 {
+  font-family: "fast_in_my_carregular", sans-serif;
+
+  color: #000;
+  font-size: 1rem;
+
+  /* https://clamp.font-size.app/?config=eyJyb290IjoiMTYiLCJtaW5XaWR0aCI6IjU3NnB4IiwibWF4V2lkdGgiOiIxMjAwcHgiLCJtaW5Gb250U2l6ZSI6IjI0cHgiLCJtYXhGb250U2l6ZSI6IjM2cHgifQ%3D%3D */
+  font-size: clamp(1.5rem, 0.8077rem + 1.9231vw, 2.25rem);
+  /* 24 > 36 */
+
+  /* https://clamp.font-size.app/?config=eyJyb290IjoiMTYiLCJtaW5XaWR0aCI6IjU3NnB4IiwibWF4V2lkdGgiOiIxMjAwcHgiLCJtaW5Gb250U2l6ZSI6IjQycHgiLCJtYXhGb250U2l6ZSI6IjcycHgifQ%3D%3D */
+  line-height: clamp(2.625rem, 0.8942rem + 4.8077vw, 4.5rem);
+  /* 42 > 72 */
+}
