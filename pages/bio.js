@@ -4,7 +4,7 @@ import Hero from "../components/Hero";
 import Heading1 from "../components/Heading2";
 import Text from "../components/Text";
 import Stack from "../components/Stack";
-import img from "../public/images/jesse-rugs-5.jpg";
+import img from "../public/images/jesse-rugs-5-art.jpg";
 import BigLink from "../components/BigLink";
 
 export default function Home() {

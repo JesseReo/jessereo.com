@@ -5,7 +5,7 @@ import Main from "../components/Main";
 import Text from "../components/Text";
 import EmailLink from "../components/EmailLink";
 import Stack from "../components/Stack";
-import img from "../public/images/jesse-b-roll-2.jpg";
+import img from "../public/images/jesse-b-roll-2-art.jpg";
 import BigLink from "../components/BigLink";
 import Heading2 from "../components/Heading2";
 

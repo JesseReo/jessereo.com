@@ -3,7 +3,7 @@ import styles from "../styles/Videos.module.css";
 import Hero from "../components/Hero";
 import Main from "../components/Main";
 import Stack from "../components/Stack";
-import img from "../public/images/jesse-rugs-32.jpg";
+import img from "../public/images/jesse-rugs-32-art.jpg";
 import BigLink from "../components/BigLink";
 
 export default function Videos() {

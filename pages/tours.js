@@ -4,7 +4,7 @@ import Hero from "../components/Hero";
 import Main from "../components/Main";
 import Heading2 from "../components/Heading2";
 import Stack from "../components/Stack";
-import img from "../public/images/jesse-rugs-23.jpg";
+import img from "../public/images/jesse-rugs-23-art.jpg";
 import BigLink from "../components/BigLink";
 
 export default function Tours() {
