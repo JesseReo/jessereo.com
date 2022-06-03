@@ -9,4 +9,6 @@ const PageContainer = React.forwardRef((props, ref) => {
   );
 });
 
+PageContainer.displayName = "PageContainer";
+
 export default PageContainer;
