@@ -2,6 +2,7 @@ import { useState } from "react";
 import Link from "next/link";
 import styles from "./Navigation.module.css";
 import MenuIcon from "../MenuIcon/MenuIcon";
+import Text from "../Text/Text";
 
 export default function Navighation() {
   const [menuIsActive, setMenuIsActive] = useState(false);
@@ -43,15 +44,15 @@ export default function Navighation() {
 const linksData = [
   {
     path: "/",
-    label: "Home",
+    label: "hOme",
   },
   {
     path: "/bio",
-    label: "Bio",
+    label: "bIO",
   },
   {
     path: "/videos",
-    label: "Videos",
+    label: "VideOS",
   },
   // {
   //   path: "/photos",
@@ -59,11 +60,11 @@ const linksData = [
   // },
   {
     path: "/dj",
-    label: "DJ",
+    label: "dj",
   },
   {
     path: "/tours",
-    label: "Tours",
+    label: "TOurs",
   },
   // {
   //   path: "/blog",
@@ -71,7 +72,7 @@ const linksData = [
   // },
   {
     path: "/contact",
-    label: "Contact",
+    label: "COntact",
   },
 ];
 
