@@ -1,5 +1,12 @@
+import React from "react";
 import styles from "./PageContainer.module.css";
 
-export default function PageContainer(props) {
-  return <div className={styles.pageContainer}>{props.children}</div>;
-}
+const PageContainer = React.forwardRef((props, ref) => {
+  return (
+    <div ref={ref} className={styles.pageContainer}>
+      {props.children}
+    </div>
+  );
+});
+
+export default PageContainer;
