@@ -1,15 +1,17 @@
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import styles from "./Navigation.module.css";
 import MenuIcon from "../MenuIcon/MenuIcon";
 import Text from "../Text/Text";
+import bgImg from "../../public/images/menu-bg.jpg";
 
 export default function Navighation() {
   const [menuIsActive, setMenuIsActive] = useState(false);
   return (
     <>
       <div
-        role="buttob"
+        role="button"
         className={styles.menuIcon}
         onClick={() => {
           setMenuIsActive(!menuIsActive);
@@ -18,25 +20,34 @@ export default function Navighation() {
         <MenuIcon active={menuIsActive} />
       </div>
 
-      <ul
-        className={styles.list}
+      <div
+        className={styles.navContainer}
         style={{
           left: menuIsActive ? "0" : "100%",
         }}
       >
-        {linksData.map((item) => {
-          return (
-            <Listitem
-              key={item.label}
-              path={item.path}
-              label={item.label}
-              clickHandler={() => {
-                setMenuIsActive(false);
-              }}
-            />
-          );
-        })}
-      </ul>
+        <ul className={styles.list}>
+          {linksData.map((item) => {
+            return (
+              <Listitem
+                key={item.label}
+                path={item.path}
+                label={item.label}
+                clickHandler={() => {
+                  setMenuIsActive(false);
+                }}
+              />
+            );
+          })}
+        </ul>
+        <Image
+          src={bgImg}
+          alt="alt"
+          layout="fill"
+          objectFit="cover"
+          placeholder="blur"
+        />
+      </div>
     </>
   );
 }

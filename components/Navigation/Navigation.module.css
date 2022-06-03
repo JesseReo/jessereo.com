@@ -15,25 +15,34 @@
   }
 }
 
-.list {
+.navContainer {
   position: fixed;
   top: 0;
   left: 0;
   z-index: 3;
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: left 300ms ease-in-out;
+}
+
+.list {
+  position: relative;
+  z-index: 1;
   list-style-type: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(234, 234, 234);
-  transition: left 300ms ease-in-out;
 }
 
 .listItem {
   padding: 10px 20px;
   font-family: "fast_in_my_carregular", sans-serif;
+  color: #fff;
   font-size: 1rem;
 
   /* https://clamp.font-size.app/?config=eyJyb290IjoiMTYiLCJtaW5XaWR0aCI6IjU3NnB4IiwibWF4V2lkdGgiOiIxMjAwcHgiLCJtaW5Gb250U2l6ZSI6IjM0cHgiLCJtYXhGb250U2l6ZSI6IjY0cHgifQ%3D%3D */

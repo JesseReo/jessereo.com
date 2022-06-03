@@ -41,7 +41,7 @@ export default function MenuIcon(props) {
           stroke: #fff;
           stroke-width: 5.5;
           stroke-linecap: round;
-          filter: drop-shadow(0 0 21px rgba(0, 0, 0, 0.4));
+          filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.4));
         }
         .ham1 .top {
           stroke-dasharray: 40 139;
