@@ -35,7 +35,8 @@ export default function Dj() {
               Mixes coming sOOn
             </Heading2>
             <Text style={{ textAlign: "center" }}>
-              To make a booking email: <EmailLink />
+              To make a booking, email: <br />
+              <EmailLink />
             </Text>
           </Stack>
         </div>

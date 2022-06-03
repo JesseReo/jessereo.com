@@ -6,6 +6,7 @@ import styles from "../styles/Home.module.css";
 import imgHero from "../public/images/jesse-tri.jpg";
 import Heading1 from "../components/Heading1";
 import Arrow from "../components/Arrow";
+import poster from "../public/images/video-poster.jpg";
 
 export default function Home() {
   const playIconRef = useRef();
@@ -50,6 +51,7 @@ export default function Home() {
           className={styles.video}
           loop
           playsInline
+          poster={poster.src}
           onClick={(e) => {
             if (e.target.paused) {
               e.target.play();
@@ -62,6 +64,16 @@ export default function Home() {
         >
           <source src="/videos/intro-edit.mp4" type="video/mp4" />
         </video>
+        <Link href="/videos">
+          <a
+            style={{
+              color: "#535353",
+              textDecoration: "underline",
+            }}
+          >
+            watch full version
+          </a>
+        </Link>
         <div ref={playIconRef} className={styles.playIcon}>
           <svg viewBox="0 0 512 512">
             <path d="M128,96v320l256-160L128,96L128,96z" />

@@ -19,6 +19,16 @@ export default function Videos() {
         <Stack>
           <iframe
             className={styles.videoEmbed}
+            title="vimeo-player"
+            src="https://player.vimeo.com/video/715559616?h=969d76414f"
+            width="640"
+            height="360"
+            frameBorder="0"
+            allowFullScreen
+          />
+
+          <iframe
+            className={styles.videoEmbed}
             width="560"
             height="315"
             src="https://www.youtube.com/embed/l4GZah6WsOA"
