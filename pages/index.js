@@ -100,8 +100,7 @@ export default function Home() {
         <Link href="/contact">
           <a className={`${styles.bigLink} ${styles.bgGreen}`}>
             <Heading1 style={{ textAlign: "center" }}>
-              The Real <br />
-              mOtherFunker
+              Wake the FuNk uP
             </Heading1>
           </a>
         </Link>

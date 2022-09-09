@@ -86,6 +86,7 @@
 
 .bigLink {
   height: 16vh;
+  min-height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -96,7 +97,6 @@
 
 .bigLink:hover {
   opacity: 1;
-  height: 20vh;
   transition: all 500ms ease;
 }
 
