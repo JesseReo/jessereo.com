@@ -158,29 +158,108 @@ export default function Tours() {
               <li className={styles.dayGrid__empty}></li>
               <li className={styles.dayGrid__empty}></li>
               <li className={styles.dayGrid__day}>1</li>
-              <li className={styles.dayGrid__day}>2</li>
+              <li className={styles.dayGrid__day}>
+                <DayInner
+                  dayNum="2"
+                  event={
+                    <>Sherblues and Folk Festival, Sherbrooke, QC, Canada</>
+                  }
+                />
+              </li>
               <li className={styles.dayGrid__day}>3</li>
-              <li className={styles.dayGrid__day}>4</li>
-              <li className={styles.dayGrid__day}>5</li>
+              <li className={styles.dayGrid__day}>
+                <DayInner
+                  dayNum="4"
+                  event={<>HISTORY, Toronto, ON, Canada</>}
+                />
+              </li>
+              <li className={styles.dayGrid__day}>
+                <DayInner
+                  dayNum="5"
+                  event={<>HISTORY, Toronto, ON, Canada</>}
+                />
+              </li>
               <li className={styles.dayGrid__day}>6</li>
-              <li className={styles.dayGrid__day}>7</li>
-              <li className={styles.dayGrid__day}>8</li>
+              <li className={styles.dayGrid__day}>
+                <DayInner
+                  dayNum="7"
+                  event={
+                    <>Festival d&apos;été International de Québec, QC, Canada</>
+                  }
+                />
+              </li>
+              <li className={styles.dayGrid__day}>
+                <DayInner
+                  dayNum="8"
+                  event={<>RBC Ottawa Bluesfest, Ottawa, ON, Canada</>}
+                />
+              </li>
               <li className={styles.dayGrid__day}>9</li>
-              <li className={styles.dayGrid__day}>10</li>
+              <li className={styles.dayGrid__day}>
+                <DayInner
+                  dayNum="10"
+                  event={<>Winnipeg Folk Festival, Winnipeg, MB, Canada</>}
+                />
+              </li>
               <li className={styles.dayGrid__day}>11</li>
-              <li className={styles.dayGrid__day}>12</li>
+              <li className={styles.dayGrid__day}>
+                <DayInner
+                  dayNum="12"
+                  event={<>Edmonton Convention Centre, Edmonton, AB, Canada</>}
+                />
+              </li>
               <li className={styles.dayGrid__day}>13</li>
               <li className={styles.dayGrid__day}>14</li>
-              <li className={styles.dayGrid__day}>15</li>
-              <li className={styles.dayGrid__day}>16</li>
-              <li className={styles.dayGrid__day}>17</li>
+              <li className={styles.dayGrid__day}>
+                <DayInner
+                  dayNum="15"
+                  event={<>Royal Theatre, Victoria, BC, Canada</>}
+                />
+              </li>
+              <li className={styles.dayGrid__day}>
+                <DayInner
+                  dayNum="16"
+                  event={<>Orpheum Theatre, Vancouver, BC, Canada</>}
+                />
+              </li>
+              <li className={styles.dayGrid__day}>
+                <DayInner
+                  dayNum="17"
+                  event={<>McMenamins Grand Lodge, Forest Grove, OR, USA</>}
+                />
+              </li>
               <li className={styles.dayGrid__day}>18</li>
-              <li className={styles.dayGrid__day}>19</li>
+              <li className={styles.dayGrid__day}>
+                <DayInner
+                  dayNum="19"
+                  event={<>Paramount Theatre, Seattle, WA, USA</>}
+                />
+              </li>
               <li className={styles.dayGrid__day}>20</li>
-              <li className={styles.dayGrid__day}>21</li>
-              <li className={styles.dayGrid__day}>22</li>
-              <li className={styles.dayGrid__day}>23</li>
-              <li className={styles.dayGrid__day}>24</li>
+              <li className={styles.dayGrid__day}>
+                <DayInner
+                  dayNum="21"
+                  event={<>Fox Theater, Oakland, CA, USA</>}
+                />
+              </li>
+              <li className={styles.dayGrid__day}>
+                <DayInner
+                  dayNum="22"
+                  event={<>Fox Theater, Oakland, CA, USA</>}
+                />
+              </li>
+              <li className={styles.dayGrid__day}>
+                <DayInner
+                  dayNum="23"
+                  event={<>Hollywood Palladium, Los Angeles, CA, USA</>}
+                />
+              </li>
+              <li className={styles.dayGrid__day}>
+                <DayInner
+                  dayNum="24"
+                  event={<>Fox Theater, Pomona, CA, USA</>}
+                />
+              </li>
               <li className={styles.dayGrid__day}>25</li>
               <li className={styles.dayGrid__day}>26</li>
               <li className={styles.dayGrid__day}>27</li>
@@ -199,9 +278,9 @@ export default function Tours() {
 
           <div className={styles.month}>
             <div className={styles.monthName}>
-              <Heading2>August 2022 - coming soon</Heading2>
+              <Heading2>August 2022</Heading2>
             </div>
-            {/* <Weekdays />
+            <Weekdays />
             <ol className={styles.dayGrid}>
               <li className={styles.dayGrid__empty}></li>
               <li className={styles.dayGrid__day}>1</li>
@@ -222,14 +301,41 @@ export default function Tours() {
               <li className={styles.dayGrid__day}>16</li>
               <li className={styles.dayGrid__day}>17</li>
               <li className={styles.dayGrid__day}>18</li>
-              <li className={styles.dayGrid__day}>19</li>
+              <li className={styles.dayGrid__day}>
+                <DayInner
+                  dayNum="19"
+                  event={<>Dockville, Hamburg, Germany</>}
+                />
+              </li>
               <li className={styles.dayGrid__day}>20</li>
-              <li className={styles.dayGrid__day}>21</li>
-              <li className={styles.dayGrid__day}>22</li>
-              <li className={styles.dayGrid__day}>23</li>
+              <li className={styles.dayGrid__day}>
+                <DayInner
+                  dayNum="21"
+                  event={<>Lowlands, Biddinghuizen, Netherland</>}
+                />
+              </li>
+              <li className={styles.dayGrid__day}>
+                <DayInner
+                  dayNum="22"
+                  event={<>Openluchttheater Rivierenhof, Antwerp, Belgium</>}
+                />
+              </li>
+              <li className={styles.dayGrid__day}>
+                <DayInner
+                  dayNum="23"
+                  event={<>Openluchttheater Rivierenhof, Antwerp, Belgium</>}
+                />
+              </li>
               <li className={styles.dayGrid__day}>24</li>
-              <li className={styles.dayGrid__day}>25</li>
-              <li className={styles.dayGrid__day}>26</li>
+              <li className={styles.dayGrid__day}>
+                <DayInner
+                  dayNum="25"
+                  event={<>Zurich Open Air, Zurich, Switzerland</>}
+                />
+              </li>
+              <li className={styles.dayGrid__day}>
+                <DayInner dayNum="26" event={<>Spazio211, Turin, Italy</>} />
+              </li>
               <li className={styles.dayGrid__day}>27</li>
               <li className={styles.dayGrid__day}>28</li>
               <li className={styles.dayGrid__day}>29</li>
@@ -238,7 +344,7 @@ export default function Tours() {
               <li className={styles.dayGrid__empty}></li>
               <li className={styles.dayGrid__empty}></li>
               <li className={styles.dayGrid__empty}></li>
-            </ol> */}
+            </ol>
           </div>
         </Stack>
       </Main>
