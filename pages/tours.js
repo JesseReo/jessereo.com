@@ -148,9 +148,9 @@ export default function Tours() {
 
           <div className={styles.month}>
             <div className={styles.monthName}>
-              <Heading2>July 2022 - coming soon</Heading2>
+              <Heading2>July 2022</Heading2>
             </div>
-            {/* <Weekdays />
+            <Weekdays />
             <ol className={styles.dayGrid}>
               <li className={styles.dayGrid__empty}></li>
               <li className={styles.dayGrid__empty}></li>
@@ -194,7 +194,7 @@ export default function Tours() {
               <li className={styles.dayGrid__empty}></li>
               <li className={styles.dayGrid__empty}></li>
               <li className={styles.dayGrid__empty}></li>
-            </ol> */}
+            </ol>
           </div>
 
           <div className={styles.month}>
