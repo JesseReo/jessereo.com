@@ -21,10 +21,9 @@ export default function Navighation() {
       </div>
 
       <div
-        className={styles.navContainer}
-        style={{
-          left: menuIsActive ? "0" : "100%",
-        }}
+        className={`${styles.navContainer} ${
+          menuIsActive && `${styles.navContainerActive}`
+        }`}
       >
         <ul className={styles.list}>
           {linksData.map((item) => {
