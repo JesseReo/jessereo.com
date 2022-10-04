@@ -19,13 +19,11 @@ export default function Contact() {
       <Main>
         <div className={styles.content}>
           <Stack>
-            <Heading2 style={{ textAlign: "center" }}>get IN cOntact</Heading2>
+            <Heading2>get IN cOntact</Heading2>
 
-            <Text style={{ textAlign: "center" }}>
-              Accepting offers for peace, love, puppies and / or rainbows.
-            </Text>
+            <Text>Accepting offers for solid grooves and peace.</Text>
 
-            <Text style={{ textAlign: "center" }}>
+            <Text>
               <EmailLink />
             </Text>
 
