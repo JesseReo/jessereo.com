@@ -1,9 +1,12 @@
 import styles from "./Logo.module.css";
+import logoImg from "../../images/brandmark-white.svg";
+console.log(logoImg);
 
 export default function Logo() {
   return (
     <div className={styles.logo}>
-      <svg
+      <img src={logoImg.src} />
+      {/* <svg
         // xmlns="http://www.w3.org/2000/svg"
         // xmlnsXlink="http://www.w3.org/1999/xlink"
         // x="0px"
@@ -93,7 +96,7 @@ export default function Logo() {
 	c-0.67-4.21-0.46-9.39,0.41-14.71c1.03-5.44,2.21-10.62,3.86-14.83c1.54-3.95,3.24-5.12,6.44-5.12c3.76,0,5.25,1.88,5.67,5.64
 	c0.26,2.27,0,4.15,0.31,5.77c0.31,1.3,1.03,1.88,2.11,1.88c0.82,0,1.34-0.07,2.83-0.07C270.65,141.79,273.69,146.2,273.69,159.67"
         />
-      </svg>
+      </svg> */}
     </div>
   );
 }
