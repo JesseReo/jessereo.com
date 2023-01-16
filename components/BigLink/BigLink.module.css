@@ -24,6 +24,12 @@
   transition: all 500ms ease;
 }
 
+.label {}
+
+.label svg {
+  width: 100%;
+}
+
 .bgRed {
   background-color: #eb1400;
 }

@@ -11,9 +11,17 @@ export default function BigLink(props) {
           backgroundColor: props.color ?? "none",
         }}
       >
-        <Heading1 style={{ color: props.textColor ?? "#fff" }}>
-          {props.label}
-        </Heading1>
+        <div
+          className={styles.label}
+          style={{ fill: props.textColor ?? "#fff" }}
+        >
+          {props.labelImg}
+        </div>
+
+        {/* <Heading1 style={{ color: props.textColor ?? "#fff" }}>
+           {props.label}
+
+        </Heading1> */}
 
         <div className={styles.img}>
           <svg viewBox="0 0 460.94 71.1">

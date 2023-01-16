@@ -7,15 +7,16 @@ import Text from "../components/Text";
 import Stack from "../components/Stack";
 import img from "../public/images/jesse-film-12-art.jpg";
 import EmailLink from "../components/EmailLink/EmailLink";
+import ContactSvg from "../images/contact.svg";
 
 export default function Contact() {
   return (
     <>
       <Head>
-        <title>Contact - JESSE REAL</title>
+        <title>CONTACT - JESSE REAL</title>
         <meta name="description" content="Contact details for Jesse Real" />
       </Head>
-      <Hero title="CONtact" backgroundImage={img} />
+      <Hero title="CONtact" titleImage={<ContactSvg />} backgroundImage={img} />
       <Main>
         <div className={styles.content}>
           <Stack>
