@@ -1,6 +1,5 @@
 import Image from "next/image";
 import styles from "./Hero.module.css";
-import Heading1 from "../Heading1";
 import Arrow from "../Arrow";
 
 export default function Hero(props) {
@@ -15,7 +14,7 @@ export default function Hero(props) {
         }}
       >
         <div className={styles.content}>
-          {props.title && <Heading1>{props.title}</Heading1>}
+          <div className={styles.titleImage}>{props.titleImage}</div>
           {props.children}
         </div>
 

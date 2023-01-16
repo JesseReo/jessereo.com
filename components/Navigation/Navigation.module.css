@@ -42,9 +42,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .listItem {
+  position: relative;
   padding: 10px 20px;
   font-family: "fast_in_my_carregular", sans-serif;
   color: rgba(255, 255, 255, 0.8);
@@ -59,11 +61,18 @@
   /* 40 > 64 */
 
   transition: color 300ms;
+
+  width: 100%;
+  max-width: 220px;
 }
 
 .listItem:hover {
   color: rgba(255, 255, 255, 1);
   transition: color 300ms;
+}
+
+.listItem svg path {
+  fill: white;
 }
 
 .navContainerActive .listItem {

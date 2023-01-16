@@ -100,12 +100,14 @@
   transition: all 500ms ease;
 }
 
-.bigLink h1 {
+.bigLink svg {
+  fill: white;
+  width: 300px;
   transform: scale(1);
   transition: all 500ms ease;
 }
 
-.bigLink:hover h1 {
+.bigLink:hover svg {
   transform: scale(1.1);
   transition: all 500ms ease;
 }
@@ -120,6 +122,10 @@
 
 .bgYellow {
   background-color: #f8ff1f;
+}
+
+.bgYellow svg {
+  fill: black;
 }
 
 .bgGreen {

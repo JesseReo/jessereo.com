@@ -6,6 +6,16 @@
   cursor: pointer;
 }
 
+.titleImage {
+  position: relative;
+  width: 300px;
+  height: 100px;
+}
+
+.titleImage svg {
+  fill: white;
+}
+
 .content {
   position: absolute;
   top: 0;

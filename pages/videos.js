@@ -5,16 +5,18 @@ import Main from "../components/Main";
 import Stack from "../components/Stack";
 import img from "../public/images/jesse-rugs-32-art.jpg";
 import BigLink from "../components/BigLink";
+import VideoSvg from "../images/videos.svg";
+import DjSvg from "../images/dj.svg";
 
 export default function Videos() {
   return (
     <>
       <Head>
-        <title>Videos - JESSE REAL</title>
+        <title>VIDEOS - JESSE REAL</title>
         <meta name="description" content="Videos featuring Jesse Real" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <Hero title="VideOS" backgroundImage={img} />
+      <Hero title="VideOS" titleImage={<VideoSvg />} backgroundImage={img} />
       <Main>
         <Stack>
           <iframe
@@ -58,7 +60,7 @@ export default function Videos() {
           />
         </Stack>
       </Main>
-      <BigLink href="/dj" color="#192cd1" label="dj" />
+      <BigLink href="/dj" color="#192cd1" label="dj" labelImg={<DjSvg />} />
     </>
   );
 }

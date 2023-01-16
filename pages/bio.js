@@ -6,16 +6,18 @@ import Text from "../components/Text";
 import Stack from "../components/Stack";
 import img from "../public/images/jesse-rugs-5-art.jpg";
 import BigLink from "../components/BigLink";
+import BioSvg from "../images/bio.svg";
+import VideoSvg from "../images/videos.svg";
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>Bio - JESSE REAL</title>
+        <title>BIO - JESSE REAL</title>
         <meta name="description" content="Biography for Jesse Real" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <Hero title="bIO" backgroundImage={img} />
+      <Hero title="bIO" titleImage={<BioSvg />} backgroundImage={img} />
       <Main>
         <Stack>
           <Heading1 style={{ textAlign: "center" }}>
@@ -120,7 +122,12 @@ export default function Home() {
           </Text>
         </Stack>
       </Main>
-      <BigLink href="/videos" color="#eb1400" label="VideOs" />
+      <BigLink
+        href="/videos"
+        color="#eb1400"
+        label="VideOs"
+        labelImg={<VideoSvg />}
+      />
     </>
   );
 }

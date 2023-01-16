@@ -8,6 +8,11 @@ import Heading1 from "../components/Heading1";
 import Arrow from "../components/Arrow";
 import poster from "../public/images/video-poster.jpg";
 
+import TheDrummerSvg from "../images/the-drummer.svg";
+import TheDjSvg from "../images/the-dj.svg";
+import TheTravellerSvg from "../images/the-traveller.svg";
+import WakeUpSvg from "../images/wake-the-funk-up.svg";
+
 export default function Home() {
   const playIconRef = useRef();
 
@@ -86,24 +91,22 @@ export default function Home() {
       <div className={styles.bigLinks}>
         <Link href="/bio">
           <a className={`${styles.bigLink} ${styles.bgRed}`}>
-            <Heading1>The dRummeR</Heading1>
+            <TheDrummerSvg />
           </a>
         </Link>
         <Link href="/dj">
           <a className={`${styles.bigLink} ${styles.bgBlue}`}>
-            <Heading1>The dj</Heading1>
+            <TheDjSvg />
           </a>
         </Link>
         <Link href="/tours">
           <a className={`${styles.bigLink} ${styles.bgYellow}`}>
-            <Heading1 style={{ color: "#000" }}>The Traveller</Heading1>
+            <TheTravellerSvg />
           </a>
         </Link>
         <Link href="/contact">
           <a className={`${styles.bigLink} ${styles.bgGreen}`}>
-            <Heading1 style={{ textAlign: "center" }}>
-              Wake the FuNk uP
-            </Heading1>
+            <WakeUpSvg />
           </a>
         </Link>
       </div>

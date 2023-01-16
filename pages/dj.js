@@ -8,6 +8,8 @@ import Stack from "../components/Stack";
 import img from "../public/images/jesse-b-roll-2-art.jpg";
 import BigLink from "../components/BigLink";
 import Heading2 from "../components/Heading2";
+import DjSvg from "../images/dj.svg";
+import ToursSvg from "../images/tours.svg";
 
 export default function Dj() {
   return (
@@ -19,7 +21,7 @@ export default function Dj() {
           content="DJ mixes, music and information for Jesse Real"
         />
       </Head>
-      <Hero title="DJ" backgroundImage={img} />
+      <Hero title="DJ" titleImage={<DjSvg />} backgroundImage={img} />
       <Main>
         <div className={styles.content}>
           <Stack>
@@ -41,7 +43,13 @@ export default function Dj() {
           </Stack>
         </div>
       </Main>
-      <BigLink href="/tours" color="#f8ff1f" textColor="#000" label="tOUrs" />
+      <BigLink
+        href="/tours"
+        color="#f8ff1f"
+        textColor="#000"
+        label="tOUrs"
+        labelImg={<ToursSvg />}
+      />
     </>
   );
 }

@@ -24,6 +24,12 @@
   transition: all 500ms ease;
 }
 
+.label {}
+
+.label svg {
+  width: 100%;
+}
+
 .bgRed {
   background-color: #eb1400;
 }
@@ -41,12 +47,8 @@
 }
 
 .img {
-  position: absolute;
   width: 20vw;
   max-width: 120px;
-  top: 50%;
-  right: 20px;
-  transform: translateY(-50%);
 }
 
 .img svg {

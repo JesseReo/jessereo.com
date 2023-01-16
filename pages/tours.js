@@ -6,16 +6,18 @@ import Heading2 from "../components/Heading2";
 import Stack from "../components/Stack";
 import img from "../public/images/jesse-rugs-23-art.jpg";
 import BigLink from "../components/BigLink";
+import ToursSvg from "../images/tours.svg";
+import ContactSvg from "../images/contact.svg";
 
 export default function Tours() {
   return (
     <>
       <Head>
-        <title>Tours - JESSE REAL</title>
+        <title>TOURS - JESSE REAL</title>
         <meta name="description" content="Tour Schedule for Jesse Real" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <Hero title="TOurs" backgroundImage={img} />
+      <Hero title="TOurs" titleImage={<ToursSvg />} backgroundImage={img} />
       <Main>
         <Stack>
           <div className={styles.month}>
@@ -348,7 +350,12 @@ export default function Tours() {
           </div>
         </Stack>
       </Main>
-      <BigLink href="/contact" color="#00ba56" label="COntaCt" />
+      <BigLink
+        href="/contact"
+        color="#00ba56"
+        label="COntaCt"
+        labelImg={<ContactSvg />}
+      />
     </>
   );
 }
