@@ -72,7 +72,7 @@ export default function Home() {
               textDecoration: "underline",
             }}
           >
-            watch full version
+            {/* watch full version */}
           </a>
         </Link> */}
 
