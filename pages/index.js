@@ -64,7 +64,8 @@ export default function Home() {
         >
           <source src="/videos/intro-edit.mp4" type="video/mp4" />
         </video>
-        <Link href="/videos">
+
+        {/* <Link href="/videos">
           <a
             style={{
               color: "#535353",
@@ -73,7 +74,8 @@ export default function Home() {
           >
             watch full version
           </a>
-        </Link>
+        </Link> */}
+
         <div ref={playIconRef} className={styles.playIcon}>
           <svg viewBox="0 0 512 512">
             <path d="M128,96v320l256-160L128,96L128,96z" />
