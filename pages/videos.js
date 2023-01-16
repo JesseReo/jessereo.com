@@ -23,7 +23,6 @@ export default function Videos() {
             height="315"
             src="https://www.youtube.com/embed/l4GZah6WsOA"
             title="YouTube video player"
-            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           />
@@ -34,7 +33,6 @@ export default function Videos() {
             height="315"
             src="https://www.youtube.com/embed/PhQrCWMgmyA"
             title="YouTube video player"
-            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           />
@@ -45,7 +43,6 @@ export default function Videos() {
             height="315"
             src="https://www.youtube.com/embed/PtfrSNRlFgA"
             title="YouTube video player"
-            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           />
@@ -56,7 +53,6 @@ export default function Videos() {
             height="315"
             src="https://www.youtube.com/embed/uX8yoT9ct6k"
             title="YouTube video player"
-            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           />
