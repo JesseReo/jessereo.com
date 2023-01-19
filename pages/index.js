@@ -10,6 +10,11 @@ import TheTravellerSvg from "../images/the-traveller.svg";
 import WakeUpSvg from "../images/wake-the-funk-up.svg";
 import Hero from "../components/Hero/Hero";
 
+import TheDrummerSvg from "../images/the-drummer.svg";
+import TheDjSvg from "../images/the-dj.svg";
+import TheTravellerSvg from "../images/the-traveller.svg";
+import WakeUpSvg from "../images/wake-the-funk-up.svg";
+
 export default function Home() {
   const playIconRef = useRef();
 

@@ -17,6 +17,16 @@
   fill: white;
 }
 
+.titleImage {
+  position: relative;
+  width: 200px;
+  height: 100px;
+}
+
+.titleImage svg {
+  fill: white;
+}
+
 .content {
   position: absolute;
   top: 0;
