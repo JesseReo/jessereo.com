@@ -1,15 +1,10 @@
 import { useRef } from "react";
 import Head from "next/head";
 import Link from "next/link";
+import Hero from "../components/Hero/Hero";
 import styles from "../styles/Home.module.css";
 import imgHero from "../public/images/jesse-tri.jpg";
 import poster from "../public/images/video-poster.jpg";
-import TheDrummerSvg from "../images/the-drummer.svg";
-import TheDjSvg from "../images/the-dj.svg";
-import TheTravellerSvg from "../images/the-traveller.svg";
-import WakeUpSvg from "../images/wake-the-funk-up.svg";
-import Hero from "../components/Hero/Hero";
-
 import TheDrummerSvg from "../images/the-drummer.svg";
 import TheDjSvg from "../images/the-dj.svg";
 import TheTravellerSvg from "../images/the-traveller.svg";
