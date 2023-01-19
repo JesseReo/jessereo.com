@@ -1,7 +1,6 @@
 .main {
   position: relative;
   background-image: url("../../public/images/white_construction_paper_seamless.jpg");
-  background-attachment: fixed;
 }
 
 .mainInner {
