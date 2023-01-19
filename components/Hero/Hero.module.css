@@ -15,16 +15,7 @@
 
 .titleImage svg {
   fill: white;
-}
-
-.titleImage {
-  position: relative;
-  width: 200px;
-  height: 100px;
-}
-
-.titleImage svg {
-  fill: white;
+  filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.4));
 }
 
 .content {
