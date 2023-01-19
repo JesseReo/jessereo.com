@@ -1,17 +1,14 @@
 import { useRef } from "react";
 import Head from "next/head";
-import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/Home.module.css";
 import imgHero from "../public/images/jesse-tri.jpg";
-import Heading1 from "../components/Heading1";
-import Arrow from "../components/Arrow";
 import poster from "../public/images/video-poster.jpg";
-
 import TheDrummerSvg from "../images/the-drummer.svg";
 import TheDjSvg from "../images/the-dj.svg";
 import TheTravellerSvg from "../images/the-traveller.svg";
 import WakeUpSvg from "../images/wake-the-funk-up.svg";
+import Hero from "../components/Hero/Hero";
 
 export default function Home() {
   const playIconRef = useRef();
@@ -19,38 +16,16 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>JESSE REAL LiVES </title>
+        <title>JESSE REAL LIVES </title>
         <meta
           name="description"
-          content="The home page of Jesse Real the honest hommus adonis"
+          content="The homepage of Jesse Real, the honest hommus adonis"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
-      <div
-        className={styles.sectionContainer}
-        onClick={() => {
-          document
-            .querySelector(".videoAnchor")
-            .scrollIntoView({ behavior: "smooth" });
-        }}
-      >
-        <Image
-          src={imgHero}
-          alt="alt"
-          layout="fill"
-          objectFit="cover"
-          objectPosition="center top"
-          placeholder="blur"
-          priority
-        />
+      <Hero backgroundImage={imgHero} />
 
-        <div className={styles.downArrow}>
-          <Arrow />
-        </div>
-      </div>
-
-      <a name="video" className="videoAnchor" />
       <div className={styles.videoContainer}>
         <video
           className={styles.video}

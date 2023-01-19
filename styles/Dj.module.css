@@ -1,9 +1,6 @@
 .content {
-  position: absolute;
-  /* width: 100%; */
-  width: calc(100% - 40px);
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
 }

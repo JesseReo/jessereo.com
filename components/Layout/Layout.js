@@ -2,7 +2,6 @@ import { useRef, useEffect } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import styles from "./Layout.module.css";
-import PageContainer from "../PageContainer";
 import Navigation from "../Navigation";
 import Logo from "../Logo";
 
@@ -15,11 +14,10 @@ export default function Layout({ children }) {
       "routeChangeComplete",
       () => (pageContainerRef.current.scrollTop = 0)
     );
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [router.events]);
 
   return (
-    <PageContainer ref={pageContainerRef}>
+    <>
       <Navigation />
       <div className={styles.logoContainer}>
         <Link href="/">
@@ -28,7 +26,12 @@ export default function Layout({ children }) {
           </a>
         </Link>
       </div>
-      {children}
-    </PageContainer>
+      <div
+        className={`${styles.pageContainer} ${styles.parallaxScroll}`}
+        ref={pageContainerRef}
+      >
+        {children}
+      </div>
+    </>
   );
 }

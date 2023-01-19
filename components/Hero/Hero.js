@@ -23,7 +23,7 @@ export default function Hero(props) {
         </div>
 
         {props.backgroundImage && (
-          <div className={styles.backgroundImage}>
+          <div className={`${styles.backgroundImage} ${styles.parallaxItem}`}>
             <Image
               src={props.backgroundImage}
               alt="alt"
