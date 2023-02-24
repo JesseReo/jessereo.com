@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./Hero.module.css";
-import Arrow from "../Arrow";
+import ArrowDown from "./images/arrow-down.svg";
 
 export default function Hero(props) {
   return (
@@ -19,7 +19,7 @@ export default function Hero(props) {
         </div>
 
         <div className={styles.downArrow}>
-          <Arrow />
+          <ArrowDown />
         </div>
 
         {props.backgroundImage && (
