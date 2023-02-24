@@ -5,7 +5,7 @@ import Main from "../components/Main";
 import Text from "../components/Text";
 import EmailLink from "../components/EmailLink";
 import Stack from "../components/Stack";
-import img from "../public/images/jesse-b-roll-2-art.jpg";
+import heroImg from "../images/hero-dj.jpg";
 import BigLink from "../components/BigLink";
 import Heading2 from "../components/Heading2";
 import DjSvg from "../images/dj.svg";
@@ -21,7 +21,7 @@ export default function Dj() {
           content="DJ mixes, music and information for Jesse Real"
         />
       </Head>
-      <Hero title="DJ" titleImage={<DjSvg />} backgroundImage={img} />
+      <Hero title="DJ" titleImage={<DjSvg />} backgroundImage={heroImg} />
       <Main>
         <div className={styles.content}>
           <Stack>

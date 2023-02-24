@@ -4,7 +4,7 @@ import Hero from "../components/Hero";
 import Main from "../components/Main";
 import Heading2 from "../components/Heading2";
 import Stack from "../components/Stack";
-import img from "../public/images/jesse-rugs-23-art.jpg";
+import heroImg from "../images/hero-tours.jpg";
 import BigLink from "../components/BigLink";
 import ToursSvg from "../images/tours.svg";
 import ContactSvg from "../images/contact.svg";
@@ -17,7 +17,7 @@ export default function Tours() {
         <meta name="description" content="Tour Schedule for Jesse Real" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <Hero title="TOurs" titleImage={<ToursSvg />} backgroundImage={img} />
+      <Hero title="TOurs" titleImage={<ToursSvg />} backgroundImage={heroImg} />
       <Main>
         <Stack>
           <div className={styles.month}>
