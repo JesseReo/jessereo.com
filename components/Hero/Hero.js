@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./Hero.module.css";
-import Arrow from "../Arrow";
+import ArrowDown from "./images/arrow-down.svg";
 
 export default function Hero(props) {
   return (
@@ -13,13 +13,15 @@ export default function Hero(props) {
             .scrollIntoView({ behavior: "smooth" });
         }}
       >
-        <div className={styles.content}>
-          <div className={styles.titleImage}>{props.titleImage}</div>
-          {props.children}
-        </div>
+        {props.children && (
+          <div className={styles.content}>
+            <div className={styles.titleImage}>{props.titleImage}</div>
+            {props.children}
+          </div>
+        )}
 
         <div className={styles.downArrow}>
-          <Arrow />
+          <ArrowDown />
         </div>
 
         {props.backgroundImage && (
@@ -35,6 +37,7 @@ export default function Hero(props) {
           </div>
         )}
       </div>
+
       <span className="nextSection" />
     </>
   );

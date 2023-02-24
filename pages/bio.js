@@ -4,7 +4,7 @@ import Hero from "../components/Hero";
 import Heading1 from "../components/Heading2";
 import Text from "../components/Text";
 import Stack from "../components/Stack";
-import img from "../public/images/jesse-rugs-5-art.jpg";
+import heroImg from "../images/hero-bio.jpg";
 import BigLink from "../components/BigLink";
 import BioSvg from "../images/bio.svg";
 import VideoSvg from "../images/videos.svg";
@@ -17,7 +17,7 @@ export default function Home() {
         <meta name="description" content="Biography for Jesse Real" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <Hero title="bIO" titleImage={<BioSvg />} backgroundImage={img} />
+      <Hero title="bIO" titleImage={<BioSvg />} backgroundImage={heroImg} />
       <Main>
         <Stack>
           <Heading1 style={{ textAlign: "center" }}>

@@ -9,4 +9,5 @@
   margin: 0 auto;
   padding: 20px;
   flex-grow: 1;
+  min-height: calc(100vh - 160px);
 }
