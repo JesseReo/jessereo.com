@@ -32,22 +32,23 @@
 
 .downArrow {
   position: absolute;
-  bottom: 20px;
-  left: 50%;
+  bottom: 0;
+  left: calc(50% - 15px);
   z-index: 2;
-  width: 30px;
+  width: 70px;
+  padding: 20px;
   cursor: pointer;
+}
+
+.downArrow:hover svg {
+  transform: translateY(15px);
+  transition: transform 150ms ease;
 }
 
 .downArrow svg {
   width: 100%;
   height: 100%;
-  transform: translateX(-50%);
-  transition: transform 150ms ease;
-}
-
-.downArrow:hover svg {
-  transform: translateX(-50%) translateY(15px);
+  cursor: pointer;
   transition: transform 150ms ease;
 }
 
@@ -62,6 +63,7 @@
   left: 0;
   width: 100%;
   height: 100%;
+  background-color: #000;
 }
 
 .parallaxItem {

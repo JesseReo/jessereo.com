@@ -13,10 +13,12 @@ export default function Hero(props) {
             .scrollIntoView({ behavior: "smooth" });
         }}
       >
-        <div className={styles.content}>
-          <div className={styles.titleImage}>{props.titleImage}</div>
-          {props.children}
-        </div>
+        {props.children && (
+          <div className={styles.content}>
+            <div className={styles.titleImage}>{props.titleImage}</div>
+            {props.children}
+          </div>
+        )}
 
         <div className={styles.downArrow}>
           <ArrowDown />
@@ -35,6 +37,7 @@ export default function Hero(props) {
           </div>
         )}
       </div>
+
       <span className="nextSection" />
     </>
   );
