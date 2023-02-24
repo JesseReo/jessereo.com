@@ -3,13 +3,15 @@ import styles from "../styles/Tours.module.css";
 import Hero from "../components/Hero";
 import Main from "../components/Main";
 import Heading2 from "../components/Heading2";
-import Stack from "../components/Stack";
 import heroImg from "../images/hero-tours.jpg";
 import BigLink from "../components/BigLink";
 import ToursSvg from "../images/tours.svg";
 import ContactSvg from "../images/contact.svg";
 
 export default function Tours() {
+  const upcomingEvents = getUpcomingEvents(eventData);
+  const pastEvents = getPastEvents(eventData);
+
   return (
     <>
       <Head>
@@ -19,336 +21,15 @@ export default function Tours() {
       </Head>
       <Hero title="TOurs" titleImage={<ToursSvg />} backgroundImage={heroImg} />
       <Main>
-        <Stack>
-          <div className={styles.month}>
-            <div className={styles.monthName}>
-              <Heading2>August 2022</Heading2>
-            </div>
-            <Weekdays />
-            <ol className={styles.dayGrid}>
-              <li className={styles.dayGrid__empty}></li>
-              <li className={styles.dayGrid__day}>1</li>
-              <li className={styles.dayGrid__day}>2</li>
-              <li className={styles.dayGrid__day}>3</li>
-              <li className={styles.dayGrid__day}>4</li>
-              <li className={styles.dayGrid__day}>5</li>
-              <li className={styles.dayGrid__day}>6</li>
-              <li className={styles.dayGrid__day}>7</li>
-              <li className={styles.dayGrid__day}>8</li>
-              <li className={styles.dayGrid__day}>9</li>
-              <li className={styles.dayGrid__day}>10</li>
-              <li className={styles.dayGrid__day}>11</li>
-              <li className={styles.dayGrid__day}>12</li>
-              <li className={styles.dayGrid__day}>13</li>
-              <li className={styles.dayGrid__day}>14</li>
-              <li className={styles.dayGrid__day}>15</li>
-              <li className={styles.dayGrid__day}>16</li>
-              <li className={styles.dayGrid__day}>17</li>
-              <li className={styles.dayGrid__day}>18</li>
-              <li className={styles.dayGrid__day}>
-                <DayInner
-                  dayNum="19"
-                  event={<>Dockville, Hamburg, Germany</>}
-                />
-              </li>
-              <li className={styles.dayGrid__day}>20</li>
-              <li className={styles.dayGrid__day}>
-                <DayInner
-                  dayNum="21"
-                  event={<>Lowlands, Biddinghuizen, Netherland</>}
-                />
-              </li>
-              <li className={styles.dayGrid__day}>
-                <DayInner
-                  dayNum="22"
-                  event={<>Openluchttheater Rivierenhof, Antwerp, Belgium</>}
-                />
-              </li>
-              <li className={styles.dayGrid__day}>
-                <DayInner
-                  dayNum="23"
-                  event={<>Openluchttheater Rivierenhof, Antwerp, Belgium</>}
-                />
-              </li>
-              <li className={styles.dayGrid__day}>24</li>
-              <li className={styles.dayGrid__day}>
-                <DayInner
-                  dayNum="25"
-                  event={<>Zurich Open Air, Zurich, Switzerland</>}
-                />
-              </li>
-              <li className={styles.dayGrid__day}>
-                <DayInner dayNum="26" event={<>Spazio211, Turin, Italy</>} />
-              </li>
-              <li className={styles.dayGrid__day}>27</li>
-              <li className={styles.dayGrid__day}>28</li>
-              <li className={styles.dayGrid__day}>29</li>
-              <li className={styles.dayGrid__day}>30</li>
-              <li className={styles.dayGrid__day}>31</li>
-              <li className={styles.dayGrid__empty}></li>
-              <li className={styles.dayGrid__empty}></li>
-              <li className={styles.dayGrid__empty}></li>
-            </ol>
-          </div>
+        <div className={styles.heading}>
+          <Heading2>UpcOmIng events</Heading2>
+        </div>
+        <EventList data={upcomingEvents} />
 
-          <div className={styles.month}>
-            <div className={styles.monthName}>
-              <Heading2>July 2022</Heading2>
-            </div>
-            <Weekdays />
-            <ol className={styles.dayGrid}>
-              <li className={styles.dayGrid__empty}></li>
-              <li className={styles.dayGrid__empty}></li>
-              <li className={styles.dayGrid__empty}></li>
-              <li className={styles.dayGrid__empty}></li>
-              <li className={styles.dayGrid__empty}></li>
-              <li className={styles.dayGrid__day}>1</li>
-              <li className={styles.dayGrid__day}>
-                <DayInner
-                  dayNum="2"
-                  event={
-                    <>Sherblues and Folk Festival, Sherbrooke, QC, Canada</>
-                  }
-                />
-              </li>
-              <li className={styles.dayGrid__day}>3</li>
-              <li className={styles.dayGrid__day}>
-                <DayInner
-                  dayNum="4"
-                  event={<>HISTORY, Toronto, ON, Canada</>}
-                />
-              </li>
-              <li className={styles.dayGrid__day}>
-                <DayInner
-                  dayNum="5"
-                  event={<>HISTORY, Toronto, ON, Canada</>}
-                />
-              </li>
-              <li className={styles.dayGrid__day}>6</li>
-              <li className={styles.dayGrid__day}>
-                <DayInner
-                  dayNum="7"
-                  event={
-                    <>Festival d&apos;été International de Québec, QC, Canada</>
-                  }
-                />
-              </li>
-              <li className={styles.dayGrid__day}>
-                <DayInner
-                  dayNum="8"
-                  event={<>RBC Ottawa Bluesfest, Ottawa, ON, Canada</>}
-                />
-              </li>
-              <li className={styles.dayGrid__day}>9</li>
-              <li className={styles.dayGrid__day}>
-                <DayInner
-                  dayNum="10"
-                  event={<>Winnipeg Folk Festival, Winnipeg, MB, Canada</>}
-                />
-              </li>
-              <li className={styles.dayGrid__day}>11</li>
-              <li className={styles.dayGrid__day}>
-                <DayInner
-                  dayNum="12"
-                  event={<>Edmonton Convention Centre, Edmonton, AB, Canada</>}
-                />
-              </li>
-              <li className={styles.dayGrid__day}>13</li>
-              <li className={styles.dayGrid__day}>14</li>
-              <li className={styles.dayGrid__day}>
-                <DayInner
-                  dayNum="15"
-                  event={<>Royal Theatre, Victoria, BC, Canada</>}
-                />
-              </li>
-              <li className={styles.dayGrid__day}>
-                <DayInner
-                  dayNum="16"
-                  event={<>Orpheum Theatre, Vancouver, BC, Canada</>}
-                />
-              </li>
-              <li className={styles.dayGrid__day}>
-                <DayInner
-                  dayNum="17"
-                  event={<>McMenamins Grand Lodge, Forest Grove, OR, USA</>}
-                />
-              </li>
-              <li className={styles.dayGrid__day}>18</li>
-              <li className={styles.dayGrid__day}>
-                <DayInner
-                  dayNum="19"
-                  event={<>Paramount Theatre, Seattle, WA, USA</>}
-                />
-              </li>
-              <li className={styles.dayGrid__day}>20</li>
-              <li className={styles.dayGrid__day}>
-                <DayInner
-                  dayNum="21"
-                  event={<>Fox Theater, Oakland, CA, USA</>}
-                />
-              </li>
-              <li className={styles.dayGrid__day}>
-                <DayInner
-                  dayNum="22"
-                  event={<>Fox Theater, Oakland, CA, USA</>}
-                />
-              </li>
-              <li className={styles.dayGrid__day}>
-                <DayInner
-                  dayNum="23"
-                  event={<>Hollywood Palladium, Los Angeles, CA, USA</>}
-                />
-              </li>
-              <li className={styles.dayGrid__day}>
-                <DayInner
-                  dayNum="24"
-                  event={<>Fox Theater, Pomona, CA, USA</>}
-                />
-              </li>
-              <li className={styles.dayGrid__day}>25</li>
-              <li className={styles.dayGrid__day}>26</li>
-              <li className={styles.dayGrid__day}>27</li>
-              <li className={styles.dayGrid__day}>28</li>
-              <li className={styles.dayGrid__day}>29</li>
-              <li className={styles.dayGrid__day}>30</li>
-              <li className={styles.dayGrid__day}>31</li>
-              <li className={styles.dayGrid__empty}></li>
-              <li className={styles.dayGrid__empty}></li>
-              <li className={styles.dayGrid__empty}></li>
-              <li className={styles.dayGrid__empty}></li>
-              <li className={styles.dayGrid__empty}></li>
-              <li className={styles.dayGrid__empty}></li>
-            </ol>
-          </div>
-
-          <div className={styles.month}>
-            <div className={styles.monthName}>
-              <Heading2>June 2022</Heading2>
-            </div>
-            <Weekdays />
-            <ol className={styles.dayGrid}>
-              <li className={styles.dayGrid__empty}></li>
-              <li className={styles.dayGrid__empty}></li>
-              <li className={styles.dayGrid__empty}></li>
-              <li className={styles.dayGrid__day}>1</li>
-              <li className={styles.dayGrid__day}>2</li>
-              <li className={styles.dayGrid__day}>3</li>
-              <li className={styles.dayGrid__day}>4</li>
-              <li className={styles.dayGrid__day}>5</li>
-              <li className={styles.dayGrid__day}>6</li>
-              <li className={styles.dayGrid__day}>7</li>
-              <li className={styles.dayGrid__day}>8</li>
-              <li className={styles.dayGrid__day}>9</li>
-              <li className={styles.dayGrid__day}>
-                <DayInner
-                  dayNum="10"
-                  event={
-                    <>The Chelsea at the Cosmopolitan, Las Vegas, NV USA</>
-                  }
-                />
-              </li>
-              <li className={styles.dayGrid__day}>
-                <DayInner
-                  dayNum="11"
-                  event={<>Sandy City Amphitheater, Sandy, UT USA</>}
-                />
-              </li>
-              <li className={styles.dayGrid__day}>
-                <DayInner
-                  dayNum="12"
-                  event={<>Red Rocks Amphitheatre, Morrison, CO USA</>}
-                />
-              </li>
-              <li className={styles.dayGrid__day}>13</li>
-              <li className={styles.dayGrid__day}>
-                <DayInner
-                  dayNum="14"
-                  event={<>The Palace, St. Paul, MN USA</>}
-                />
-              </li>
-              <li className={styles.dayGrid__day}>
-                <DayInner
-                  dayNum="15"
-                  event={<>Riviera Theatre Chicago, IL USA</>}
-                />
-              </li>
-              <li className={styles.dayGrid__day}>16</li>
-              <li className={styles.dayGrid__day}>
-                <DayInner
-                  dayNum="17"
-                  event={<>Agora Theatre, Cleveland, OH USA</>}
-                />
-              </li>
-              <li className={styles.dayGrid__day}>
-                <DayInner
-                  dayNum="18"
-                  event={<>Promowest Pavilion @ Ovation, Newport, KY USA</>}
-                />
-              </li>
-              <li className={styles.dayGrid__day}>
-                <DayInner
-                  dayNum="19"
-                  event={<>Bonnaroo Music Festival, Manchester, TN USA</>}
-                />
-              </li>
-              <li className={styles.dayGrid__day}>20</li>
-              <li className={styles.dayGrid__day}>
-                <DayInner
-                  dayNum="21"
-                  event={<>Roxian Theatre, Pittsburgh, PA USA</>}
-                />
-              </li>
-              <li className={styles.dayGrid__day}>
-                <DayInner
-                  dayNum="22"
-                  event={<>Asbury Hall @ Babeville, Buffalo, NY USA</>}
-                />
-              </li>
-              <li className={styles.dayGrid__day}>23</li>
-              <li className={styles.dayGrid__day}>
-                <DayInner
-                  dayNum="24"
-                  event={<>The Fillmore, Philadelphia, PA USA</>}
-                />
-              </li>
-              <li className={styles.dayGrid__day}>
-                <DayInner
-                  dayNum="25"
-                  event={<>The Anthem, Washington, DC USA</>}
-                />
-              </li>
-              <li className={styles.dayGrid__day}>
-                <DayInner dayNum="26" event={<>Pier 17, New York, NY USA</>} />
-              </li>
-              <li className={styles.dayGrid__day}>27</li>
-              <li className={styles.dayGrid__day}>
-                <DayInner
-                  dayNum="28"
-                  event={<>State Theatre, Portland, ME USA</>}
-                />
-              </li>
-              <li className={styles.dayGrid__day}>
-                <DayInner
-                  dayNum="29"
-                  event={<>House Of Blues, Boston, MA USA</>}
-                />
-              </li>
-              <li className={styles.dayGrid__day}>
-                <DayInner
-                  dayNum="30"
-                  event={
-                    <>
-                      Festival International de Jazz de Montréal, Montreal, QC
-                      Canada
-                    </>
-                  }
-                />
-              </li>
-              <li className={styles.dayGrid__empty}></li>
-              <li className={styles.dayGrid__empty}></li>
-            </ol>
-          </div>
-        </Stack>
+        <div className={styles.heading}>
+          <Heading2>Past events</Heading2>
+        </div>
+        <EventList data={pastEvents} />
       </Main>
       <BigLink
         href="/contact"
@@ -360,39 +41,353 @@ export default function Tours() {
   );
 }
 
-function Weekdays() {
-  return (
-    <ul className={styles.weekdays}>
-      <li className={styles.weekdays__item}>
-        S<span className={styles.weekdays__full}>unday</span>
-      </li>
-      <li className={styles.weekdays__item}>
-        M<span className={styles.weekdays__full}>onday</span>
-      </li>
-      <li className={styles.weekdays__item}>
-        T<span className={styles.weekdays__full}>uesday</span>
-      </li>
-      <li className={styles.weekdays__item}>
-        W<span className={styles.weekdays__full}>ednesday</span>
-      </li>
-      <li className={styles.weekdays__item}>
-        T<span className={styles.weekdays__full}>hursday</span>
-      </li>
-      <li className={styles.weekdays__item}>
-        F<span className={styles.weekdays__full}>riday</span>
-      </li>
-      <li className={styles.weekdays__item}>
-        S<span className={styles.weekdays__full}>aturday</span>
-      </li>
-    </ul>
-  );
+function getUpcomingEvents(data) {
+  const today = new Date(new Date().toDateString());
+
+  var mutated = data
+    .filter(function (item) {
+      const itemDate = new Date(new Date(item.date).toDateString());
+      return itemDate >= today;
+    })
+    .sort((a, b) => {
+      const dateA = new Date(new Date(a.date).toDateString());
+      const dateB = new Date(new Date(b.date).toDateString());
+      if (dateA < dateB) return -1;
+      if (dateA > dateB) return 1;
+      return 0;
+    });
+
+  return mutated;
 }
 
-function DayInner(props) {
-  return (
-    <>
-      <span className={styles.dayNum}>{props.dayNum}</span>
-      <div className={styles.event}>{props.event}</div>
-    </>
-  );
+function getPastEvents(data) {
+  const today = new Date(new Date().toDateString());
+
+  var mutated = data
+    .filter(function (item) {
+      const itemDate = new Date(new Date(item.date).toDateString());
+      return itemDate < today;
+    })
+    .sort((a, b) => {
+      const dateA = new Date(new Date(a.date).toDateString());
+      const dateB = new Date(new Date(b.date).toDateString());
+      if (dateA > dateB) return -1;
+      if (dateA < dateB) return 1;
+      return 0;
+    });
+
+  return mutated;
 }
+
+const EventList = (props) => {
+  return props.data.map((item) => {
+    const formattedDate = formatEventDate(item.date);
+    return (
+      <div key={`event-${item.date}`} className={styles.event}>
+        <div className={styles.date}>{formattedDate}</div>
+        <div className={styles.venue}>{item.venue}</div>
+        <div className={styles.location}>
+          {item.city && <>{item.city}, </>}
+          {item.state && <>{item.state}, </>}
+          {item.country && <>{item.country} </>}
+        </div>
+      </div>
+    );
+  });
+};
+
+function formatEventDate(date) {
+  const eventDate = new Date(date);
+  const day = eventDate.getUTCDate();
+  const month = eventDate.toLocaleString("default", { month: "short" });
+  const year = eventDate.getUTCFullYear();
+  const formattedDate = `${month} ${day}, ${year}`;
+  return formattedDate;
+}
+
+const eventData = [
+  {
+    date: "2022-06-10",
+    venue: "The Chelsea at the Cosmopolitan",
+    city: "Las Vegas",
+    state: "NV",
+    country: "USA",
+  },
+  {
+    date: "2022-06-11",
+    venue: "Sandy City Amphitheater",
+    city: "Sandy",
+    state: "UT",
+    country: "USA",
+  },
+  {
+    date: "2022-06-12",
+    venue: "Red Rocks Amphitheatre",
+    city: "Morrison",
+    state: "CO",
+    country: "USA",
+  },
+  {
+    date: "2022-06-14",
+    venue: "The Palace",
+    city: "St. Paul",
+    state: "MN",
+    country: "USA",
+  },
+  {
+    date: "2022-06-15",
+    venue: "Riviera Theatre Chicago",
+    city: "Chicago",
+    state: "IL",
+    country: "USA",
+  },
+  {
+    date: "2022-06-17",
+    venue: "Agora Theatre",
+    city: "Cleveland",
+    state: "OH",
+    country: "USA",
+  },
+  {
+    date: "2022-06-18",
+    venue: "Promowest Pavilion @ Ovation",
+    city: "Newport",
+    state: "KY",
+    country: "USA",
+  },
+  {
+    date: "2022-06-19",
+    venue: "Bonnaroo Music Festival",
+    city: "Manchester",
+    state: "TN",
+    country: "USA",
+  },
+  {
+    date: "2022-06-21",
+    venue: "Bonnaroo Music Festival",
+    city: "Manchester",
+    state: "TN",
+    country: "USA",
+  },
+  {
+    date: "2022-06-22",
+    venue: "Asbury Hall @ Babeville",
+    city: "Buffalo",
+    state: "NY",
+    country: "USA",
+  },
+  {
+    date: "2022-06-24",
+    venue: "The Fillmore",
+    city: "Philadelphia",
+    state: "PA",
+    country: "USA",
+  },
+  {
+    date: "2022-06-25",
+    venue: "The Anthem",
+    city: "Washington",
+    state: "DC",
+    country: "USA",
+  },
+  {
+    date: "2022-06-26",
+    venue: "Pier 17",
+    city: "New York",
+    state: "NY",
+    country: "USA",
+  },
+  {
+    date: "2022-06-28",
+    venue: "State Theatre",
+    city: "Portland",
+    state: "ME",
+    country: "USA",
+  },
+  {
+    date: "2022-06-29",
+    venue: "House Of Blues",
+    city: "Boston",
+    state: "MA",
+    country: "USA",
+  },
+  {
+    date: "2022-06-30",
+    venue: "Festival International de Jazz de Montréal",
+    city: "Montreal",
+    state: "QC",
+    country: "Canada",
+  },
+
+  {
+    date: "2022-07-02",
+    venue: "Sherblues and Folk Festival",
+    city: "Sherbrooke",
+    state: "QC",
+    country: "Canada",
+  },
+  {
+    date: "2022-07-04",
+    venue: "History",
+    city: "Toronto",
+    state: "ON",
+    country: "Canada",
+  },
+  {
+    date: "2022-07-05",
+    venue: "History",
+    city: "Toronto",
+    state: "ON",
+    country: "Canada",
+  },
+  {
+    date: "2022-07-07",
+    venue: "Festival d&apos;été International de Québec",
+    city: "Québec",
+    state: "QC",
+    country: "Canada",
+  },
+  {
+    date: "2022-07-08",
+    venue: "RBC Ottawa Bluesfest",
+    city: "Ottawa",
+    state: "ON",
+    country: "Canada",
+  },
+  {
+    date: "2022-07-09",
+    venue: "Winnipeg Folk Festival",
+    city: "Winnipeg",
+    state: "MB",
+    country: "Canada",
+  },
+  {
+    date: "2022-07-12",
+    venue: "Edmonton Convention Centre",
+    city: "Edmonton",
+    state: "AB",
+    country: "Canada",
+  },
+  {
+    date: "2022-07-15",
+    venue: "Royal Theatre",
+    city: "Victoria",
+    state: "BC",
+    country: "Canada",
+  },
+  {
+    date: "2022-07-16",
+    venue: "Orpheum Theatre",
+    city: "Vancouver",
+    state: "BC",
+    country: "Canada",
+  },
+  {
+    date: "2022-07-17",
+    venue: "McMenamins Grand Lodge",
+    city: "Forest Grove",
+    state: "OR",
+    country: "USA",
+  },
+  {
+    date: "2022-07-19",
+    venue: "Paramount Theatre",
+    city: "Seattle",
+    state: "WA",
+    country: "USA",
+  },
+  {
+    date: "2022-07-21",
+    venue: "Fox Theater",
+    city: "Oakland",
+    state: "CA",
+    country: "USA",
+  },
+  {
+    date: "2022-07-22",
+    venue: "Fox Theater",
+    city: "Oakland",
+    state: "CA",
+    country: "USA",
+  },
+  {
+    date: "2022-07-23",
+    venue: "Hollywood Palladium",
+    city: "Los Angeles",
+    state: "CA",
+    country: "USA",
+  },
+  {
+    date: "2022-07-24",
+    venue: "Fox Theater",
+    city: "Pomona",
+    state: "CA",
+    country: "USA",
+  },
+
+  {
+    date: "2022-08-19",
+    venue: "Dockville",
+    city: "Hamburg",
+    country: "Germany",
+  },
+  {
+    date: "2022-08-21",
+    venue: "Lowlands",
+    city: "Biddinghuizen",
+    country: "Netherlands",
+  },
+  {
+    date: "2022-08-22",
+    venue: "Openluchttheater Rivierenhof",
+    city: "Antwerp",
+    country: "Belgium",
+  },
+  {
+    date: "2022-08-23",
+    venue: "Openluchttheater Rivierenhof",
+    city: "Antwerp",
+    country: "Belgium",
+  },
+  {
+    date: "2022-08-25",
+    venue: "Spazio211",
+    city: "Turin",
+    country: "Italy",
+  },
+  {
+    date: "2022-02-19",
+    venue: "California Vibrations Festival",
+    city: "Gabrielino/Tongva Country (Long Beach)",
+    state: "CA",
+    country: "USA",
+  },
+  {
+    date: "2023-03-03",
+    venue: "Vanfest",
+    city: "Wiradjuri Country (Bathurst)",
+    state: "NSW",
+    country: "AUS",
+  },
+  {
+    date: "2023-04-01",
+    venue: "Vintage Vibes",
+    city: "Woodside",
+    state: "SA",
+    country: "AUS",
+  },
+  {
+    date: "2023-04-08",
+    venue: "Lazy Mountain",
+    city: "Dharawal Country (Berry)",
+    state: "NSW",
+    country: "AUS",
+  },
+  {
+    date: "2023-04-09",
+    venue: "Blues Fest",
+    city: "Bundjalung Country (Byron Bay)",
+    state: "NSW",
+    country: "AUS",
+  },
+];
