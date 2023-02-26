@@ -26,7 +26,7 @@ export default function Tours() {
         </div>
         <EventList data={upcomingEvents} />
 
-        <div className={styles.heading}>
+        <div className={styles.heading} style={{ marginTop: "120px" }}>
           <Heading2>Past events</Heading2>
         </div>
         <EventList data={pastEvents} />
@@ -34,8 +34,8 @@ export default function Tours() {
       <BigLink
         href="/contact"
         color="#00ba56"
-        label="COntaCt"
-        labelImg={<ContactSvg />}
+        labelImg={<ContactSvg alt="contact" />}
+        arrow
       />
     </>
   );

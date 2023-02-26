@@ -19,13 +19,7 @@ export default function Layout({ children }) {
   return (
     <>
       <Navigation />
-      <div className={styles.logoContainer}>
-        <Link href="/">
-          <a className={styles.a}>
-            <Logo />
-          </a>
-        </Link>
-      </div>
+      <Logo />
       <div
         className={`${styles.pageContainer} ${styles.parallaxScroll}`}
         ref={pageContainerRef}

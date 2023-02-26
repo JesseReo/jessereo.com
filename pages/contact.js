@@ -5,7 +5,7 @@ import Main from "../components/Main";
 import Heading2 from "../components/Heading2";
 import Text from "../components/Text";
 import Stack from "../components/Stack";
-import img from "../public/images/jesse-film-12-art.jpg";
+import img from "../images/hero-contact.jpg";
 import EmailLink from "../components/EmailLink/EmailLink";
 import ContactSvg from "../images/contact.svg";
 

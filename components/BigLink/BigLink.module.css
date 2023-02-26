@@ -14,43 +14,33 @@
   transition: all 500ms ease;
 }
 
-.bigLink h1 {
-  transform: scale(1);
-  transition: all 500ms ease;
-}
-
-.bigLink:hover h1 {
-  transform: scale(1.1);
-  transition: all 500ms ease;
-}
-
-.label {}
-
 .label svg {
   width: 100%;
+  transform: scale(1);
+  transition: all 300ms ease;
 }
 
-.bgRed {
-  background-color: #eb1400;
+.bigLink:hover .label svg {
+  transform: scale(1.1);
+  transition: all 300ms ease;
 }
 
-.bgBlue {
-  background-color: #192cd1;
+.arrow {
+  width: 30px;
+  height: 68px;
+  transition: transform 300ms ease;
 }
 
-.bgYellow {
-  background-color: #f8ff1f;
-}
-
-.bgGreen {
-  background-color: #00ba56;
-}
-
-.img {
-  width: 20vw;
-  max-width: 120px;
-}
-
-.img svg {
+.arrow svg {
+  height: 100%;
   width: 100%;
+  transform: rotate(-90deg);
+}
+
+.arrow svg path {
+  fill: inherit;
+}
+
+.bigLink:hover .arrow {
+  transform: translatex(15px);
 }

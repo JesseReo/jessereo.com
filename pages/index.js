@@ -1,10 +1,11 @@
 import { useRef } from "react";
 import Head from "next/head";
 import Link from "next/link";
-import Hero from "../components/Hero/Hero";
 import styles from "../styles/Home.module.css";
+import Hero from "../components/Hero/Hero";
+import BigLink from "../components/BigLink";
 import heroImg from "../images/hero-home.jpg";
-import poster from "../public/images/video-poster.jpg";
+import poster from "../images/video-poster.jpg";
 import TheDrummerSvg from "../images/the-drummer.svg";
 import TheDjSvg from "../images/the-dj.svg";
 import TheTravellerSvg from "../images/the-traveller.svg";
@@ -63,28 +64,23 @@ export default function Home() {
         </div>
       </div>
 
-      <div className={styles.bigLinks}>
-        <Link href="/bio">
-          <a className={`${styles.bigLink} ${styles.bgRed}`}>
-            <TheDrummerSvg />
-          </a>
-        </Link>
-        <Link href="/dj">
-          <a className={`${styles.bigLink} ${styles.bgBlue}`}>
-            <TheDjSvg />
-          </a>
-        </Link>
-        <Link href="/tours">
-          <a className={`${styles.bigLink} ${styles.bgYellow}`}>
-            <TheTravellerSvg />
-          </a>
-        </Link>
-        <Link href="/contact">
-          <a className={`${styles.bigLink} ${styles.bgGreen}`}>
-            <WakeUpSvg />
-          </a>
-        </Link>
-      </div>
+      <BigLink
+        href="/bio"
+        color="#eb1400"
+        labelImg={<TheDrummerSvg alt="bio" />}
+      />
+      <BigLink href="/dj" color="#192cd1" labelImg={<TheDjSvg alt="dj" />} />
+      <BigLink
+        href="/tours"
+        color="#f8ff1f"
+        textColor="#000"
+        labelImg={<TheTravellerSvg alt="tours" />}
+      />
+      <BigLink
+        href="/contact"
+        color="#00ba56"
+        labelImg={<WakeUpSvg alt="contact" />}
+      />
     </>
   );
 }

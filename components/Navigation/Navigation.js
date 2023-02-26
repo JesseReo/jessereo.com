@@ -9,7 +9,7 @@ import VideoSvg from "../../images/videos.svg";
 import DjSvg from "../../images/dj.svg";
 import ToursSvg from "../../images/tours.svg";
 import ContactImg from "../../images/contact.svg";
-import bgImg from "../../public/images/menu-bg.jpg";
+import bgImg from "../../images/menu-bg.jpg";
 
 export default function Navighation() {
   const [menuIsActive, setMenuIsActive] = useState(false);

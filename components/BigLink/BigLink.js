@@ -1,6 +1,6 @@
 import Link from "next/link";
 import styles from "./BigLink.module.css";
-import Heading1 from "../Heading1";
+import ArrowRight from "../../images/arrow.svg";
 
 export default function BigLink(props) {
   return (
@@ -9,34 +9,16 @@ export default function BigLink(props) {
         className={styles.bigLink}
         style={{
           backgroundColor: props.color ?? "none",
+          fill: props.textColor ?? "#fff",
         }}
       >
-        <div
-          className={styles.label}
-          style={{ fill: props.textColor ?? "#fff" }}
-        >
-          {props.labelImg}
-        </div>
+        <div className={`${styles.label} biglink__label`}>{props.labelImg}</div>
 
-        {/* <Heading1 style={{ color: props.textColor ?? "#fff" }}>
-           {props.label}
-
-        </Heading1> */}
-
-        <div className={styles.img}>
-          <svg viewBox="0 0 460.94 71.1">
-            <path
-              style={{ fill: props.textColor ?? "#fff" }}
-              d="M357.75,69.18c0.75-0.61,1.49-1.22,1.49-1.84c11.19-1.22,23.86-6.12,33.56-8.57
-	c19.39-4.9,39.52-9.18,58.91-13.46c9.69-1.84,8.2-12.24,0-14.69c-31.32-9.79-61.89-18.97-92.47-29.99c-4.47-1.84-8.2,0.61-8.95,3.67
-	c-1.49,0.61-2.98,1.84-3.73,4.28c-0.75,8.57-1.49,17.75-2.24,26.32c-46.23-12.24-102.16-8.57-149.89-7.96
-	c-61.89,0.61-124.53,1.84-187.17,5.51c-9.69,0.61-9.69,11.63,0,12.24c58.16,3.06,116.33-0.61,174.49-1.22
-	c54.44-0.61,108.13,5.51,161.82,5.51c-1.49,7.34-2.98,16.52,2.98,20.81C350.29,71.62,354.77,71.62,357.75,69.18z M360.73,45.31
-	c-0.75-11.02-0.75-22.64-2.24-33.66c19.39,9.79,40.27,17.75,61.15,25.09c-10.44,2.45-20.88,4.9-31.32,6.73
-	c-7.46,1.84-18.64,3.06-27.59,6.12C360.73,47.76,360.73,46.53,360.73,45.31z"
-            />
-          </svg>
-        </div>
+        {props.arrow && (
+          <div className={styles.arrow}>
+            <ArrowRight />
+          </div>
+        )}
       </a>
     </Link>
   );

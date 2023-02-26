@@ -3,7 +3,7 @@ import styles from "../styles/Videos.module.css";
 import Hero from "../components/Hero";
 import Main from "../components/Main";
 import Stack from "../components/Stack";
-import img from "../public/images/jesse-rugs-32-art.jpg";
+import img from "../images/hero-videos.jpg";
 import BigLink from "../components/BigLink";
 import VideoSvg from "../images/videos.svg";
 import DjSvg from "../images/dj.svg";
@@ -60,7 +60,7 @@ export default function Videos() {
           />
         </Stack>
       </Main>
-      <BigLink href="/dj" color="#192cd1" label="dj" labelImg={<DjSvg />} />
+      <BigLink href="/dj" color="#192cd1" labelImg={<DjSvg alt="dj" />} arrow />
     </>
   );
 }

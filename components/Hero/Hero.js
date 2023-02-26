@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./Hero.module.css";
-import ArrowDown from "./images/arrow-down.svg";
+import ArrowDown from "../../images/arrow.svg";
 
 export default function Hero(props) {
   return (

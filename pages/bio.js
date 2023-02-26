@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Main from "../components/Main";
 import Hero from "../components/Hero";
-import Heading1 from "../components/Heading2";
+import Heading2 from "../components/Heading2";
 import Text from "../components/Text";
 import Stack from "../components/Stack";
 import heroImg from "../images/hero-bio.jpg";
@@ -20,10 +20,10 @@ export default function Home() {
       <Hero title="bIO" titleImage={<BioSvg />} backgroundImage={heroImg} />
       <Main>
         <Stack>
-          <Heading1 style={{ textAlign: "center" }}>
+          <Heading2 style={{ textAlign: "center" }}>
             JeSSe &apos;ReAL&apos; RehAUT AKA (FUNK) <br />
             DRUMMER | DJ | ROOTS MUSICIAN
-          </Heading1>
+          </Heading2>
           <Text style={{ textAlign: "center" }}>Naarm/Melbourne</Text>
           <br />
           <Text>
@@ -125,8 +125,8 @@ export default function Home() {
       <BigLink
         href="/videos"
         color="#eb1400"
-        label="VideOs"
-        labelImg={<VideoSvg />}
+        labelImg={<VideoSvg alt="videos" />}
+        arrow
       />
     </>
   );

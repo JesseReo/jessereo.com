@@ -1,13 +1,13 @@
 .main {
   position: relative;
-  background-image: url("../../public/images/white_construction_paper_seamless.jpg");
+  background-image: url("../../images/bg-page-dark.jpg");
 }
 
 .mainInner {
   width: 100%;
   max-width: 992px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 120px 20px;
   flex-grow: 1;
-  min-height: calc(100vh - 160px);
+  min-height: calc(100vh - 213px);
 }
