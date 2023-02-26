@@ -27,7 +27,7 @@ export default function Navighation() {
 
       <div
         className={`${styles.navContainer} ${
-          menuIsActive && `${styles.navContainerActive}`
+          menuIsActive ? styles.navContainerActive : ""
         }`}
       >
         <ul className={styles.list}>
