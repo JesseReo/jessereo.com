@@ -8,6 +8,5 @@
   max-width: 992px;
   margin: 0 auto;
   padding: 120px 20px;
-  flex-grow: 1;
   min-height: calc(100vh - 213px);
 }

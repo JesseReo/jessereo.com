@@ -1,9 +1,10 @@
 import styles from "./Main.module.css";
 
 export default function Main(props) {
+  console.log(props);
   return (
     <main
-      className={styles.main}
+      className={`${styles.main} ${props.className ?? ""}`}
       style={{
         ...(props.fullWidth && { maxWidth: "100%" }),
         ...(props.style && { ...props.style }),
