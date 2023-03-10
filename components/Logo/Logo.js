@@ -1,6 +1,6 @@
 import Link from "next/link";
 import styles from "./Logo.module.css";
-import LogoImg from "../../images/brandmark-white.svg";
+import LogoImg from "../../images/logo-2.svg";
 
 export default function Logo() {
   return (
