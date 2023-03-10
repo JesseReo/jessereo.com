@@ -10,6 +10,7 @@ import DjSvg from "../../images/dj.svg";
 import ToursSvg from "../../images/tours.svg";
 import ContactImg from "../../images/contact.svg";
 import bgImg from "../../images/menu-bg.jpg";
+import InstagramLogo from "../../images/instagram-logo.svg";
 
 export default function Navighation() {
   const [menuIsActive, setMenuIsActive] = useState(false);
@@ -43,6 +44,15 @@ export default function Navighation() {
             );
           })}
         </ul>
+
+        <div className={`${styles.listItem} ${styles.instagramLogo}`}>
+          <Link href="https://www.instagram.com/jesse.funk/" passHref>
+            <a target="_blank">
+              <InstagramLogo />
+            </a>
+          </Link>
+        </div>
+
         <Image
           src={bgImg}
           alt="alt"
