@@ -54,6 +54,7 @@ export default function Navighation() {
         </div>
 
         <Image
+          className={styles.bgImg}
           src={bgImg}
           alt="alt"
           layout="fill"
@@ -81,10 +82,6 @@ const linksData = [
     label: "VideO",
     image: <VideoSvg />,
   },
-  // {
-  //   path: "/photos",
-  //   label: "Photos",
-  // },
   {
     path: "/dj",
     label: "dj",
@@ -95,10 +92,6 @@ const linksData = [
     label: "TOurs",
     image: <ToursSvg />,
   },
-  // // {
-  // //   path: "/blog",
-  // //   label: "Blog",
-  // // },
   {
     path: "/contact",
     label: "COntact",
@@ -116,12 +109,6 @@ function Listitem(props) {
           }}
         >
           {props.image}
-          {/* <Image
-            src={props.image}
-            alt={props.label}
-            layout="fill"
-            objectFit="contain"
-          /> */}
         </a>
       </Link>
     </li>
