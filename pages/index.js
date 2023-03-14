@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import Head from "next/head";
 import Link from "next/link";
 import styles from "../styles/Home.module.css";
@@ -10,6 +10,7 @@ import TheDrummerSvg from "../images/the-drummer.svg";
 import TheDjSvg from "../images/the-dj.svg";
 import TheTravellerSvg from "../images/the-traveller.svg";
 import WakeUpSvg from "../images/wake-the-funk-up.svg";
+import Weather from "../components/Weather";
 
 export default function Home() {
   const playIconRef = useRef();
@@ -24,6 +25,8 @@ export default function Home() {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
+
+      <Weather />
 
       <Hero backgroundImage={heroImg} />
 

@@ -1,0 +1,61 @@
+.weather {
+  position: fixed;
+  z-index: 3;
+  bottom: 200px;
+  bottom: 10px;
+  left: 10px;
+  color: #fff;
+  pointer-events: none;
+  text-align: center;
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+}
+
+@media (min-width: 992px) {
+  .weather {
+    bottom: 20px;
+    left: 20px;
+  }
+}
+
+.loadingText {
+  display: grid;
+  grid: 1fr / 1fr 1fr;
+  gap: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loadingText svg {
+  width: 20px;
+  height: 20px;
+  stroke: #fff;
+  fill: #fff;
+}
+
+.cityName.cityName {
+  line-height: 0;
+}
+
+.iconAndTemp {
+  display: flex;
+  justify-content: center;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  margin-left: -16px;
+}
+@media (min-width: 992px) {
+  .icon {
+    width: 75px;
+    height: 75px;
+  }
+}
+
+.temperature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

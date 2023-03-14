@@ -1,7 +1,7 @@
 import { useForm, ValidationError } from "@formspree/react";
 import styles from "./ContactForm.module.css";
 import Text from "../Text";
-import Spinner from "./images/spinner.svg";
+import Spinner from "../../images/spinner.svg";
 
 export default function ContactForm() {
   const [state, handleSubmit] = useForm("mjvdwznj");
