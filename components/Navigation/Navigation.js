@@ -12,8 +12,10 @@ import ContactImg from "../../images/contact.svg";
 import bgImg from "../../images/menu-bg.jpg";
 import InstagramLogo from "../../images/instagram-logo.svg";
 
-export default function Navighation() {
-  const [menuIsActive, setMenuIsActive] = useState(false);
+export default function Navighation(props) {
+  const menuIsActive = props.menuIsActive;
+  const setMenuIsActive = props.setMenuIsActive;
+
   return (
     <>
       <div
