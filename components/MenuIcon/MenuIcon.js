@@ -5,7 +5,12 @@ import MenuClose from "./images/menu-close.svg";
 export default function MenuIcon(props) {
   return (
     <div className={styles.outer}>
-      {!props.active ? <MenuOpen /> : <MenuClose />}
+      {!props.active ? <MenuOpen {...buttonProps} /> : <MenuClose />}
     </div>
   );
 }
+
+const buttonProps = {
+  role: "button",
+  "aria-label": "menu",
+};

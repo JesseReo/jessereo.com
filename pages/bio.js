@@ -125,6 +125,7 @@ export default function Home() {
       <BigLink
         href="/videos"
         color="#eb1400"
+        label="videos"
         labelImg={<VideoSvg alt="videos" />}
         arrow
       />

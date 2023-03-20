@@ -34,6 +34,7 @@ export default function Tours() {
       <BigLink
         href="/contact"
         color="#00ba56"
+        label="contact"
         labelImg={<ContactSvg alt="contact" />}
         arrow
       />

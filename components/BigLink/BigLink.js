@@ -11,6 +11,7 @@ export default function BigLink(props) {
           backgroundColor: props.color ?? "none",
           fill: props.textColor ?? "#fff",
         }}
+        aria-label={props.label}
       >
         <div className={`${styles.label} biglink__label`}>{props.labelImg}</div>
 
