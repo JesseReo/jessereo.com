@@ -25,7 +25,9 @@ export default function Layout({ children }) {
       />
       <Logo />
       <div
-        className={`${styles.pageContainer} ${styles.parallaxScroll}`}
+        className={`${styles.pageContainer} ${styles.parallaxScroll} ${
+          menuIsActive ? styles.menuIsActive : ""
+        }`}
         ref={pageContainerRef}
       >
         {children}
