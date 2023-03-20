@@ -27,7 +27,7 @@ const Weather = (props) => {
           <div className={styles.iconAndTemp}>
             <img
               className={styles.icon}
-              src={`http://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`}
+              src={`https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`}
               alt={weatherData.weather[0].main}
             />
             <Text className={styles.temperature}>

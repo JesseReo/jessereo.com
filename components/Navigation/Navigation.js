@@ -49,8 +49,8 @@ export default function Navighation(props) {
 
         <div className={`${styles.listItem} ${styles.instagramLogo}`}>
           <Link href="https://www.instagram.com/jesse.funk/" passHref>
-            <a target="_blank">
-              <InstagramLogo />
+            <a target="_blank" aria-label="instagram">
+              <InstagramLogo alt="instagram" />
             </a>
           </Link>
         </div>
@@ -62,6 +62,7 @@ export default function Navighation(props) {
           layout="fill"
           objectFit="cover"
           placeholder="blur"
+          style={{ pointerEvents: "none" }}
         />
       </div>
     </>
@@ -109,6 +110,7 @@ function Listitem(props) {
           onClick={() => {
             props.clickHandler(props.path);
           }}
+          aria-label={props.label}
         >
           {props.image}
         </a>

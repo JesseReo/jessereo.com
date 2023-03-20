@@ -6,9 +6,9 @@ export default function Logo() {
   return (
     <div className={styles.logoContainer}>
       <Link href="/">
-        <a className={styles.a}>
+        <a className={styles.a} aria-label="logo home">
           <div className={styles.logo}>
-            <LogoImg />
+            <LogoImg alt="logo" />
           </div>
         </a>
       </Link>

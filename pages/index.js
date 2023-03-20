@@ -70,18 +70,26 @@ export default function Home() {
       <BigLink
         href="/bio"
         color="#eb1400"
+        label="bio"
         labelImg={<TheDrummerSvg alt="bio" />}
       />
-      <BigLink href="/dj" color="#192cd1" labelImg={<TheDjSvg alt="dj" />} />
+      <BigLink
+        href="/dj"
+        color="#192cd1"
+        label="dj"
+        labelImg={<TheDjSvg alt="dj" />}
+      />
       <BigLink
         href="/tours"
         color="#f8ff1f"
         textColor="#000"
+        label="tours"
         labelImg={<TheTravellerSvg alt="tours" />}
       />
       <BigLink
         href="/contact"
         color="#00ba56"
+        label="contact"
         labelImg={<WakeUpSvg alt="contact" />}
       />
     </>

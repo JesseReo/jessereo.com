@@ -60,7 +60,13 @@ export default function Videos() {
           />
         </Stack>
       </Main>
-      <BigLink href="/dj" color="#192cd1" labelImg={<DjSvg alt="dj" />} arrow />
+      <BigLink
+        href="/dj"
+        color="#192cd1"
+        label="dj"
+        labelImg={<DjSvg alt="dj" />}
+        arrow
+      />
     </>
   );
 }

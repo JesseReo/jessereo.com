@@ -47,6 +47,7 @@ export default function Dj() {
         href="/tours"
         color="#f8ff1f"
         textColor="#000"
+        label="tours"
         labelImg={<ToursSvg alt="tours" />}
         arrow
       />
