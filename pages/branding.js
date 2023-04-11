@@ -93,7 +93,7 @@ export default function Home() {
             filepath: "../images/logo-variations/",
             filename: "logo-white-500px.jpg",
             width: 500,
-            description: "500px wide, white background.",
+            description: "500px wide, black background.",
           },
           {
             filepath: "../images/logo-variations/",
@@ -105,7 +105,7 @@ export default function Home() {
             filepath: "../images/logo-variations/",
             filename: "logo-white-1000px.jpg",
             width: 1000,
-            description: "1000px wide, white background.",
+            description: "1000px wide, black background.",
           },
         ].map((itemProps, i) => (
           <Item key={`image-${i}`} {...itemProps} />
