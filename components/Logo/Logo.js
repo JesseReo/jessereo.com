@@ -8,7 +8,11 @@ export default function Logo() {
       <Link href="/">
         <a className={styles.a} aria-label="logo home">
           <div className={styles.logo}>
-            <LogoImg alt="logo" />
+            <LogoImg alt="logo" className={`${styles.svg} ${styles.svg2}`} />
+            <LogoImg alt="logo" className={`${styles.svg} ${styles.svg1}`} />
+            <LogoImg alt="logo" className={`${styles.svg} ${styles.svg3}`} />
+            <LogoImg alt="logo" className={`${styles.svg} ${styles.svg4}`} />
+            <LogoImg alt="logo" className={`${styles.svg} ${styles.svg5}`} />
           </div>
         </a>
       </Link>

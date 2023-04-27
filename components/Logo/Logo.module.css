@@ -1,7 +1,7 @@
 .logoContainer {
   position: fixed;
   top: 10px;
-  left: 10px;
+  left: 0px;
   z-index: 3;
 
   width: 120px;
@@ -16,21 +16,62 @@
 
 @media (min-width: 992px) {
   .logoContainer {
-    top: 20px;
-    left: 20px;
+    top: 15px;
+    left: 0;
   }
 }
 
 .a {
   display: block;
-  width: 100%;
+
+  /* https://clamp.font-size.app/?config=eyJyb290IjoiMTYiLCJtaW5XaWR0aCI6IjU3NnB4IiwibWF4V2lkdGgiOiIxMjAwcHgiLCJtaW5Gb250U2l6ZSI6IjEyMHB4IiwibWF4Rm9udFNpemUiOiIyMDBweCJ9 */
+  width: clamp(7.5rem, 2.8846rem + 12.8205vw, 12.5rem);
+  /* 120 > 200 */
+
+  perspective: calc(600 * 1px);
+  perspective-origin: 50% 50%;
 }
 
 .logo {
   width: 100%;
+  transform-style: preserve-3d;
+  animation: linear 5000ms infinite rotate;
 }
 
 .logo svg path {
   fill: #fff;
-  filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.4));
+  filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.6));
+}
+
+.svg {
+  position: absolute;
+}
+
+.svg1 {
+  transform: translateZ(0);
+}
+
+.svg2 {
+  transform: translateZ(3px);
+}
+
+.svg3 {
+  transform: translateZ(6px);
+}
+
+.svg4 {
+  transform: translateZ(9px);
+}
+
+.svg5 {
+  transform: translateZ(12px);
+}
+
+@keyframes rotate {
+  0% {
+    transform: translateZ(-100px) rotateY(0deg);
+  }
+  100% {
+    transform: translateZ(-100px) rotateY(360deg);
+  }
 }
