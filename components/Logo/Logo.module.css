@@ -52,19 +52,39 @@
 }
 
 .svg2 {
-  transform: translateZ(3px);
+  transform: translateZ(2px);
 }
 
 .svg3 {
-  transform: translateZ(6px);
+  transform: translateZ(3px);
 }
 
 .svg4 {
-  transform: translateZ(9px);
+  transform: translateZ(4px);
 }
 
 .svg5 {
-  transform: translateZ(12px);
+  transform: translateZ(5px);
+}
+
+.svg6 {
+  transform: translateZ(6px);
+}
+
+.svg7 {
+  transform: translateZ(7px);
+}
+
+.svg8 {
+  transform: translateZ(8px);
+}
+
+.svg9 {
+  transform: translateZ(9px);
+}
+
+.svg10 {
+  transform: translateZ(10px);
 }
 
 @keyframes rotate {
