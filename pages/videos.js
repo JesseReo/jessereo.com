@@ -33,16 +33,6 @@ export default function Videos() {
             className={styles.videoEmbed}
             width="560"
             height="315"
-            src="https://www.youtube.com/embed/PhQrCWMgmyA"
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          />
-
-          <iframe
-            className={styles.videoEmbed}
-            width="560"
-            height="315"
             src="https://www.youtube.com/embed/PtfrSNRlFgA"
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
