@@ -15,10 +15,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>JESSE REAL LIVES </title>
+        <title>JESSE REO</title>
         <meta
           name="description"
-          content="The homepage of Jesse Real, the honest hommus adonis"
+          content="The homepage of Jesse Reo, the honest hommus adonis"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>

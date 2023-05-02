@@ -13,21 +13,21 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>BIO - JESSE REAL</title>
-        <meta name="description" content="Biography for Jesse Real" />
+        <title>BIO - JESSE REO</title>
+        <meta name="description" content="Biography for Jesse Reo" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Hero title="bIO" titleImage={<BioSvg />} backgroundImage={heroImg} />
       <Main>
         <Stack>
           <Heading2 style={{ textAlign: "center" }}>
-            JeSSe &apos;ReAL&apos; RehAUT AKA (FUNK) <br />
+            JeSSe &apos;REO&apos; RehAUT AKA (FUNK) <br />
             DRUMMER | DJ | ROOTS MUSICIAN
           </Heading2>
           <Text style={{ textAlign: "center" }}>Naarm/Melbourne</Text>
           <br />
           <Text>
-            JESSE &apos;REAL&apos; REHAUT AKA (FUNK), the half Mauritian, half
+            JESSE &apos;REO&apos; REHAUT AKA (FUNK), the half Mauritian, half
             Lebanese Drummer, DJ and Roots musician from Naarm/Melbourne, has
             been dedicated to creating rhythms from the moment he received his
             first drum kit from his father at age fourteen.

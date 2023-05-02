@@ -15,8 +15,8 @@ export default function Tours() {
   return (
     <>
       <Head>
-        <title>TOURS - JESSE REAL</title>
-        <meta name="description" content="Tour Schedule for Jesse Real" />
+        <title>TOURS - JESSE REO</title>
+        <meta name="description" content="Tour Schedule for Jesse Reo" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Hero title="TOurs" titleImage={<ToursSvg />} backgroundImage={heroImg} />

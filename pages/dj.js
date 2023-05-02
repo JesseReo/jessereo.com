@@ -15,10 +15,10 @@ export default function Dj() {
   return (
     <>
       <Head>
-        <title>DJ - JESSE REAL</title>
+        <title>DJ - JESSE REO</title>
         <meta
           name="description"
-          content="DJ mixes, music and information for Jesse Real"
+          content="DJ mixes, music and information for Jesse Reo"
         />
       </Head>
       <Hero title="DJ" titleImage={<DjSvg />} backgroundImage={heroImg} />

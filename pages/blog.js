@@ -8,10 +8,10 @@ export default function Blog() {
   return (
     <>
       <Head>
-        <title>Blog - JESSE REAL LiVES</title>
+        <title>Blog - JESSE REO</title>
         <meta
           name="description"
-          content="Blog and articles written by Jesse Real for up and coming drummer"
+          content="Blog and articles written by Jesse Reo for up and coming drummer"
         />
       </Head>
       <Hero title="Blog" backgroundImage="/loan-7AIDE8PrvA0-unsplash.jpg" />

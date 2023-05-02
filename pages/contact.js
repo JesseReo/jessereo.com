@@ -14,8 +14,8 @@ export default function Contact() {
   return (
     <>
       <Head>
-        <title>CONTACT - JESSE REAL</title>
-        <meta name="description" content="Contact details for Jesse Real" />
+        <title>CONTACT - JESSE REO</title>
+        <meta name="description" content="Contact details for Jesse Reo" />
       </Head>
       <Hero title="CONtact" titleImage={<ContactSvg />} backgroundImage={img} />
       <Main className={styles.main}>

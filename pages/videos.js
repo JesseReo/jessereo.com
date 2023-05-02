@@ -12,8 +12,8 @@ export default function Videos() {
   return (
     <>
       <Head>
-        <title>VIDEOS - JESSE REAL</title>
-        <meta name="description" content="Videos featuring Jesse Real" />
+        <title>VIDEOS - JESSE REO</title>
+        <meta name="description" content="Videos featuring Jesse Reo" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Hero title="VideOS" titleImage={<VideoSvg />} backgroundImage={img} />

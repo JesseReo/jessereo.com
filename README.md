@@ -1,7 +1,7 @@
-# Jesse Real Website
+# Jesse Reo Website
 
 This repo is for the website:
-**jessereallives.com**
+**jessereo.com**
 
 ---
 

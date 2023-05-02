@@ -8,8 +8,8 @@ export default function Photos() {
   return (
     <>
       <Head>
-        <title>Photos - JESSE REAL</title>
-        <meta name="description" content="Photos featuring Jesse Real" />
+        <title>Photos - JESSE REO</title>
+        <meta name="description" content="Photos featuring Jesse Reo" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Hero title="Photos" backgroundImage="/loan-7AIDE8PrvA0-unsplash.jpg" />
