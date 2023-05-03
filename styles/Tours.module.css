@@ -24,3 +24,22 @@
 .location {
   font-size: 1rem;
 }
+
+.tabHeadings {
+  color: white;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.tabHeadings div,
+.tabHeadings h2 {
+  display: inline-block;
+}
+
+.tabButton {
+  cursor: pointer;
+}
+
+.tabActive {
+  border-bottom: 3px solid white;
+}
