@@ -18,12 +18,12 @@
 }
 
 .pageContainer {
-  transform: perspective(500px) translateX(0) translateZ(0) rotateY(0);
+  transform: perspective(1000px) translateX(0) translateZ(0) rotateY(0);
   transition: transform 300ms ease-in-out;
 }
 
 .pageContainer.menuIsActive {
-  transform: perspective(500px) translateX(-75%) translateZ(-150px)
-    rotateY(15deg);
+  transform: perspective(1000px) translateX(-20%) translateZ(-350px)
+    rotateY(10deg);
   transition: transform 300ms ease-in-out;
 }
