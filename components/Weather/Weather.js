@@ -23,7 +23,7 @@ const Weather = (props) => {
     <div className={styles.weather}>
       {weatherData ? (
         <>
-          <Text className={styles.cityName}>Melbourne</Text>
+          {/* <Text className={styles.cityName}>Melbourne</Text> */}
           <div className={styles.iconAndTemp}>
             <img
               className={styles.icon}

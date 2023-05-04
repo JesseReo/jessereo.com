@@ -1,8 +1,6 @@
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import Head from "next/head";
-import Link from "next/link";
 import styles from "../styles/Home.module.css";
-import Hero from "../components/Hero/Hero";
 import BigLink from "../components/BigLink";
 import heroImg from "../images/hero-home.jpg";
 import poster from "../images/video-poster.jpg";
@@ -10,7 +8,8 @@ import TheDrummerSvg from "../images/the-drummer.svg";
 import TheDjSvg from "../images/the-dj.svg";
 import TheTravellerSvg from "../images/the-traveller.svg";
 import WakeUpSvg from "../images/wake-the-funk-up.svg";
-import Weather from "../components/Weather";
+import HomeHero from "../components/HomeHero";
+import HomeIntro from "../components/HomeIntro/HomeIntro";
 
 export default function Home() {
   const playIconRef = useRef();
@@ -26,11 +25,11 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
-      <Weather />
+      <HomeHero />
 
-      <Hero backgroundImage={heroImg} />
+      <HomeIntro />
 
-      <div className={styles.videoContainer}>
+      {/* <div className={styles.videoContainer}>
         <video
           className={styles.video}
           loop
@@ -49,23 +48,13 @@ export default function Home() {
           <source src="/videos/intro-edit.mp4" type="video/mp4" />
         </video>
 
-        {/* <Link href="/videos">
-          <a
-            style={{
-              color: "#535353",
-              textDecoration: "underline",
-            }}
-          >
-            watch full version
-          </a>
-        </Link> */}
 
         <div ref={playIconRef} className={styles.playIcon}>
           <svg viewBox="0 0 512 512">
             <path d="M128,96v320l256-160L128,96L128,96z" />
           </svg>
         </div>
-      </div>
+      </div> */}
 
       <BigLink
         href="/bio"
