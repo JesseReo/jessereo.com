@@ -1,7 +1,9 @@
+import { useEffect, useState } from "react";
 import Head from "next/head";
 import styles from "../styles/Tours.module.css";
 import Hero from "../components/Hero";
 import Main from "../components/Main";
+import Text from "../components/Text";
 import Heading2 from "../components/Heading2";
 import heroImg from "../images/hero-tours.jpg";
 import BigLink from "../components/BigLink";
@@ -9,8 +11,13 @@ import ToursSvg from "../images/tours.svg";
 import ContactSvg from "../images/contact.svg";
 
 export default function Tours() {
+  const [activeTab, setActiveTab] = useState("upcoming");
   const upcomingEvents = getUpcomingEvents(eventData);
   const pastEvents = getPastEvents(eventData);
+
+  useEffect(() => {
+    console.log(activeTab);
+  }, [activeTab]);
 
   return (
     <>
@@ -21,15 +28,37 @@ export default function Tours() {
       </Head>
       <Hero title="TOurs" titleImage={<ToursSvg />} backgroundImage={heroImg} />
       <Main>
-        <div className={styles.heading}>
-          <Heading2>UpcOmIng events</Heading2>
+        <div className={styles.tabHeadings}>
+          <div
+            className={`${styles.tabButton} ${
+              activeTab === "upcoming" ? styles.tabActive : ""
+            }`}
+            onClick={() => {
+              setActiveTab("upcoming");
+            }}
+          >
+            <Heading2>Upcoming</Heading2>
+          </div>
+          <Heading2> &nbsp;&nbsp; / &nbsp;&nbsp;</Heading2>
+          <div
+            className={`${styles.tabButton} ${
+              activeTab === "past" ? styles.tabActive : ""
+            }`}
+            onClick={() => {
+              setActiveTab("past");
+            }}
+          >
+            <Heading2>Past</Heading2>
+          </div>
         </div>
-        <EventList data={upcomingEvents} />
 
-        <div className={styles.heading} style={{ marginTop: "120px" }}>
-          <Heading2>Past events</Heading2>
+        <div style={{ display: activeTab === "upcoming" ? "block" : "none" }}>
+          <EventList data={upcomingEvents} />
         </div>
-        <EventList data={pastEvents} />
+
+        <div style={{ display: activeTab === "past" ? "block" : "none" }}>
+          <EventList data={pastEvents} />
+        </div>
       </Main>
       <BigLink
         href="/contact"
@@ -84,7 +113,7 @@ const EventList = (props) => {
   return props.data.map((item) => {
     const formattedDate = formatEventDate(item.date);
     return (
-      <div key={`event-${item.date}`} className={styles.event}>
+      <div key={`event-${item.date}-${item.venue}`} className={styles.event}>
         <div className={styles.date}>{formattedDate}</div>
         <div className={styles.venue}>{item.venue}</div>
         <div className={styles.location}>
@@ -96,7 +125,7 @@ const EventList = (props) => {
     );
   });
 };
-
+``;
 function formatEventDate(date) {
   const eventDate = new Date(date);
   const day = eventDate.getUTCDate();
@@ -390,5 +419,378 @@ const eventData = [
     city: "Bundjalung Country (Byron Bay)",
     state: "NSW",
     country: "AUS",
+  },
+  {
+    date: "2023-05-28",
+    venue: "Greenroom Festival",
+    city: "Yokohama",
+    state: "",
+    country: "Japan",
+  },
+  {
+    date: "2023-06-14",
+    venue: "Bergenfest",
+    city: "Bergen",
+    state: "",
+    country: "Norway",
+  },
+  {
+    date: "2023-06-16",
+    venue: "Hurricane Festival",
+    city: "Scheeßel",
+    state: "",
+    country: "Germany",
+  },
+  {
+    date: "2023-06-17",
+    venue: "Southside Festival",
+    city: "Neuhausen ob Eck",
+    state: "",
+    country: "Germany",
+  },
+  {
+    date: "2023-06-18",
+    venue: "Pinkpop Festival",
+    city: "Landgraaf",
+    state: "",
+    country: "Netherlands",
+  },
+  {
+    date: "2023-06-21",
+    venue: "Release Athens Festival",
+    city: "Athens",
+    state: "",
+    country: "Greece",
+  },
+  {
+    date: "2023-06-23",
+    venue: "Zorlu Performing Arts Center",
+    city: "İstanbul",
+    state: "",
+    country: "Türkiye",
+  },
+  {
+    date: "2023-06-25",
+    venue: "Couleur Café",
+    city: "Brussels",
+    state: "",
+    country: "Belgium",
+  },
+  {
+    date: "2023-06-26",
+    venue: "Eventim Apollo",
+    city: "London",
+    state: "",
+    country: "United Kingdom",
+  },
+  {
+    date: "2023-06-27",
+    venue: "The Civic at The Halls Wolverhampton",
+    city: "Wolverhampton",
+    state: "",
+    country: "United Kingdom",
+  },
+  {
+    date: "2023-06-30",
+    venue: "OpenAir St. Gallen",
+    city: "St. Gallen",
+    state: "",
+    country: "Switzerland",
+  },
+  {
+    date: "2023-07-02",
+    venue: "Garorock Festival",
+    city: "Marmande",
+    state: "",
+    country: "France",
+  },
+  {
+    date: "2023-07-06",
+    venue: "Cruïlla Festival",
+    city: "Barcelona",
+    state: "",
+    country: "Spain",
+  },
+  {
+    date: "2023-07-07",
+    venue: "Mad Cool Festival",
+    city: "Madrid",
+    state: "",
+    country: "Spain",
+  },
+  {
+    date: "2023-07-08",
+    venue: "NOS Alive",
+    city: "Algés",
+    state: "",
+    country: "Lisbon",
+  },
+  {
+    date: "2023-07-14",
+    venue: "Waldbühne",
+    city: "Berlin",
+    state: "",
+    country: "Germany",
+    support: "Fat Freddy's Drop",
+  },
+  {
+    date: "2023-07-15",
+    venue: "Letnia Scena Progresji",
+    city: "Warsaw",
+    state: "",
+    country: "Poland",
+  },
+  {
+    date: "2023-07-17",
+    venue: "Arena Wien Open Air",
+    city: "Vienna",
+    state: "",
+    country: "Austria",
+  },
+  {
+    date: "2023-07-19",
+    venue: "Hala Park",
+    city: "Zagreb",
+    state: "",
+    country: "Croatia",
+  },
+  {
+    date: "2023-07-21",
+    venue: "Electric Castle",
+    city: "Cluj-Napoca",
+    state: "",
+    country: "Romania",
+  },
+  {
+    date: "2023-07-23",
+    venue: "Sequoie Music Park",
+    city: "Bologna",
+    state: "",
+    country: "Italy",
+  },
+  {
+    date: "2023-07-25",
+    venue: "Autodromo Nazionalek",
+    city: "Monza",
+    state: "",
+    country: "Italy",
+    support: "Bruce Springsteen & Tesky Brothers",
+  },
+  {
+    date: "2023-07-26",
+    venue: "Cavea of the Auditorium Parco della Musica",
+    city: "Monza",
+    state: "",
+    country: "Rome",
+  },
+  {
+    date: "2023-08-22",
+    venue: "The Rady Shell at Jacobs Park",
+    city: "San Diego",
+    state: "CA",
+    country: "USA",
+  },
+  {
+    date: "2023-08-23",
+    venue: "Avila Beach Golf Resort",
+    city: "Avila Beach",
+    state: "CA",
+    country: "USA",
+  },
+  {
+    date: "2023-08-25",
+    venue: "Frost Amphitheater",
+    city: "Palo Alto",
+    state: "CA",
+    country: "USA",
+  },
+  {
+    date: "2023-08-26",
+    venue: "Britt Festival Pavilion",
+    city: "Jacksonville",
+    state: "OR",
+    country: "USA",
+  },
+  {
+    date: "2023-08-27",
+    venue: "THING Fest",
+    city: "Port Townsend",
+    state: "WA",
+    country: "USA",
+  },
+  {
+    date: "2023-08-29",
+    venue: "Orpheum Theatre",
+    city: "Vancouver",
+    state: "BC",
+    country: "Canada",
+  },
+  {
+    date: "2023-08-30",
+    venue: "The Cuthbert Amphitheater",
+    city: "Eugene",
+    state: "OR",
+    country: "USA",
+  },
+  {
+    date: "2023-09-01",
+    venue: "Sandy Amphitheater",
+    city: "Sandy",
+    state: "UT",
+    country: "USA",
+  },
+  {
+    date: "2023-09-02",
+    venue: "Dillon Amphitheate",
+    city: "Dillon",
+    state: "CO",
+    country: "USA",
+  },
+  {
+    date: "2023-09-03",
+    venue: "Gerald R. Ford Amphitheater",
+    city: "Vail",
+    state: "CO",
+    country: "USA",
+  },
+  {
+    date: "2023-09-05",
+    venue: "Harrah's Kansas City - Voodoo Lounge",
+    city: "Kansas City",
+    state: "MO",
+    country: "USA",
+  },
+  {
+    date: "2023-09-06",
+    venue: "The Sylvee",
+    city: "Madison",
+    state: "WI",
+    country: "USA",
+  },
+  {
+    date: "2023-09-08",
+    venue: "The Salt Shed",
+    city: "Chicago",
+    state: "IL",
+    country: "USA",
+  },
+  {
+    date: "2023-09-09",
+    venue: "MegaCorp Pavilion",
+    city: "Newport",
+    state: "KY",
+    country: "USA",
+  },
+  {
+    date: "2023-09-10",
+    venue: "Agora Theatre and Ballroom",
+    city: "Cleveland",
+    state: "OH",
+    country: "USA",
+  },
+  {
+    date: "2023-09-12",
+    venue: "REBEL",
+    city: "Toronto",
+    state: "",
+    country: "Canada",
+  },
+  {
+    date: "2023-09-13",
+    venue: "MTELUS",
+    city: "Montreal",
+    state: "",
+    country: "Canada",
+  },
+  {
+    date: "2023-09-15",
+    venue: "Roadrunner",
+    city: "Boston",
+    state: "MA",
+    country: "USA",
+  },
+  {
+    date: "2023-09-16",
+    venue: "Sea.Hear.Now. Festival",
+    city: "Asbury Park",
+    state: "NJ",
+    country: "USA",
+  },
+  {
+    date: "2023-09-17",
+    venue: "Kings Theatre",
+    city: "Brooklyn",
+    state: "NY",
+    country: "USA",
+  },
+  {
+    date: "2023-09-19",
+    venue: "Harrisburg University at the Forum",
+    city: "Harrisburg",
+    state: "PA",
+    country: "USA",
+  },
+  {
+    date: "2023-09-20",
+    venue: "Ting Pavilion",
+    city: "Charlottesville",
+    state: "VA",
+    country: "USA",
+  },
+  {
+    date: "2023-09-22",
+    venue: "Tabernacle",
+    city: "Atlanta",
+    state: "GA",
+    country: "USA",
+  },
+  {
+    date: "2023-09-23",
+    venue: "The Pageant",
+    city: "St Louis",
+    state: "MO",
+    country: "USA",
+  },
+  {
+    date: "2023-09-24",
+    venue: "FORMAT Festival",
+    city: "Bentonville",
+    state: "AR",
+    country: "USA",
+  },
+  {
+    date: "2023-09-27",
+    venue: "The Fillmore New Orleans",
+    city: "Bentonville",
+    state: "AR",
+    country: "USA",
+  },
+  {
+    date: "2023-09-29",
+    venue: "Mempho Music Festival",
+    city: "Memphis",
+    state: "TN",
+    country: "USA",
+  },
+  {
+    date: "2023-09-29",
+    venue: "713 Music Hall",
+    city: "Houston",
+    state: "TX",
+    country: "USA",
+  },
+  {
+    date: "2023-09-30",
+    venue: "The Pavilion at Toyota Music Factory",
+    city: "Irving",
+    state: "TX",
+    country: "USA",
+  },
+  {
+    date: "2023-11-25",
+    venue: "Spark Arena",
+    city: "Auckland",
+    state: "",
+    country: "USA",
   },
 ];
