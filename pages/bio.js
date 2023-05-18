@@ -1,4 +1,6 @@
 import Head from "next/head";
+import Image from "next/image";
+import styles from "../styles/Bio.module.css";
 import Main from "../components/Main";
 import Hero from "../components/Hero";
 import Heading2 from "../components/Heading2";
@@ -8,6 +10,25 @@ import heroImg from "../images/hero-bio.jpg";
 import BigLink from "../components/BigLink";
 import BioSvg from "../images/bio.svg";
 import VideoSvg from "../images/videos.svg";
+import Carousel, { CarouselImage } from "../components/Carousel";
+import bioTash1 from "../images/bio-tash1.jpg";
+import bioTash2 from "../images/bio-tash2.jpg";
+import bioTash3 from "../images/bio-tash3.jpg";
+import bioTash4 from "../images/bio-tash4.jpg";
+import bioTash5 from "../images/bio-tash5.jpg";
+import bioTash6 from "../images/bio-tash6.jpg";
+import bioCuba1 from "../images/bio-cuba1.jpg";
+import bioCuba2 from "../images/bio-cuba2.jpg";
+import bioCuba3 from "../images/bio-cuba3.jpg";
+import bioCuba4 from "../images/bio-cuba4.jpg";
+import bioCuba5 from "../images/bio-cuba5.jpg";
+import bioCuba6 from "../images/bio-cuba6.jpg";
+import bioPerspective1 from "../images/bio-perspective1.jpg";
+import bioPerspective2 from "../images/bio-perspective2.jpg";
+import bioPerspective3 from "../images/bio-perspective3.jpg";
+import bioPerspective4 from "../images/bio-perspective4.jpg";
+import bioPerspective5 from "../images/bio-perspective5.jpg";
+import bioPerspective6 from "../images/bio-perspective6.jpg";
 
 export default function Home() {
   return (
@@ -24,14 +45,28 @@ export default function Home() {
             JeSSe &apos;REO&apos; RehAUT AKA (FUNK) <br />
             DRUMMER | DJ | ROOTS MUSICIAN
           </Heading2>
+
           <Text style={{ textAlign: "center" }}>Naarm/Melbourne</Text>
+
           <br />
+
           <Text>
             JESSE &apos;REO&apos; REHAUT AKA (FUNK), the half Mauritian, half
             Lebanese Drummer, DJ and Roots musician from Naarm/Melbourne, has
             been dedicated to creating rhythms from the moment he received his
             first drum kit from his father at age fourteen.
           </Text>
+
+          <br />
+          <br />
+          <br />
+
+          <Callout>Jesse is currently performing at arena show level</Callout>
+
+          <br />
+          <br />
+          <br />
+
           <Text>
             Recognised as one-fifth of the Australian Funk band Jakubi—who was
             notably scouted in 2015 by American record executive L.A. Reid (Epic
@@ -50,6 +85,11 @@ export default function Home() {
             arena show level, with in-demand Australian acts Tash Sultana and
             Adrian Eagle, recently playing on MTV Unplugged and Fender Sessions.
           </Text>
+
+          <br />
+          <br />
+          <br />
+
           <Text>
             Rehaut&apos;s parents knew from a young age that music would be his
             passion for life. Growing up in a family of singers and musicians,
@@ -63,6 +103,29 @@ export default function Home() {
             Jesse, being introduced to the genres of Latin, Funk, Reggae, Soul,
             Roots &amp; Jazz and taking his musical talents to the next level.
           </Text>
+
+          <br />
+          <br />
+          <br />
+
+          <Carousel
+            cycle
+            prevNextButtons
+            pagination
+            data={[
+              <CarouselImage key="perspective1" src={bioPerspective1.src} />,
+              <CarouselImage key="perspective2" src={bioPerspective2.src} />,
+              <CarouselImage key="perspective3" src={bioPerspective3.src} />,
+              <CarouselImage key="perspective4" src={bioPerspective4.src} />,
+              <CarouselImage key="perspective5" src={bioPerspective5.src} />,
+              <CarouselImage key="perspective6" src={bioPerspective6.src} />,
+            ]}
+          />
+
+          <br />
+          <br />
+          <br />
+
           <Text>
             Jakubi—A collective of Melbourne musicians—was formed in 2012.
             During this time, Jesse worked in cafes during the day and ran
@@ -80,6 +143,38 @@ export default function Home() {
             writing songs and eating every meal together. This collaboration was
             a significant experience in Jesse&apos;s music career.
           </Text>
+
+          <br />
+          <br />
+          <br />
+
+          <Callout>
+            This collaboration was a significant experience in Jesse&apos;s
+            music career.
+          </Callout>
+
+          <br />
+          <br />
+          <br />
+
+          <Carousel
+            cycle
+            prevNextButtons
+            pagination
+            data={[
+              <CarouselImage key="bioCuba1" src={bioCuba1.src} />,
+              <CarouselImage key="bioCuba2" src={bioCuba2.src} />,
+              <CarouselImage key="bioCuba3" src={bioCuba3.src} />,
+              <CarouselImage key="bioCuba4" src={bioCuba4.src} />,
+              <CarouselImage key="bioCuba5" src={bioCuba5.src} />,
+              <CarouselImage key="bioCuba6" src={bioCuba6.src} />,
+            ]}
+          />
+
+          <br />
+          <br />
+          <br />
+
           <Text>
             In 2018 Jesse received an advance from the label, allowing him to
             seek private lessons with Robi Parolin while studying music at
@@ -89,14 +184,37 @@ export default function Home() {
             &apos;It takes a long time to sound like yourself,&apos; igniting
             his own pursuit to further craft his sound. The same year, he took
             one-on-one lessons with Cuban multi instrumentalist Redy Cobas,
-            learning Bembe/Merengue/Rumba/Son/Songo rhythms while jamming
-            together in a hot, sweaty room in Havana. Cobas would set up one
-            rhythm, and they would jam the whole day, repeating these sessions
-            every day throughout Jesse&apos;s month-long stay. While learning
-            the Afro Cuban and Latin rhythms, having not been able to
+            learning Bembe / Merengue / Rumba / Son / Songo rhythms while
+            jamming together in a hot, sweaty room in Havana. Cobas would set up
+            one rhythm, and they would jam the whole day, repeating these
+            sessions every day throughout Jesse&apos;s month-long stay. While
+            learning the Afro Cuban and Latin rhythms, having not been able to
             communicate verbally, they connected through the language of these
             grooves.
           </Text>
+
+          <br />
+          <br />
+          <br />
+
+          <Carousel
+            cycle
+            prevNextButtons
+            pagination
+            data={[
+              <CarouselImage key="bioTash1" src={bioTash1.src} />,
+              <CarouselImage key="bioTash2" src={bioTash2.src} />,
+              <CarouselImage key="bioTash3" src={bioTash3.src} />,
+              <CarouselImage key="bioTash4" src={bioTash4.src} />,
+              <CarouselImage key="bioTash5" src={bioTash5.src} />,
+              <CarouselImage key="bioTash6" src={bioTash6.src} />,
+            ]}
+          />
+
+          <br />
+          <br />
+          <br />
+
           <Text>
             Jesse continues to bring his soulful energy to venues worldwide with
             artist Tash Sultana—Recently returning from her tour which is
@@ -108,6 +226,20 @@ export default function Home() {
             Mauritius, Sega and Seggae—where he plans to spend a month or two
             later this year.
           </Text>
+
+          <br />
+          <br />
+          <br />
+
+          <Callout>
+            Declaring that&apos;s all you need to make your dreams come true
+            while advocating that &apos;THE WORLD NEEDS MORE FUNK.&apos;
+          </Callout>
+
+          <br />
+          <br />
+          <br />
+
           <Text>
             Even with such significant accomplishments, Jesse has always
             remained humble about his journey, stating that he is just &apos;a
@@ -122,6 +254,7 @@ export default function Home() {
           </Text>
         </Stack>
       </Main>
+
       <BigLink
         href="/videos"
         color="#eb1400"
@@ -132,3 +265,7 @@ export default function Home() {
     </>
   );
 }
+
+const Callout = (props) => {
+  return <div className={styles.callout}>{props.children}</div>;
+};
