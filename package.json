@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fontsource/source-sans-pro": "^5.0.1",
     "@formspree/react": "^2.4.1",
     "@svgr/webpack": "^6.5.1",
     "fs": "^0.0.1-security",
