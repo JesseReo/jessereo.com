@@ -1,0 +1,57 @@
+import React, { useState } from "react";
+import styles from "./HomeHero.module.css";
+import poster from "../../images/video-poster.jpg";
+import ArrowDown from "../../images/arrow.svg";
+import MuteOn from "../../images/icon-mute-on.svg";
+import MuteOff from "../../images/icon-mute-off.svg";
+import Weather from "../Weather";
+
+export default function HomeHero() {
+  const [mute, setMute] = useState(true);
+
+  return (
+    <>
+      <div className={`${styles.outer} ${styles.parallaxItem}`}>
+        <video
+          className={styles.video}
+          loop
+          playsInline
+          poster={poster.src}
+          autoPlay
+          muted={mute}
+          onClick={() => {
+            setMute(!mute);
+          }}
+        >
+          <source src="/videos/intro-edit.mp4" type="video/mp4" />
+        </video>
+
+        <Weather />
+
+        <div
+          className={styles.downArrow}
+          onClick={() => {
+            document
+              .querySelector(".nextSection")
+              .scrollIntoView({ behavior: "smooth" });
+          }}
+        >
+          <ArrowDown />
+        </div>
+
+        <button
+          className={styles.muteIcon}
+          onClick={(e) => {
+            e.preventDefault();
+            console.log("mute");
+            setMute(!mute);
+          }}
+        >
+          {mute ? <MuteOn /> : <MuteOff />}
+        </button>
+      </div>
+
+      <span className="nextSection" />
+    </>
+  );
+}
