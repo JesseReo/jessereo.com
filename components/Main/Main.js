@@ -5,11 +5,17 @@ export default function Main(props) {
     <main
       className={`${styles.main} ${props.className ?? ""}`}
       style={{
-        ...(props.fullWidth && { maxWidth: "100%" }),
         ...(props.style && { ...props.style }),
       }}
     >
-      <div className={styles.mainInner}>{props.children}</div>
+      <div
+        className={styles.mainInner}
+        style={{
+          ...(props.fullWidth && { maxWidth: "100%" }),
+        }}
+      >
+        {props.children}
+      </div>
     </main>
   );
 }

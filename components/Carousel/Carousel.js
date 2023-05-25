@@ -165,22 +165,9 @@ const Carousel = (props) => {
 
 export default Carousel;
 
-export const CarouselItem = styled.div`
-  position: relative;
-  width: 100%;
-  aspect-ratio: 4/3;
-  height: 50vh;
-`;
-
 export const CarouselImage = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
-`;
-
-export const Slide = styled.div`
-  width: 100%;
-  aspect-ratio: 16/9;
-  display: grid;
-  place-items: center;
+  display: block;
 `;
