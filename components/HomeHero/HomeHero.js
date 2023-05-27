@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "./HomeHero.module.css";
 import poster from "../../images/video-poster.jpg";
+import Logo from "../Logo";
 import ArrowDown from "../../images/arrow.svg";
 import MuteOn from "../../images/icon-mute-on.svg";
 import MuteOff from "../../images/icon-mute-off.svg";
@@ -25,6 +26,10 @@ export default function HomeHero() {
         >
           <source src="/videos/intro-edit.mp4" type="video/mp4" />
         </video>
+
+        <div className={styles.logoContainer}>
+          <Logo />
+        </div>
 
         <Weather />
 
