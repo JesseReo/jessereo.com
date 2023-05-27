@@ -5,6 +5,8 @@ import Logo from "../Logo";
 import ArrowDown from "../../images/arrow.svg";
 import MuteOn from "../../images/icon-mute-on.svg";
 import MuteOff from "../../images/icon-mute-off.svg";
+import muteOn from "../../images/icon-mute-on.png";
+import muteOff from "../../images/icon-mute-off.png";
 import Weather from "../Weather";
 
 export default function HomeHero() {
@@ -12,7 +14,12 @@ export default function HomeHero() {
 
   return (
     <>
-      <div className={`${styles.outer} ${styles.parallaxItem}`}>
+      <div
+        className={`${styles.outer} ${styles.parallaxItem}`}
+        style={{
+          cursor: `url('${mute ? muteOn.src : muteOff.src}'), auto`,
+        }}
+      >
         <video
           className={styles.video}
           loop
