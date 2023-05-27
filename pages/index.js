@@ -1,10 +1,11 @@
 import Head from "next/head";
+import HomeHero from "../components/HomeHero";
+import Main from "../components/Main";
 import BigLink from "../components/BigLink";
 import TheDrummerSvg from "../images/the-drummer.svg";
 import TheDjSvg from "../images/the-dj.svg";
 import TheTravellerSvg from "../images/the-traveller.svg";
 import WakeUpSvg from "../images/wake-the-funk-up.svg";
-import HomeHero from "../components/HomeHero";
 
 export default function Home() {
   return (
@@ -19,6 +20,8 @@ export default function Home() {
       </Head>
 
       <HomeHero />
+
+      <Main></Main>
 
       <BigLink
         href="/bio"
