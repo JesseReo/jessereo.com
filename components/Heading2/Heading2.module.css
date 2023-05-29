@@ -1,12 +1,9 @@
 .heading2 {
-  font-weight: 700;
-
-  color: #fff;
-  font-size: 1rem;
-
   /* https://clamp.font-size.app/?config=eyJyb290IjoiMTYiLCJtaW5XaWR0aCI6IjU3NnB4IiwibWF4V2lkdGgiOiIxMjAwcHgiLCJtaW5Gb250U2l6ZSI6IjM0cHgiLCJtYXhGb250U2l6ZSI6IjUycHgifQ%3D%3D */
   font-size: clamp(2.125rem, 1.0865rem + 2.8846vw, 3.25rem);
   /* 34 > 52 */
 
   line-height: 1.2;
+  font-weight: 600;
+  color: #fff;
 }
