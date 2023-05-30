@@ -3,21 +3,16 @@ import Head from "next/head";
 import styles from "../styles/Tours.module.css";
 import Hero from "../components/Hero";
 import Main from "../components/Main";
-import Text from "../components/Text";
-import Heading2 from "../components/Heading2";
+import Heading3 from "../components/Heading3";
 import heroImg from "../images/hero-tours.jpg";
 import BigLink from "../components/BigLink";
 import ToursSvg from "../images/tours.svg";
 import ContactSvg from "../images/contact.svg";
 
 export default function Tours() {
-  const [activeTab, setActiveTab] = useState("upcoming");
-  const upcomingEvents = getUpcomingEvents(eventData);
-  const pastEvents = getPastEvents(eventData);
-
-  useEffect(() => {
-    console.log(activeTab);
-  }, [activeTab]);
+  const [activeTab, setActiveTab] = useState("future");
+  const futureEvents = getFutureEvents(eventData, "future");
+  const pastEvents = getPastEvents(eventData, "past");
 
   return (
     <>
@@ -31,15 +26,15 @@ export default function Tours() {
         <div className={styles.tabHeadings}>
           <div
             className={`${styles.tabButton} ${
-              activeTab === "upcoming" ? styles.tabActive : ""
+              activeTab === "future" ? styles.tabActive : ""
             }`}
             onClick={() => {
-              setActiveTab("upcoming");
+              setActiveTab("future");
             }}
           >
-            <Heading2>Upcoming</Heading2>
+            <Heading3>Upcoming</Heading3>
           </div>
-          <Heading2> &nbsp;&nbsp; / &nbsp;&nbsp;</Heading2>
+          <Heading3> &nbsp;&nbsp; / &nbsp;&nbsp;</Heading3>
           <div
             className={`${styles.tabButton} ${
               activeTab === "past" ? styles.tabActive : ""
@@ -48,12 +43,12 @@ export default function Tours() {
               setActiveTab("past");
             }}
           >
-            <Heading2>Past</Heading2>
+            <Heading3>Past</Heading3>
           </div>
         </div>
 
         <div style={{ display: activeTab === "upcoming" ? "block" : "none" }}>
-          <EventList data={upcomingEvents} />
+          <EventList data={futureEvents} />
         </div>
 
         <div style={{ display: activeTab === "past" ? "block" : "none" }}>
@@ -71,7 +66,7 @@ export default function Tours() {
   );
 }
 
-function getUpcomingEvents(data) {
+function getFutureEvents(data) {
   const today = new Date(new Date().toDateString());
 
   var mutated = data
@@ -114,18 +109,22 @@ const EventList = (props) => {
     const formattedDate = formatEventDate(item.date);
     return (
       <div key={`event-${item.date}-${item.venue}`} className={styles.event}>
-        <div className={styles.date}>{formattedDate}</div>
-        <div className={styles.venue}>{item.venue}</div>
-        <div className={styles.location}>
-          {item.city && <>{item.city}, </>}
-          {item.state && <>{item.state}, </>}
-          {item.country && <>{item.country} </>}
+        <div>
+          <div className={styles.date}>{formattedDate}</div>
+          <div className={styles.venue}>{item.venue}</div>
+        </div>
+        <div>
+          <div className={styles.location}>
+            {item.city && <>{item.city}, </>}
+            {item.state && <>{item.state}, </>}
+            {item.country && <>{item.country} </>}
+          </div>
         </div>
       </div>
     );
   });
 };
-``;
+
 function formatEventDate(date) {
   const eventDate = new Date(date);
   const day = eventDate.getUTCDate();
@@ -248,7 +247,6 @@ const eventData = [
     state: "QC",
     country: "Canada",
   },
-
   {
     date: "2022-07-02",
     venue: "Sherblues and Folk Festival",
@@ -354,7 +352,6 @@ const eventData = [
     state: "CA",
     country: "USA",
   },
-
   {
     date: "2022-08-19",
     venue: "Dockville",
