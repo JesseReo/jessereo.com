@@ -11,8 +11,8 @@ import ContactSvg from "../images/contact.svg";
 
 export default function Tours() {
   const [activeTab, setActiveTab] = useState("future");
-  const futureEvents = getFutureEvents(eventData, "future");
-  const pastEvents = getPastEvents(eventData, "past");
+  const futureEvents = getEvents(eventData, "future");
+  const pastEvents = getEvents(eventData, "past");
 
   return (
     <>
@@ -66,44 +66,6 @@ export default function Tours() {
   );
 }
 
-function getFutureEvents(data) {
-  const today = new Date(new Date().toDateString());
-
-  var mutated = data
-    .filter(function (item) {
-      const itemDate = new Date(new Date(item.date).toDateString());
-      return itemDate >= today;
-    })
-    .sort((a, b) => {
-      const dateA = new Date(new Date(a.date).toDateString());
-      const dateB = new Date(new Date(b.date).toDateString());
-      if (dateA < dateB) return -1;
-      if (dateA > dateB) return 1;
-      return 0;
-    });
-
-  return mutated;
-}
-
-function getPastEvents(data) {
-  const today = new Date(new Date().toDateString());
-
-  var mutated = data
-    .filter(function (item) {
-      const itemDate = new Date(new Date(item.date).toDateString());
-      return itemDate < today;
-    })
-    .sort((a, b) => {
-      const dateA = new Date(new Date(a.date).toDateString());
-      const dateB = new Date(new Date(b.date).toDateString());
-      if (dateA > dateB) return -1;
-      if (dateA < dateB) return 1;
-      return 0;
-    });
-
-  return mutated;
-}
-
 const EventList = (props) => {
   return props.data.map((item) => {
     const formattedDate = formatEventDate(item.date);
@@ -125,6 +87,42 @@ const EventList = (props) => {
   });
 };
 
+/* Get events
+ *
+ * @param data - array - the event data as an array.
+ * @param filter - 'future' | 'past' - filter by futire or past events.
+ * @return array - array of filterered events. future events are sorted ascending, past events are sorted descending.
+ */
+function getEvents(data, filter = "future") {
+  const today = new Date(new Date().toDateString());
+
+  var mutated = data
+    .filter(function (item) {
+      const itemDate = new Date(new Date(item.date).toDateString());
+      const result = {
+        future: itemDate >= today,
+        past: itemDate < today,
+      };
+      return result[filter];
+    })
+    .sort((a, b) => {
+      const dateA = new Date(new Date(a.date).toDateString());
+      const dateB = new Date(new Date(b.date).toDateString());
+      const result = {
+        future: dateA > dateB ? 1 : -1,
+        past: dateA < dateB ? 1 : -1,
+      };
+      return result[filter];
+    });
+
+  return mutated;
+}
+
+/* Format event date
+ *
+ * @param date - date as a string eg. 2023-01-01
+ * @return string - eg. JAN 01, 2023
+ */
 function formatEventDate(date) {
   const eventDate = new Date(date);
   const day = eventDate.getUTCDate();
