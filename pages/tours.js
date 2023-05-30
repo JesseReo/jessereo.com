@@ -47,7 +47,7 @@ export default function Tours() {
           </div>
         </div>
 
-        <div style={{ display: activeTab === "upcoming" ? "block" : "none" }}>
+        <div style={{ display: activeTab === "future" ? "block" : "none" }}>
           <EventList data={futureEvents} />
         </div>
 
