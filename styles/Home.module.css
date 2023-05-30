@@ -1,5 +1,4 @@
 /* Section ////////////////////////////////////////////////////////////////// */
-
 .sectionContainer {
   position: relative;
   padding: 40px 0;
@@ -31,7 +30,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* gap: 20px; */
 }
 
 .section__item {
@@ -63,7 +61,6 @@
 @media (min-width: 992px) {
   .section {
     flex-direction: row;
-    /* gap: 80px; */
   }
 
   .section__item {
@@ -89,9 +86,11 @@
     height: 20px;
     background-color: #fff;
   }
+
   .layout1__text {
     text-align: left;
   }
+
   .layout1__image {
     margin-left: 80px;
     margin-right: 80px;
@@ -103,6 +102,7 @@
   .layout2 {
     flex-direction: row-reverse;
   }
+
   .layout2__line:after {
     content: "";
     position: absolute;
@@ -112,9 +112,11 @@
     height: 20px;
     background-color: #fff;
   }
+
   .layout2__text {
     text-align: right;
   }
+
   .layout2__image {
     margin-right: 80px;
     margin-left: 80px;
