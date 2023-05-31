@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "./Hero.module.css";
 import ArrowDown from "../../images/arrow.svg";
+import arrowDown from "../../images/arrow.png";
 
 export default function Hero(props) {
   return (
@@ -11,6 +12,9 @@ export default function Hero(props) {
           document
             .querySelector(".nextSection")
             .scrollIntoView({ behavior: "smooth" });
+        }}
+        style={{
+          cursor: `url('${arrowDown.src}'), auto`,
         }}
       >
         <div className={styles.content}>
