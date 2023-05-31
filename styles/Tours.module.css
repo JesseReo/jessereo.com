@@ -1,62 +1,14 @@
-.heading {
-  text-align: center;
-  padding: 32px;
-}
-
-.event {
-  text-align: center;
-  margin-bottom: 60px;
-  color: #fff;
-}
-
-@media (min-width: 768px) {
-  .event {
-    text-align: left;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
-  }
-}
-
-.date {
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 12px;
-}
-
-.venue {
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-bottom: 8px;
-}
-@media (min-width: 992px) {
-  .venue {
-    margin-bottom: 16px;
-  }
-}
-
-.location {
-  font-size: 1rem;
-  margin-bottom: 16px;
-}
-
-@media (min-width: 992px) {
-  .location {
-    margin-bottom: 16px;
-    text-align: right;
-  }
-}
-
 .tabHeadings {
-  color: white;
-  text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 64px;
+  display: flex;
+  gap: 16px;
+  justify-content: center;
 }
 
-.tabHeadings div,
-.tabHeadings h3 {
-  display: inline-block;
+@media (min-width: 992px) {
+  .tabHeadings {
+    margin-bottom: 120px;
+  }
 }
 
 .tabButton {
@@ -65,4 +17,46 @@
 
 .tabActive {
   border-bottom: 3px solid white;
+}
+
+.eventList {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+@media (min-width: 768px) {
+  .eventList {
+    gap: 64px;
+  }
+}
+
+.event {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .event {
+    padding-bottom: 16px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+
+.date {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.venue {
+  font-weight: bold;
+}
+
+@media (min-width: 992px) {
+  .location {
+    text-align: right;
+  }
 }
