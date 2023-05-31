@@ -1,17 +1,18 @@
 .menuIcon {
   position: fixed;
-  top: 10px;
-  right: 15px;
-  width: 30px;
+  top: 0;
+  right: 0;
   z-index: 4;
+
+  width: 65px;
+  padding: 12px 16px;
   cursor: pointer;
 }
 
 @media (min-width: 992px) {
   .menuIcon {
-    top: 20px;
-    right: 25px;
-    width: 40px;
+    width: 80px;
+    padding: 16px 20px;
   }
 }
 
