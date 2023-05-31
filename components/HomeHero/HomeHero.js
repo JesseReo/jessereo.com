@@ -16,9 +16,7 @@ export default function HomeHero() {
     <>
       <div
         className={`${styles.outer} ${styles.parallaxItem}`}
-        style={{
-          cursor: `url('${mute ? muteOn.src : muteOff.src}'), auto`,
-        }}
+        style={{ cursor: `url('${mute ? muteOn.src : muteOff.src}'), auto` }}
       >
         <video
           className={styles.video}
@@ -55,7 +53,6 @@ export default function HomeHero() {
           className={styles.muteIcon}
           onClick={(e) => {
             e.preventDefault();
-            console.log("mute");
             setMute(!mute);
           }}
         >

@@ -7,15 +7,13 @@ export default function Hero(props) {
   return (
     <>
       <div
-        className={styles.hero}
+        className={`${styles.hero} ${styles.parallaxItem}`}
         onClick={() => {
           document
             .querySelector(".nextSection")
             .scrollIntoView({ behavior: "smooth" });
         }}
-        style={{
-          cursor: `url('${arrowDown.src}'), auto`,
-        }}
+        style={{ cursor: `url('${arrowDown.src}'), auto` }}
       >
         <div className={styles.content}>
           <div className={styles.titleImage}>{props.titleImage}</div>
@@ -26,18 +24,16 @@ export default function Hero(props) {
           <ArrowDown />
         </div>
 
-        {props.backgroundImage && (
-          <div className={`${styles.backgroundImage} ${styles.parallaxItem}`}>
-            <Image
-              src={props.backgroundImage}
-              alt="alt"
-              layout="fill"
-              objectFit="cover"
-              placeholder="blur"
-              priority
-            />
-          </div>
-        )}
+        <div className={`${styles.backgroundImage}`}>
+          <Image
+            src={props.backgroundImage}
+            alt="alt"
+            layout="fill"
+            objectFit="cover"
+            placeholder="blur"
+            priority
+          />
+        </div>
       </div>
 
       <span className="nextSection" />
