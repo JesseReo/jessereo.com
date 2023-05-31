@@ -7,12 +7,8 @@ export default function ContactForm() {
   const [state, handleSubmit] = useForm("mjvdwznj");
 
   return (
-    <>
-      {!state.succeeded && (
-        <Text>
-          or fill out the form <br />
-        </Text>
-      )}
+    <div>
+      {!state.succeeded && <Text className={styles.title}>Message</Text>}
 
       <div className={styles.formContainer}>
         {state.succeeded ? (
@@ -20,60 +16,58 @@ export default function ContactForm() {
             Thanks for your message, <br /> i&apos;ll get back to you soon.
           </Text>
         ) : (
-          <>
-            <form onSubmit={handleSubmit} className={styles.form}>
-              <div className={styles.fieldContainer}>
-                <label className={styles.label} htmlFor="email">
-                  Email Address
-                </label>
-                <input
-                  className={styles.input}
-                  id="email"
-                  type="email"
-                  name="email"
-                  required
-                />
-                <ValidationError
-                  prefix="Email"
-                  field="email"
-                  errors={state.errors}
-                />
-              </div>
+          <form onSubmit={handleSubmit} className={styles.form}>
+            <div className={styles.fieldContainer}>
+              <label className={styles.label} htmlFor="email">
+                <Text color="black"> Email Address</Text>
+              </label>
+              <input
+                className={styles.input}
+                id="email"
+                type="email"
+                name="email"
+                required
+              />
+              <ValidationError
+                prefix="Email"
+                field="email"
+                errors={state.errors}
+              />
+            </div>
 
-              <div className={styles.fieldContainer}>
-                <label className={styles.label} htmlFor="message">
-                  Message
-                </label>
-                <textarea
-                  className={styles.textarea}
-                  id="message"
-                  name="message"
-                  required
-                />
-                <ValidationError
-                  prefix="Message"
-                  field="message"
-                  errors={state.errors}
-                />
-              </div>
+            <div className={styles.fieldContainer}>
+              <label className={styles.label} htmlFor="message">
+                <Text color="black">Message</Text>
+              </label>
+              <textarea
+                className={styles.textarea}
+                id="message"
+                name="message"
+                required
+              />
+              <ValidationError
+                prefix="Message"
+                field="message"
+                errors={state.errors}
+              />
+            </div>
 
-              <button
-                className={styles.submit}
-                type="submit"
-                disabled={state.submitting}
-              >
-                <span>Submit</span>
+            <button
+              className={styles.submit}
+              type="submit"
+              disabled={state.submitting}
+            >
+              <span>Send</span>
 
-                {state.submitting && (
-                  <div className={styles.spinnerContainer}>
-                    <Spinner />
-                  </div>
-                )}
-              </button>
-            </form>
-          </>
+              {state.submitting && (
+                <div className={styles.spinnerContainer}>
+                  <Spinner />
+                </div>
+              )}
+            </button>
+          </form>
         )}
       </div>
-    </>
+    </div>
   );
 }

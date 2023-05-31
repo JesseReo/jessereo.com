@@ -4,7 +4,11 @@ export default function Text(props) {
   return (
     <p
       className={`${styles.text} ${props.className ?? ""}`}
-      style={{ ...props.style }}
+      style={{
+        fontWeight: props.bold ?? "400",
+        color: props.color ?? "white",
+        ...props.style,
+      }}
     >
       {props.children}
     </p>

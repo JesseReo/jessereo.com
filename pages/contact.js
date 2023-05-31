@@ -1,14 +1,15 @@
 import Head from "next/head";
 import styles from "../styles/Contact.module.css";
 import Hero from "../components/Hero";
-import Main from "../components/Main";
 import Heading2 from "../components/Heading2";
+import Heading3 from "../components/Heading3";
 import Text from "../components/Text";
-import Stack from "../components/Stack";
 import img from "../images/hero-contact.jpg";
 import EmailLink from "../components/EmailLink/EmailLink";
 import ContactSvg from "../images/contact.svg";
 import ContactForm from "../components/ContactForm";
+import contact1 from "../images/contact1.jpg";
+import Image from "next/image";
 
 export default function Contact() {
   return (
@@ -18,25 +19,36 @@ export default function Contact() {
         <meta name="description" content="Contact details for Jesse Reo" />
       </Head>
       <Hero title="CONtact" titleImage={<ContactSvg />} backgroundImage={img} />
-      <Main className={styles.main}>
-        <Stack>
-          <Heading2>get IN cOntact</Heading2>
-          <Text>Accepting offers for solid grooves and peace.</Text>
 
-          <br />
-          <br />
+      <div className={styles.layout}>
+        <div className={`${styles.layoutItem} ${styles.layoutContent}`}>
+          <div>
+            <Heading2 className={styles.title}>GET IN CONTACT</Heading2>
+            <Heading3 className={styles.subTitle}>
+              Accepting offers for solid grooves and peace.
+            </Heading3>
+          </div>
 
-          <Text>
-            Send me an email <br />
-            <EmailLink />
-          </Text>
-
-          <br />
-          <br />
+          <div>
+            <Text>Email</Text>
+            <Text bold>
+              <EmailLink />
+            </Text>
+          </div>
 
           <ContactForm />
-        </Stack>
-      </Main>
+        </div>
+
+        <div className={`${styles.layoutItem} ${styles.layoutImage}`}>
+          <Image
+            src={contact1}
+            layout="fill"
+            objectFit="cover"
+            objectPosition="top"
+            alt=""
+          />
+        </div>
+      </div>
     </>
   );
 }
