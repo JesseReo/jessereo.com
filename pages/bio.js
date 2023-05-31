@@ -38,6 +38,7 @@ import bioEpic4 from "../images/bio-epic4.jpg";
 import bioEpic5 from "../images/bio-epic5.jpg";
 import bioEpic6 from "../images/bio-epic6.jpg";
 import bioEpic7 from "../images/bio-epic7.jpg";
+import bioFinal from "../images/bio-final.jpg";
 
 export default function Home() {
   return (
@@ -141,6 +142,7 @@ export default function Home() {
             cycle
             prevNextButtons
             pagination
+            aspectRatio="16/9"
             data={[
               <CarouselImage key="epic1" src={bioEpic1.src} />,
               <CarouselImage key="dpic2" src={bioEpic2.src} />,
@@ -269,6 +271,7 @@ export default function Home() {
             cycle
             prevNextButtons
             pagination
+            aspectRatio="16/9"
             data={[
               <CarouselImage key="bioTash1" src={bioTash1.src} />,
               <CarouselImage key="bioTash2" src={bioTash2.src} />,
@@ -328,7 +331,19 @@ export default function Home() {
             through his beats and musical talents.
           </Text>
         </section>
+
+        <Spacer />
       </Main>
+
+      <section className={styles.section9}>
+        <Image
+          src={bioFinal}
+          layout="fill"
+          objectFit="cover"
+          objectPosition="top"
+          alt=""
+        />
+      </section>
 
       <BigLink
         href="/videos"
