@@ -73,6 +73,7 @@ export default function Home() {
         <Spacer />
 
         <section className={styles.section1}>
+          <a id="epic" />
           <div className={styles.section1item1}>
             <Text>
               Recognised as one-fifth of the Australian Funk band{" "}
@@ -188,6 +189,7 @@ export default function Home() {
         <Spacer />
 
         <section className={styles.section4}>
+          <a id="perspective" />
           <div className={styles.section4item1}>
             <Text>
               Jakubi—A collective of Melbourne musicians—was formed in 2012.
@@ -235,6 +237,7 @@ export default function Home() {
         <Spacer />
 
         <section className={styles.section5}>
+          <a id="cuba" />
           <Text>
             In 2018 Jesse received an advance from the label, allowing him to
             seek <strong>private lessons with Robi Parolin </strong> while

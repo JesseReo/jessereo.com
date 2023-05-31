@@ -93,6 +93,11 @@ export default function Home() {
                   Redy Cobas, learning Bembe / Merengue / Rumba / Son / Songo
                   rhythms while jamming together in a hot, sweaty room in
                   Havana.
+                  <br />
+                  <br />
+                  <Link href="/bio#cuba">
+                    <a>Read more</a>
+                  </Link>
                 </TextBody>
               </SectionText>
             </SectionItem>
@@ -118,13 +123,15 @@ export default function Home() {
                   Perspective Records / Jakubi U.S. Tour
                 </TextHeading>
                 <TextBody>
-                  Most recently Jesse has been bringing his soulful energy
-                  touring worldwide with Tash Sultana. So far they have played
-                  xx shows across xx different countries.
+                  In 2016, Jakubi Signs major recored label with Perspective
+                  records.spent six months working intensely with Jimmy Jam &
+                  Terry Lewis, spending 5-6 days a week in the studio, working
+                  one-on-one, jamming together into the early hours of the
+                  morning, writing songs and eating every meal together.
                   <br />
                   <br />
-                  <Link href="/tours">
-                    <a>Tour dates</a>
+                  <Link href="/bio#perspective">
+                    <a>Read more</a>
                   </Link>
                 </TextBody>
               </SectionText>
@@ -156,6 +163,11 @@ export default function Home() {
                   and working with Macy Gray and Scott Storch (The Roots / Dr.
                   Dre / 50 Cent / Beyonce / Nas) and supported legendary artists
                   such as Sublime, Fishbone, The Suffers.
+                  <br />
+                  <br />
+                  <Link href="/bio#epic">
+                    <a>Read more</a>
+                  </Link>
                 </TextBody>
               </SectionText>
             </SectionItem>
