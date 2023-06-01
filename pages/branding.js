@@ -1,9 +1,8 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
 
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import Head from "next/head";
-import Link from "next/link";
 import styles from "../styles/Branding.module.css";
 import Main from "../components/Main";
 import Heading2 from "../components/Heading2";

@@ -348,14 +348,6 @@ export default function Home() {
 
         <Pagination id="bio" className={styles.pagination} />
       </section>
-
-      {/* <BigLink
-        href="/videos"
-        color="#eb1400"
-        label="videos"
-        labelImg={<VideoSvg alt="videos" />}
-        arrow
-      /> */}
     </>
   );
 }

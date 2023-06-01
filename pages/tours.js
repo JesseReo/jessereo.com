@@ -53,14 +53,6 @@ export default function Tours() {
       </Main>
 
       <Pagination id="tours" className={styles.pagination} />
-
-      {/* <BigLink
-        href="/contact"
-        color="#00ba56"
-        label="contact"
-        labelImg={<ContactSvg alt="contact" />}
-        arrow
-      /> */}
     </>
   );
 }

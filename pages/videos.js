@@ -5,9 +5,7 @@ import styles from "../styles/Videos.module.css";
 import Hero from "../components/Hero";
 import Main from "../components/Main";
 import img from "../images/hero-videos.jpg";
-import BigLink from "../components/BigLink";
 import VideoSvg from "../images/videos.svg";
-import DjSvg from "../images/dj.svg";
 import Heading3 from "../components/Heading3";
 import Text from "../components/Text";
 import imgFenderSessions from "../images/video-poster-fender-sessions.jpg";
@@ -51,14 +49,6 @@ export default function Videos() {
       </Main>
 
       <Pagination id="videos" className={styles.pagination} />
-
-      {/* <BigLink
-        href="/dj"
-        color="#192cd1"
-        label="dj"
-        labelImg={<DjSvg alt="dj" />}
-        arrow
-      /> */}
     </>
   );
 }
