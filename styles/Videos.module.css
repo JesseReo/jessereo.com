@@ -1,8 +1,47 @@
-.videoEmbed {
-  display: block;
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+@media (min-width: 992px) {
+  .items {
+    gap: 160px;
+  }
+}
+
+.textContainer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.videoContainer {
+  position: relative;
+  aspect-ratio: 16/9;
+}
+
+.iconPlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  transform: translate3d(-50%, -50%, 0);
+  width: 100px;
+  height: 100px;
+}
+
+.videoPoster {
+  position: absolute;
   width: 100%;
-  max-width: 100%;
-  height: auto;
-  aspect-ratio: 16 / 9;
+  height: 100%;
+  cursor: pointer;
+}
+
+.videoEmbed {
+  width: 100%;
+  height: 100%;
   border: 0;
 }
