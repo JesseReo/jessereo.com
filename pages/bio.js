@@ -8,10 +8,9 @@ import Heading3 from "../components/Heading3";
 import Text from "../components/Text";
 import heroImg from "../images/hero-bio.jpg";
 import bioIntro from "../images/bio-intro.png";
-import BigLink from "../components/BigLink";
 import BioSvg from "../images/bio.svg";
-import VideoSvg from "../images/videos.svg";
 import Carousel, { CarouselImage } from "../components/Carousel";
+import Pagination from "../components/Pagination";
 import bioTash1 from "../images/bio-tash1.jpg";
 import bioTash2 from "../images/bio-tash2.jpg";
 import bioTash3 from "../images/bio-tash3.jpg";
@@ -346,15 +345,17 @@ export default function Home() {
           objectPosition="top"
           alt=""
         />
+
+        <Pagination id="bio" className={styles.pagination} />
       </section>
 
-      <BigLink
+      {/* <BigLink
         href="/videos"
         color="#eb1400"
         label="videos"
         labelImg={<VideoSvg alt="videos" />}
         arrow
-      />
+      /> */}
     </>
   );
 }

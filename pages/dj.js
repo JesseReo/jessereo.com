@@ -10,6 +10,7 @@ import BigLink from "../components/BigLink";
 import Heading2 from "../components/Heading2";
 import DjSvg from "../images/dj.svg";
 import ToursSvg from "../images/tours.svg";
+import Pagination from "../components/Pagination";
 
 export default function Dj() {
   return (
@@ -43,14 +44,17 @@ export default function Dj() {
           </Stack>
         </div>
       </Main>
-      <BigLink
+
+      <Pagination id="dj" className={styles.pagination} />
+
+      {/* <BigLink
         href="/tours"
         color="#f8ff1f"
         textColor="#000"
         label="tours"
         labelImg={<ToursSvg alt="tours" />}
         arrow
-      />
+      /> */}
     </>
   );
 }

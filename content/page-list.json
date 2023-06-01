@@ -1,0 +1,26 @@
+[
+  {
+    "id": "home",
+    "href": "/"
+  },
+  {
+    "id": "bio",
+    "href": "/bio"
+  },
+  {
+    "id": "videos",
+    "href": "/videos"
+  },
+  {
+    "id": "dj",
+    "href": "/dj"
+  },
+  {
+    "id": "tours",
+    "href": "/tours"
+  },
+  {
+    "id": "contact",
+    "href": "/contact"
+  }
+]

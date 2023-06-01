@@ -1,4 +1,5 @@
 import { useState, useRef } from "react";
+import Image from "next/image";
 import Head from "next/head";
 import styles from "../styles/Videos.module.css";
 import Hero from "../components/Hero";
@@ -8,12 +9,12 @@ import BigLink from "../components/BigLink";
 import VideoSvg from "../images/videos.svg";
 import DjSvg from "../images/dj.svg";
 import Heading3 from "../components/Heading3";
-import Text from "../components/text";
+import Text from "../components/Text";
 import imgFenderSessions from "../images/video-poster-fender-sessions.jpg";
 import imgAdrianEagle from "../images/video-poster-adrian-eagle.jpg";
 import imgCouchPotato from "../images/video-poster-couch-potato.jpg";
 import IconPlay from "../images/icon-play.svg";
-import Image from "next/image";
+import Pagination from "../components/Pagination";
 
 export default function Videos() {
   return (
@@ -49,13 +50,15 @@ export default function Videos() {
         </div>
       </Main>
 
-      <BigLink
+      <Pagination id="videos" className={styles.pagination} />
+
+      {/* <BigLink
         href="/dj"
         color="#192cd1"
         label="dj"
         labelImg={<DjSvg alt="dj" />}
         arrow
-      />
+      /> */}
     </>
   );
 }

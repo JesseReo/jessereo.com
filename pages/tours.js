@@ -6,10 +6,10 @@ import Hero from "../components/Hero";
 import Main from "../components/Main";
 import Heading3 from "../components/Heading3";
 import heroImg from "../images/hero-tours.jpg";
-import BigLink from "../components/BigLink";
 import ToursSvg from "../images/tours.svg";
-import ContactSvg from "../images/contact.svg";
 import Text from "../components/Text";
+import Spacer from "../components/Spacer/Spacer";
+import Pagination from "../components/Pagination";
 
 export default function Tours() {
   const [active, setActive] = useState("future");
@@ -46,15 +46,21 @@ export default function Tours() {
         <div className={styles.eventList}>
           <EventList data={active === "future" ? futureEvents : pastEvents} />
         </div>
+
+        <Spacer />
+        <Spacer />
+        <Spacer />
       </Main>
 
-      <BigLink
+      <Pagination id="tours" className={styles.pagination} />
+
+      {/* <BigLink
         href="/contact"
         color="#00ba56"
         label="contact"
         labelImg={<ContactSvg alt="contact" />}
         arrow
-      />
+      /> */}
     </>
   );
 }

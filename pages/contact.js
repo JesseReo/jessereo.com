@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from "next/image";
 import styles from "../styles/Contact.module.css";
 import Hero from "../components/Hero";
 import Heading2 from "../components/Heading2";
@@ -9,7 +10,7 @@ import EmailLink from "../components/EmailLink/EmailLink";
 import ContactSvg from "../images/contact.svg";
 import ContactForm from "../components/ContactForm";
 import contact1 from "../images/contact1.jpg";
-import Image from "next/image";
+import Pagination from "../components/Pagination";
 
 export default function Contact() {
   return (
@@ -47,6 +48,8 @@ export default function Contact() {
             objectPosition="top"
             alt=""
           />
+
+          <Pagination id="contact" className={styles.pagination} />
         </div>
       </div>
     </>

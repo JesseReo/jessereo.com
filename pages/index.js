@@ -1,23 +1,17 @@
 import Head from "next/head";
+import Link from "next/link";
+import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import HomeHero from "../components/HomeHero";
 import Main from "../components/Main";
 import Heading2 from "../components/Heading2";
 import Heading3 from "../components/Heading3";
-
 import imgTash from "../images/bio-tash5.jpg";
 import imgCuba from "../images/bio-cuba1.jpg";
 import imgPerspective from "../images/bio-perspective9.jpg";
 import imgEpic from "../images/bio-perspective7.jpg";
-
-import BigLink from "../components/BigLink";
-import TheDrummerSvg from "../images/the-drummer.svg";
-import TheDjSvg from "../images/the-dj.svg";
-import TheTravellerSvg from "../images/the-traveller.svg";
-import WakeUpSvg from "../images/wake-the-funk-up.svg";
-import Link from "next/link";
-import Image from "next/image";
 import Text from "../components/Text";
+import Pagination from "../components/Pagination";
 
 export default function Home() {
   return (
@@ -174,10 +168,14 @@ export default function Home() {
           </Section>
 
           <Spacer />
+          <Spacer />
+          <Spacer />
+
+          <Pagination id="home" className={styles.pagination} />
         </div>
       </Main>
 
-      <BigLink
+      {/* <BigLink
         href="/bio"
         color="#eb1400"
         label="bio"
@@ -201,7 +199,7 @@ export default function Home() {
         color="#00ba56"
         label="contact"
         labelImg={<WakeUpSvg alt="contact" />}
-      />
+      /> */}
     </>
   );
 }

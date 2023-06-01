@@ -1,0 +1,77 @@
+.outer {
+  position: relative;
+  background-color: #1e1e1e;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.prevNextOuter {
+  display: inline-block;
+}
+
+.prevNextOuter svg {
+  fill: white;
+}
+
+.prevNextInner {
+  display: flex;
+  height: 70px;
+  background: black;
+  padding: 20px;
+}
+
+.left {
+  flex-direction: row-reverse;
+  left: 0;
+}
+
+.left .arrow {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+
+.right .arrow {
+  right: 0;
+}
+
+.left:hover .arrow {
+  left: -15px;
+}
+
+.right:hover .arrow {
+  right: -16px;
+}
+
+.arrow {
+  position: relative;
+  width: 40px;
+  fill: #fff;
+  transition: all 300ms ease;
+}
+
+@media (min-width: 992px) {
+  .outer {
+    padding-bottom: 80px;
+  }
+
+  .prevNextInner {
+    height: 120px;
+    padding: 30px;
+  }
+
+  .left {
+    padding-left: 80px;
+  }
+
+  .right {
+    padding-right: 80px;
+  }
+
+  .arrow {
+    width: 65px;
+  }
+}

@@ -2,12 +2,6 @@
   margin-bottom: 30px;
 }
 
-@media (min-width: 992px) {
-  .title {
-    margin-bottom: 40px;
-  }
-}
-
 .subTitle {
   max-width: 500px;
   margin: 0 auto;
@@ -37,7 +31,32 @@
   height: 70vh;
 }
 
+.label,
+.email,
+.textarea,
+.submit {
+  display: block;
+  width: 100%;
+}
+
+.content {
+  min-height: calc(100vh - 240px);
+  text-align: center;
+  display: grid;
+  place-items: center;
+}
+
+.pagination.pagination {
+  position: absolute;
+  bottom: 0;
+  background: transparent;
+}
+
 @media (min-width: 992px) {
+  .title {
+    margin-bottom: 40px;
+  }
+
   .layout {
     flex-direction: row-reverse;
   }
@@ -55,19 +74,4 @@
   .layoutImage {
     height: 100%;
   }
-}
-
-.label,
-.email,
-.textarea,
-.submit {
-  display: block;
-  width: 100%;
-}
-
-.content {
-  min-height: calc(100vh - 240px);
-  text-align: center;
-  display: grid;
-  place-items: center;
 }
