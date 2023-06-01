@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "logo-variations": "cd utils/generate-logo-variations; node generate-logo-variations.js"
   },
   "dependencies": {
     "@fontsource/source-sans-pro": "^5.0.1",

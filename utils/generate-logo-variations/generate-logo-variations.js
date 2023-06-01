@@ -3,11 +3,16 @@
  * This script will take the logo variations in the 'src' folder and output various size and file types.
  *
  * Usage:
- *    cd into this directory
- *      `cd components/LogoVariations/`
+ *    theres an npm script in package.json, run"
+ *      npm run logo-varations
  *
- *    run the script
- *       `node process-image.js`
+ *    to run script directly:
+ *
+ *      cd into this directory
+ *        `cd utils/generate-logo-variations/`
+ *
+ *      run the script
+ *        `node generate-logo-variations.js`
  *
  */
 
@@ -51,7 +56,14 @@ CREATE LOGO VARIATIONS
 `);
 
 // 1 //////////////////////////////////
-log("1. Removing all files in output folder.");
+log("1. Clean output folder.");
+
+if (!fs.existsSync(outputPath)) {
+  log(`\n    x output folder not found. ${outputPath}`);
+  log(`\n    CANNOT CONTINUE!\n\n`);
+  process.exit(1);
+}
+
 fs.readdir(outputPath, (err, files) => {
   if (err) throw err;
 
