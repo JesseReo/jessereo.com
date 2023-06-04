@@ -38,6 +38,7 @@ import bioEpic5 from "../images/bio-epic5.jpg";
 import bioEpic6 from "../images/bio-epic6.jpg";
 import bioEpic7 from "../images/bio-epic7.jpg";
 import bioFinal from "../images/bio-final.jpg";
+import Footer from "../components/Footer/Footer";
 
 export default function Home() {
   return (
@@ -348,6 +349,8 @@ export default function Home() {
 
         <Pagination id="bio" className={styles.pagination} />
       </section>
+
+      <Footer />
     </>
   );
 }

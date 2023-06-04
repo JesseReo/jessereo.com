@@ -10,6 +10,7 @@ import ToursSvg from "../images/tours.svg";
 import Text from "../components/Text";
 import Spacer from "../components/Spacer/Spacer";
 import Pagination from "../components/Pagination";
+import Footer from "../components/Footer/Footer";
 
 export default function Tours() {
   const [active, setActive] = useState("future");
@@ -53,6 +54,8 @@ export default function Tours() {
       </Main>
 
       <Pagination id="tours" className={styles.pagination} />
+
+      <Footer />
     </>
   );
 }

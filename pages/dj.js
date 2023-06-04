@@ -9,6 +9,7 @@ import heroImg from "../images/hero-dj.jpg";
 import Heading2 from "../components/Heading2";
 import DjSvg from "../images/dj.svg";
 import Pagination from "../components/Pagination";
+import Footer from "../components/Footer/Footer";
 
 export default function Dj() {
   return (
@@ -36,6 +37,8 @@ export default function Dj() {
       </Main>
 
       <Pagination id="dj" className={styles.pagination} />
+
+      <Footer />
     </>
   );
 }

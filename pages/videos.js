@@ -13,6 +13,7 @@ import imgAdrianEagle from "../images/video-poster-adrian-eagle.jpg";
 import imgCouchPotato from "../images/video-poster-couch-potato.jpg";
 import IconPlay from "../images/icon-play.svg";
 import Pagination from "../components/Pagination";
+import Footer from "../components/Footer/Footer";
 
 export default function Videos() {
   return (
@@ -49,6 +50,8 @@ export default function Videos() {
       </Main>
 
       <Pagination id="videos" className={styles.pagination} />
+
+      <Footer />
     </>
   );
 }

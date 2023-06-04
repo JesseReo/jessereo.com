@@ -12,6 +12,7 @@ import imgPerspective from "../images/bio-perspective9.jpg";
 import imgEpic from "../images/bio-perspective7.jpg";
 import Text from "../components/Text";
 import Pagination from "../components/Pagination";
+import Footer from "../components/Footer/Footer";
 
 export default function Home() {
   return (
@@ -174,6 +175,7 @@ export default function Home() {
           <Pagination id="home" className={styles.pagination} />
         </div>
       </Main>
+      <Footer />
     </>
   );
 }

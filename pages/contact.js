@@ -11,6 +11,7 @@ import ContactSvg from "../images/contact.svg";
 import ContactForm from "../components/ContactForm";
 import contact1 from "../images/contact1.jpg";
 import Pagination from "../components/Pagination";
+import Footer from "../components/Footer/Footer";
 
 export default function Contact() {
   return (
@@ -52,6 +53,8 @@ export default function Contact() {
           <Pagination id="contact" className={styles.pagination} />
         </div>
       </div>
+
+      <Footer />
     </>
   );
 }
