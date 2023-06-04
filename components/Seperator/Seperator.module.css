@@ -1,0 +1,12 @@
+.seperator {
+  width: 160px;
+  height: 5px;
+  background-color: #fff;
+  margin: 40px auto;
+}
+
+@media (min-width: 992px) {
+  .seperator {
+    margin: 80px auto;
+  }
+}
