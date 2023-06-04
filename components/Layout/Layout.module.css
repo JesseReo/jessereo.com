@@ -41,8 +41,6 @@
   min-height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
-  background-image: url("../../images/bg-page.jpg");
-  background-attachment: fixed;
 }
 
 .parallaxScroll {

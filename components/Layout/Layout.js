@@ -26,8 +26,6 @@ export default function Layout({ children }) {
     }
 
     function handleScroll() {
-      const scrollTop = pageContainerEl.scrollTop;
-      const height = pageContainerEl.offsetHeight;
       setLogoOffScreen(showLogo());
     }
 
