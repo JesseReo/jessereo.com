@@ -10,6 +10,7 @@ import Heading2 from "../components/Heading2";
 import DjSvg from "../images/dj.svg";
 import Pagination from "../components/Pagination";
 import Footer from "../components/Footer/Footer";
+import Seperator from "../components/Seperator";
 
 export default function Dj() {
   return (
@@ -21,17 +22,20 @@ export default function Dj() {
           content="DJ mixes, music and information for Jesse Reo"
         />
       </Head>
+
       <Hero title="DJ" titleImage={<DjSvg />} backgroundImage={heroImg} />
+
       <Main>
         <div className={styles.content}>
           <Stack>
             <Heading2 style={{ textAlign: "center" }}>
-              Mixes coming sOOn
+              MIXES COMING SOON
             </Heading2>
             <Text style={{ textAlign: "center" }}>
               To make a booking, email: <br />
               <EmailLink />
             </Text>
+            <Seperator />
           </Stack>
         </div>
       </Main>

@@ -24,7 +24,6 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 40px;
 }
 
 .layoutImage {
@@ -68,7 +67,6 @@
 
   .layoutContent {
     padding: 120px 80px 80px;
-    gap: 80px;
   }
 
   .layoutImage {

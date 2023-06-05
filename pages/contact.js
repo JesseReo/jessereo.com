@@ -12,6 +12,7 @@ import ContactForm from "../components/ContactForm";
 import contact1 from "../images/contact1.jpg";
 import Pagination from "../components/Pagination";
 import Footer from "../components/Footer/Footer";
+import Seperator from "../components/Seperator";
 
 export default function Contact() {
   return (
@@ -31,12 +32,16 @@ export default function Contact() {
             </Heading3>
           </div>
 
+          <Seperator />
+
           <div>
             <Text>Email</Text>
             <Text bold>
               <EmailLink />
             </Text>
           </div>
+
+          <Seperator />
 
           <ContactForm />
         </div>

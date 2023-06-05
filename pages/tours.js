@@ -4,7 +4,7 @@ import styles from "../styles/Tours.module.css";
 import eventData from "../content/event-data.json";
 import Hero from "../components/Hero";
 import Main from "../components/Main";
-import Heading3 from "../components/Heading3";
+import Heading2 from "../components/Heading2";
 import heroImg from "../images/hero-tours.jpg";
 import ToursSvg from "../images/tours.svg";
 import Text from "../components/Text";
@@ -28,7 +28,7 @@ export default function Tours() {
       <Hero title="TOurs" titleImage={<ToursSvg />} backgroundImage={heroImg} />
 
       <Main>
-        <Heading3 className={styles.tabHeadings}>
+        <Heading2 className={styles.tabHeadings}>
           <TabButton
             label="UPCOMING"
             value="future"
@@ -42,7 +42,7 @@ export default function Tours() {
             active={active}
             setActive={setActive}
           />
-        </Heading3>
+        </Heading2>
 
         <div className={styles.eventList}>
           <EventList data={active === "future" ? futureEvents : pastEvents} />

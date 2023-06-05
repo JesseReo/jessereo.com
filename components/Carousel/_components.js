@@ -25,7 +25,7 @@ export const Item = styled.div`
   flex: 0 0 100%;
   scroll-snap-align: start;
   scroll-snap-stop: always;
-  aspect-ratio: ${(props) => props.aspectRatio ?? "unset"};
+  aspect-ratio: ${(props) => props.$aspectRatio ?? "unset"};
 `;
 
 const PrevNext = styled.div.attrs(() => {})`

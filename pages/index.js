@@ -3,13 +3,15 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import HomeHero from "../components/HomeHero";
+import imgProfile from "../images/profile.png";
+import Seperator from "../components/Seperator/Seperator";
 import Main from "../components/Main";
 import Heading2 from "../components/Heading2";
 import Heading3 from "../components/Heading3";
 import imgTash from "../images/bio-tash5.jpg";
 import imgCuba from "../images/bio-cuba1.jpg";
 import imgPerspective from "../images/bio-perspective9.jpg";
-import imgEpic from "../images/bio-perspective7.jpg";
+import imgEpic from "../images/bio-epic9.jpg";
 import Text from "../components/Text";
 import Pagination from "../components/Pagination";
 import Footer from "../components/Footer/Footer";
@@ -28,10 +30,26 @@ export default function Home() {
 
       <HomeHero />
 
-      <Main fullWidth style={{ color: "#fff" }}>
-        <div style={{ textAlign: "center" }}>
+      <Main fullWidth>
+        <div className={styles.introText}>
           <Heading2>JESSE REO</Heading2>
-          <Heading3> Touring and session musician</Heading3>
+          <Heading3>Touring and session drummer</Heading3>
+          <div className={styles.imgProfile}>
+            <Image src={imgProfile} alt="profile" />
+          </div>
+          <p className={styles.introTextBody}>
+            With a career built on hard work, passion, and natural-born talent,
+            it is no surprise that Jesse has performed sold-out shows around the
+            world, playing at some of the most respected venues and{" "}
+            <strong>
+              signing with major labels Epic Records & Perspective Records.
+            </strong>{" "}
+            Jesse is currently performing at arena show level, with in-demand
+            Australian acts <strong>Tash Sultana</strong> and{" "}
+            <strong>Adrian Eagle</strong>, recently playing on MTV Unplugged and
+            Fender Sessions.
+          </p>
+          <Seperator />
         </div>
 
         <Spacer />
@@ -72,38 +90,6 @@ export default function Home() {
             <SectionItem className={styles.layout2__line}>
               <SectionImage className={styles.layout2__image}>
                 <Image
-                  src={imgCuba}
-                  alt="Cuba"
-                  layout="fill"
-                  objectFit="cover"
-                />
-              </SectionImage>
-            </SectionItem>
-            <SectionItem>
-              <SectionText className={styles.layout2__text}>
-                <TextDate>2018</TextDate>
-                <TextHeading>Lessons with Redy Cobas</TextHeading>
-                <TextBody>
-                  Jesse took one-on-one lessons with Cuban multi instrumentalist
-                  Redy Cobas, learning Bembe / Merengue / Rumba / Son / Songo
-                  rhythms while jamming together in a hot, sweaty room in
-                  Havana.
-                  <br />
-                  <br />
-                  <Link href="/bio#cuba">
-                    <a>Read more</a>
-                  </Link>
-                </TextBody>
-              </SectionText>
-            </SectionItem>
-          </Section>
-
-          <Spacer />
-
-          <Section className={styles.layout1}>
-            <SectionItem className={styles.layout1__line}>
-              <SectionImage className={styles.layout1__image}>
-                <Image
                   src={imgPerspective}
                   alt="Perspective"
                   layout="fill"
@@ -112,10 +98,10 @@ export default function Home() {
               </SectionImage>
             </SectionItem>
             <SectionItem>
-              <SectionText className={styles.layout1__text}>
+              <SectionText className={styles.layout2__text}>
                 <TextDate>2016 - 2018</TextDate>
                 <TextHeading>
-                  Perspective Records / Jakubi U.S. Tour
+                  Perspective Records / <br /> Jakubi U.S. Tour
                 </TextHeading>
                 <TextBody>
                   In 2016, Jakubi Signs major recored label with Perspective
@@ -135,9 +121,9 @@ export default function Home() {
 
           <Spacer />
 
-          <Section className={styles.layout2}>
-            <SectionItem className={styles.layout2__line}>
-              <SectionImage className={styles.layout2__image}>
+          <Section className={styles.layout1}>
+            <SectionItem className={styles.layout1__line}>
+              <SectionImage className={styles.layout1__image}>
                 <Image
                   src={imgEpic}
                   alt="Epic"
@@ -147,7 +133,7 @@ export default function Home() {
               </SectionImage>
             </SectionItem>
             <SectionItem>
-              <SectionText className={styles.layout2__text}>
+              <SectionText className={styles.layout1__text}>
                 <TextDate>2012 - 2016</TextDate>
                 <TextHeading>Epic Records / Jakubi U.S. Tour</TextHeading>
                 <TextBody>

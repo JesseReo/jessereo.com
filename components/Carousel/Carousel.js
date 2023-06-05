@@ -128,7 +128,7 @@ const Carousel = (props) => {
             <Item
               className={`carousel__item carousel_item_${i}`}
               key={`carousel-item-${i}`}
-              aspectRatio={props.aspectRatio}
+              $aspectRatio={props.aspectRatio}
             >
               {item}
             </Item>

@@ -13,7 +13,9 @@ import imgAdrianEagle from "../images/video-poster-adrian-eagle.jpg";
 import imgCouchPotato from "../images/video-poster-couch-potato.jpg";
 import IconPlay from "../images/icon-play.svg";
 import Pagination from "../components/Pagination";
-import Footer from "../components/Footer/Footer";
+import Footer from "../components/Footer";
+// import Spacer from "../components/Spacer";
+import Seperator from "../components/Seperator";
 
 export default function Videos() {
   return (
@@ -31,19 +33,19 @@ export default function Videos() {
           <VideoItem
             heading={"Tash Sultana - Fender Sessions"}
             description="Jesse plays drums in a live recording for Tash Sultana in Fender Sessions."
-            videoSrc="https://www.youtube.com/embed/l4GZah6WsOA?modestbranding=0&rel=0"
+            videoSrc="https://www.youtube.com/embed/l4GZah6WsOA?modestbranding=0&rel=0&autoplay=true"
             poster={imgFenderSessions}
           />
           <VideoItem
             heading="Adrian Eagle - Triple J's The Set"
             description="Jesse plays drums in a live recording for Adrian Eagles in Triple J's The Set."
-            videoSrc="https://www.youtube.com/embed/PtfrSNRlFgA?modestbranding=0&rel=0"
+            videoSrc="https://www.youtube.com/embed/PtfrSNRlFgA?modestbranding=0&rel=0&autoplay=true"
             poster={imgAdrianEagle}
           />
           <VideoItem
             heading={"Jakubi - Couch Potato"}
             description="Film clip for Jakubi single, Couch Potato"
-            videoSrc="https://www.youtube.com/embed/uX8yoT9ct6k?modestbranding=0&rel=0"
+            videoSrc="https://www.youtube.com/embed/uX8yoT9ct6k?modestbranding=0&rel=0&autoplay=true"
             poster={imgCouchPotato}
           />
         </div>
@@ -57,7 +59,7 @@ export default function Videos() {
 }
 
 const VideoItem = (props) => {
-  const [posterClicked, setPosterClicked] = useState(false);
+  const [showVideo, setShowVideo] = useState(false);
   const videoRef = useRef();
 
   return (
@@ -71,11 +73,10 @@ const VideoItem = (props) => {
         <div
           className={styles.videoPoster}
           onClick={() => {
-            setPosterClicked(true);
-            videoRef.current.src = `${props.videoSrc}&autoplay=true`;
+            setShowVideo(true);
           }}
           style={{
-            ...(posterClicked == true && { pointerEvents: "none", opacity: 0 }),
+            ...(showVideo == true && { pointerEvents: "none", opacity: 0 }),
           }}
         >
           <IconPlay className={styles.iconPlay} />
@@ -86,16 +87,18 @@ const VideoItem = (props) => {
             alt={props.heading}
           />
         </div>
-
-        <iframe
-          ref={videoRef}
-          className={styles.videoEmbed}
-          src={props.videoSrc}
-          title={props.heading}
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        />
+        {showVideo && (
+          <iframe
+            ref={videoRef}
+            className={styles.videoEmbed}
+            src={props.videoSrc}
+            title={props.heading}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
+        )}
       </div>
+      <Seperator />
     </div>
   );
 };

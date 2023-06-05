@@ -1,15 +1,17 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Bio.module.css";
-import Main from "../components/Main";
-import Hero from "../components/Hero";
+import Text from "../components/Text";
 import Heading2 from "../components/Heading2";
 import Heading3 from "../components/Heading3";
-import Text from "../components/Text";
-import heroImg from "../images/hero-bio.jpg";
-import bioIntro from "../images/bio-intro.png";
-import BioSvg from "../images/bio.svg";
 import Carousel, { CarouselImage } from "../components/Carousel";
+import Hero from "../components/Hero";
+import heroImg from "../images/hero-bio.jpg";
+import SvgFlagMauritius from "../images/flag-mauritius.svg";
+import SvgFlagLebanon from "../images/flag-lebanon.svg";
+import Seperator from "../components/Seperator/Seperator";
+import Main from "../components/Main";
+import BioSvg from "../images/bio.svg";
 import Pagination from "../components/Pagination";
 import bioTash1 from "../images/bio-tash1.jpg";
 import bioTash2 from "../images/bio-tash2.jpg";
@@ -50,26 +52,27 @@ export default function Home() {
       </Head>
       <Hero title="bIO" titleImage={<BioSvg />} backgroundImage={heroImg} />
       <Main fullWidth>
-        <Heading2 style={{ textAlign: "center" }}>JESSE REO</Heading2>
-        <Heading3 style={{ textAlign: "center" }}>
-          DRUMMER | DJ | ROOTS MUSICIAN
-        </Heading3>
-        <Text style={{ textAlign: "center" }}>Naarm/Melbourne</Text>
-        <br />
-        <div className={styles.introImage}>
-          <Image src={bioIntro} alt="" />
+        <div className={styles.intro}>
+          <Heading2 style={{ textAlign: "center" }}>JESSE REO</Heading2>
+          <Heading3 style={{ textAlign: "center" }}>
+            DRUMMER | DJ | ROOTS MUSICIAN
+          </Heading3>
+          <Text style={{ textAlign: "center" }}>Naarm/Melbourne</Text>
 
-          <br />
-          <br />
+          <div className={styles.introFlags}>
+            <SvgFlagMauritius />
+            <SvgFlagLebanon />
+          </div>
 
-          <Text style={{ textAlign: "center" }}>
+          <p className={styles.introTextBody}>
             JESSE &apos;REO&apos; REHAUT AKA (FUNK), the half Mauritian, half
             Lebanese Drummer, DJ and Roots musician from Naarm/Melbourne, has
             been dedicated to creating rhythms from the moment he received his
             first drum kit from his father at age fourteen.
-          </Text>
+          </p>
         </div>
 
+        <Seperator />
         <Spacer />
 
         <section className={styles.section1}>
