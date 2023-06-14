@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "./HomeHero.module.css";
-import poster from "../../images/video-poster.jpg";
+import poster from "../../images/video-poster2.jpg";
 import Logo from "../Logo";
 import ArrowDown from "../../images/arrow.svg";
 import MuteOn from "../../images/icon-mute-on.svg";
@@ -29,7 +29,7 @@ export default function HomeHero() {
             setMute(!mute);
           }}
         >
-          <source src="/videos/intro-edit.mp4" type="video/mp4" />
+          <source src="/videos/home-loop.mp4" type="video/mp4" />
         </video>
 
         <div className={styles.logoContainer}>
