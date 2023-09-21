@@ -1,4 +1,4 @@
-import Carousel, { CarouselItem, CarouselImage, Slide } from "./Carousel";
+import Carousel, { CarouselImage } from "./Carousel";
 
 export default Carousel;
-export { CarouselItem, CarouselImage, Slide };
+export { CarouselImage };
