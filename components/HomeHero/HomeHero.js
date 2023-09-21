@@ -50,6 +50,7 @@ export default function HomeHero() {
         </div>
 
         <button
+          aria-label="mute"
           className={styles.muteIcon}
           onClick={(e) => {
             e.preventDefault();

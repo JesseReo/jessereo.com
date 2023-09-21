@@ -58,6 +58,7 @@ export function PrevNext(props) {
     <div className={styles.prevNextOuter}>
       <Link href={dataMap[props.label].href}>
         <a
+          aria-label={props.label}
           className={`${styles.prevNextInner} ${
             props.direction == "left" ? styles.left : styles.right
           }`}

@@ -11,7 +11,7 @@ export default function Footer() {
     <div className={styles.footer}>
       <div className={styles.footerLogo}>
         <Link href="/" passHref>
-          <a>
+          <a aria-label="home">
             <LogoImg />
           </a>
         </Link>

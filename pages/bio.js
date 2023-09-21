@@ -119,15 +119,51 @@ export default function Home() {
               prevNextButtons
               pagination
               data={[
-                <CarouselImage key="perspective1" src={bioPerspective1.src} />,
-                <CarouselImage key="perspective2" src={bioPerspective2.src} />,
-                <CarouselImage key="perspective3" src={bioPerspective3.src} />,
-                <CarouselImage key="perspective4" src={bioPerspective4.src} />,
-                <CarouselImage key="perspective5" src={bioPerspective5.src} />,
-                <CarouselImage key="perspective6" src={bioPerspective6.src} />,
-                <CarouselImage key="perspective7" src={bioPerspective7.src} />,
-                <CarouselImage key="perspective8" src={bioPerspective8.src} />,
-                <CarouselImage key="perspective9" src={bioPerspective9.src} />,
+                <CarouselImage
+                  key="perspective1"
+                  src={bioPerspective1.src}
+                  alt="Perspective records"
+                />,
+                <CarouselImage
+                  key="perspective2"
+                  src={bioPerspective2.src}
+                  alt="Perspective records"
+                />,
+                <CarouselImage
+                  key="perspective3"
+                  src={bioPerspective3.src}
+                  alt="Perspective records"
+                />,
+                <CarouselImage
+                  key="perspective4"
+                  src={bioPerspective4.src}
+                  alt="Perspective records"
+                />,
+                <CarouselImage
+                  key="perspective5"
+                  src={bioPerspective5.src}
+                  alt="Perspective records"
+                />,
+                <CarouselImage
+                  key="perspective6"
+                  src={bioPerspective6.src}
+                  alt="Perspective records"
+                />,
+                <CarouselImage
+                  key="perspective7"
+                  src={bioPerspective7.src}
+                  alt="Perspective records"
+                />,
+                <CarouselImage
+                  key="perspective8"
+                  src={bioPerspective8.src}
+                  alt="Perspective records"
+                />,
+                <CarouselImage
+                  key="perspective9"
+                  src={bioPerspective9.src}
+                  alt="Perspective records"
+                />,
               ]}
             />
           </div>
@@ -148,13 +184,41 @@ export default function Home() {
             pagination
             aspectRatio="16/9"
             data={[
-              <CarouselImage key="epic1" src={bioEpic1.src} />,
-              <CarouselImage key="dpic2" src={bioEpic2.src} />,
-              <CarouselImage key="epic3" src={bioEpic3.src} />,
-              <CarouselImage key="epic4" src={bioEpic4.src} />,
-              <CarouselImage key="epic5" src={bioEpic5.src} />,
-              <CarouselImage key="epic6" src={bioEpic6.src} />,
-              <CarouselImage key="epic7" src={bioEpic7.src} />,
+              <CarouselImage
+                key="epic1"
+                src={bioEpic1.src}
+                alt="Epic records"
+              />,
+              <CarouselImage
+                key="dpic2"
+                src={bioEpic2.src}
+                alt="Epic records"
+              />,
+              <CarouselImage
+                key="epic3"
+                src={bioEpic3.src}
+                alt="Epic records"
+              />,
+              <CarouselImage
+                key="epic4"
+                src={bioEpic4.src}
+                alt="Epic records"
+              />,
+              <CarouselImage
+                key="epic5"
+                src={bioEpic5.src}
+                alt="Epic records"
+              />,
+              <CarouselImage
+                key="epic6"
+                src={bioEpic6.src}
+                alt="Epic records"
+              />,
+              <CarouselImage
+                key="epic7"
+                src={bioEpic7.src}
+                alt="Epic records"
+              />,
             ]}
           />
         </section>
@@ -228,10 +292,14 @@ export default function Home() {
               prevNextButtons
               pagination
               data={[
-                <CarouselImage key="bioCuba1" src={bioCuba1.src} />,
-                <CarouselImage key="bioCuba2" src={bioCuba2.src} />,
-                <CarouselImage key="bioCuba3" src={bioCuba3.src} />,
-                <CarouselImage key="bioDrumtek" src={bioDrumTek.src} />,
+                <CarouselImage key="bioCuba1" src={bioCuba1.src} alt="cuba" />,
+                <CarouselImage key="bioCuba2" src={bioCuba2.src} alt="cuba" />,
+                <CarouselImage key="bioCuba3" src={bioCuba3.src} alt="cuba" />,
+                <CarouselImage
+                  key="bioDrumtek"
+                  src={bioDrumTek.src}
+                  alt="cuba"
+                />,
               ]}
             />
           </div>
@@ -279,12 +347,36 @@ export default function Home() {
             pagination
             aspectRatio="16/9"
             data={[
-              <CarouselImage key="bioTash1" src={bioTash1.src} />,
-              <CarouselImage key="bioTash2" src={bioTash2.src} />,
-              <CarouselImage key="bioTash3" src={bioTash3.src} />,
-              <CarouselImage key="bioTash4" src={bioTash4.src} />,
-              <CarouselImage key="bioTash5" src={bioTash5.src} />,
-              <CarouselImage key="bioTash6" src={bioTash6.src} />,
+              <CarouselImage
+                key="bioTash1"
+                src={bioTash1.src}
+                alt="tash sultana tour"
+              />,
+              <CarouselImage
+                key="bioTash2"
+                src={bioTash2.src}
+                alt="tash sultana tour"
+              />,
+              <CarouselImage
+                key="bioTash3"
+                src={bioTash3.src}
+                alt="tash sultana tour"
+              />,
+              <CarouselImage
+                key="bioTash4"
+                src={bioTash4.src}
+                alt="tash sultana tour"
+              />,
+              <CarouselImage
+                key="bioTash5"
+                src={bioTash5.src}
+                alt="tash sultana tour"
+              />,
+              <CarouselImage
+                key="bioTash6"
+                src={bioTash6.src}
+                alt="tash sultana tour"
+              />,
             ]}
           />
         </section>
@@ -347,7 +439,7 @@ export default function Home() {
           layout="fill"
           objectFit="cover"
           objectPosition="top"
-          alt=""
+          alt="Jesse laughing"
         />
 
         <Pagination id="bio" className={styles.pagination} />
