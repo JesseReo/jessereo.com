@@ -52,7 +52,7 @@ export default function Contact() {
             layout="fill"
             objectFit="cover"
             objectPosition="top"
-            alt=""
+            alt="Jesse sitting on kick drum"
           />
 
           <Pagination id="contact" className={styles.pagination} />
