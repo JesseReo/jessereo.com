@@ -152,6 +152,7 @@
   .section4item2 :global(.carousel__items),
   .section4item2 :global(.carousel__item) {
     height: 100%;
+    max-height: 50vh;
   }
 
   .section5 {

@@ -54,9 +54,9 @@ export default function Home() {
       <Main fullWidth>
         <div className={styles.intro}>
           <Heading2 style={{ textAlign: "center" }}>JESSE REO</Heading2>
-          <Heading3 style={{ textAlign: "center" }}>
+          {/* <Heading3 style={{ textAlign: "center" }}>
             DRUMMER | DJ | ROOTS MUSICIAN
-          </Heading3>
+          </Heading3> */}
           <Text style={{ textAlign: "center" }}>Naarm/Melbourne</Text>
 
           <div className={styles.introFlags}>
@@ -65,10 +65,14 @@ export default function Home() {
           </div>
 
           <p className={styles.introTextBody}>
-            JESSE &apos;REO&apos; REHAUT AKA (FUNK), the half Mauritian, half
+            {/* JESSE &apos;REO&apos; REHAUT AKA (FUNK), the half Mauritian, half
             Lebanese Drummer, DJ and Roots musician from Naarm/Melbourne, has
             been dedicated to creating rhythms from the moment he received his
-            first drum kit from his father at age fourteen.
+            first drum kit from his father at age fourteen. */}
+            Jesse Rehaut, is an Australian drummer, DJ, and audiophile, known
+            professionally as JESSE R.E.O. His rhythmic journey began the moment
+            he received his first drum kit as a teenager. He is now performing
+            at arena show level.
           </p>
         </div>
 
@@ -79,7 +83,7 @@ export default function Home() {
           <a id="epic" />
           <div className={styles.section1item1}>
             <Text>
-              Recognised as one-fifth of the Australian Funk band{" "}
+              {/* Recognised as one-fifth of the Australian Funk band{" "}
               <strong>
                 Jakubi—who was notably scouted in 2015 by American record
                 executive L.A. Reid
@@ -108,7 +112,23 @@ export default function Home() {
               </strong>
               . Jesse is currently performing at arena show level, with
               in-demand Australian acts Tash Sultana and Adrian Eagle, recently
-              playing on MTV Unplugged and Fender Sessions.
+              playing on MTV Unplugged and Fender Sessions. */}
+              Jesse is recognised as one-fifth of the Australian Funk band
+              Jakubi who was notably scouted in 2015 by American record
+              executive L.A. Reid. He has collaborated closely with idols such
+              as (could get rid of this “such as” or the second one in this
+              paragraph?) Jimmy Jam & Terry Lewis, recording artist Macy Gray,
+              and producer Scott Storch. He has also supported legendary artists
+              such as Coldplay, Jack Johnson, Fat Freddy&apos;s Drop, The
+              Suffers, and Ska music pioneers - Fishbone, Sublime,
+              <br />
+              <br />
+              With a career built on hard work, passion, and natural-born
+              talent, he has come up through the live space, with regular
+              appearances at major music festivals, theaters, and arenas all
+              over the world, with standout performances at the Seoul Jazz
+              Festival and Montreal Jazz Festival which drew a crowd of over
+              40,000 people.
             </Text>
 
             <Spacer />
@@ -226,7 +246,7 @@ export default function Home() {
         <Spacer />
 
         <section className={styles.section3}>
-          <Text>
+          {/* <Text>
             Rehaut&apos;s parents knew from a young age that music would be his
             passion for life. Growing up in a family of singers and musicians,
             his unwavering love for drums was observed early on. His father was
@@ -243,6 +263,34 @@ export default function Home() {
             This period was a turning point for Jesse, being introduced to the
             genres of Latin, Funk, Reggae, Soul, Roots & Jazz and taking his
             musical talents to the next level.
+          </Text> */}
+
+          <Text>
+            <Heading3>Family</Heading3>
+            <br />
+            <br />
+            Growing up in a family of singers and musicians, his profound
+            passion for rhythm became evident early on as he absorbed the beats
+            emanating from his father, a creole Mauritian and key musical
+            influence. As a dedicated drummer himself, Jesse would often observe
+            his father showcasing his skills over the years. He&apos;d
+            effortlessly transform any space into his drum set, crafting
+            impromptu solos that would captivate him and his brother. These
+            moments of spontaneous performances were his most accessible and
+            frequent encounters with live music during childhood.
+            <br />
+            <br />
+            This musical upbringing instilled in Jesse a deep appreciation for
+            diverse cultural influences, which continued to shape his journey
+            into adulthood. His grandmother, Nadia Shahine, was a prominent
+            figure in the Australian Arabic music scene during the 70s and 80s.
+            <br />
+            <br />
+            Born in Melbourne&apos;s deep southeast, Jesse&apos;s mother recalls
+            her son working seven days a week just to afford cymbals. He
+            received his first formal drum lesson in his late teens with The Cat
+            Empire&apos;s master drummer Will Hull-Brown. This pivotal period
+            introduced Jesse to Jazz, Latin, Afro-Cuban.
           </Text>
         </section>
 
@@ -258,7 +306,7 @@ export default function Home() {
         <section className={styles.section4}>
           <a id="perspective" />
           <div className={styles.section4item1}>
-            <Text>
+            {/* <Text>
               Jakubi—A collective of Melbourne musicians—was formed in 2012.
               During this time, Jesse worked in cafes during the day and ran
               events and DJed across Melbourne at night. He held residencies in
@@ -282,6 +330,64 @@ export default function Home() {
               one-on-one, jamming together into the early hours of the morning,
               writing songs and eating every meal together. This collaboration
               was a significant experience in Jesse&apos;s music career.
+            </Text> */}
+
+            <Text>
+              <Heading3>Jakubi</Heading3>
+              <br />
+              <br />
+              Jakubi—A collective of Naarm/Melbourne musicians—was formed in
+              2012. The band quickly built a loyal following, releasing their
+              first single, &apos;Can&apos;t Afford It All&apos; in 2013 and
+              soon after self-funding their first US tour. The band were selling
+              out 300-500 capacity rooms from New York City to Los Angeles and
+              everywhere in between, and within no time, they had caught the
+              attention of music mogul L.A Reid, signing their first major label
+              deal with Epic Records.
+              <br />
+              <br />
+              In the years that followed, the band worked primarily out of LA,
+              in studios such as Record Plant, Jim Henson, Paramount, and
+              Windmark. They became full-time musicians, writing and recording,
+              and working with different producers, all while maintaining a full
+              touring schedule. A standout moment was their six-month
+              collaboration with legends Jimmy Jam & Terry Lewis, they absorbed
+              invaluable knowledge and stories while working closely in the
+              studio,and sharing meals together. This collaboration marked a
+              significant milestone in Jesse&apos;s music career.
+              <br />
+              <br />
+              During this time, Jesse was a resident DJ at clubs across
+              Melbourne, including Southside&apos;s 161 and Northside&apos;s
+              Glamorama, and was deeply involved in the city&apos;s live music
+              scene. Additionally, he was part of the New York Cats, a
+              collective he formed with his two cousins in 2012. They aimed to
+              strengthen and sustain the arts movement and the diverse community
+              of like-minded creatives within the city. They achieved this goal
+              through weekly events held every Sunday for three years, supported
+              by the local community. The collective, consisting of artists,
+              DJs, musicians, film-makers, and dancers, focused on welcoming all
+              cultures and celebrating differences within the crew,
+              strengthening the arts community in the city.
+              <br />
+              <br />
+              In 2018, he received an advance from the label when signing to Jam
+              & Lewis&apos;s revived Perspective Records through Capitol
+              Records, allowing him to fund private lessons with Robi Parolin
+              while studying music at Drumtek, he performed his recital in front
+              of highly respected drum set educator Frank Corniola. He memorably
+              recalls Frank reciting to him a quote from Miles Davis, &apos;It
+              takes a long time to sound like yourself&apos;, igniting his own
+              pursuit to further craft his sound.
+              <br />
+              <br />
+              That year, Jesse traveled to Cuba to study and take one-on-one
+              lessons with Cuban multi-instrumentalist Redy Cobas in Havana.
+              Cobas would introduce a rhythm, and they would spend the entire
+              day jamming together, repeating these sessions throughout
+              Jesse&apos;s month-long stay. Despite the inability to communicate
+              verbally, they formed a deep connection through the language of
+              Afro-Cuban and Latin rhythms.
             </Text>
 
             <Spacer />
@@ -309,7 +415,7 @@ export default function Home() {
 
         <section className={styles.section5}>
           <a id="cuba" />
-          <Text>
+          {/* <Text>
             In 2018 Jesse received an advance from the label, allowing him to
             seek <strong>private lessons with Robi Parolin </strong> while
             studying music at Drumtek, Northcote. Only learning to read music
@@ -335,6 +441,30 @@ export default function Home() {
             learning the Afro Cuban and Latin rhythms, having not been able to
             communicate verbally, they connected through the language of these
             grooves.
+          </Text> */}
+
+          <Text>
+            <Heading3>Career Updates</Heading3>
+            <br />
+            <br />
+            In 2019, Jakubi performed their final show supporting Tash Sultana
+            at The Forum in Melbourne before disbanding.
+            <br />
+            <br />
+            Jesse has extensively toured with Tash Sultana. His appearences at
+            events like the Montreal Jazz Festival, Bonnaroo, and supporting
+            Coldplay underscores his increasing prominence in the global music
+            scene. During these tours, Jesse has gained valuable insights into
+            live and studio sound production, acquiring knowledge on the
+            operations of large-scale setups at music festivals, arenas, and
+            stadiums.
+            <br />
+            <br />
+            In addition to his performance career, Jesse has focused on musical
+            education, taking drum lessons with mentor Benny Greb in Germany. He
+            has also built a home studio for continued studies and recording,
+            drawing from his experiences working with live music engineers
+            worldwide.
           </Text>
         </section>
 
@@ -384,7 +514,7 @@ export default function Home() {
         <Spacer />
 
         <section className={styles.section7}>
-          <Text>
+          {/* <Text>
             <strong>
               Jesse continues to bring his soulful energy to venues worldwide
               with artist Tash Sultana
@@ -401,6 +531,41 @@ export default function Home() {
             while expanding his knowledge of the traditional music styles of
             Mauritius, Sega and Seggae—where he plans to spend a month or two
             later this year.
+          </Text> */}
+
+          <Text>
+            <Heading3>Future Endeavours -</Heading3>
+            <br />
+            <br />
+            Jesse continues to bring his soulful energy to venues worldwide with
+            artist Tash Sultana, recently concluding a two-year world tour
+            spanning the US, Canada, Europe, Japan, Saudi Arabia, New Zealand,
+            and Australia.
+            <br />
+            <br />
+            During his time off the road, he intends to continue crafting his
+            own sound in his studio, engineering, and studying to push his craft
+            further. He plans to dive deeper into the audiophile journey,
+            exploring the realm of Hi-Fi sound, record collecting, and
+            intentional listening sessions. With plans to design and build a
+            sound system in the near future, Jesse is excited about the prospect
+            of gaining a deeper understanding of sound propagation through the
+            process of speaker design.
+            <br />
+            <br />
+            He is currently delving deeper into his roots, cultivating a richer
+            understanding of, the traditional music styles from Mauritius, Sega
+            and Seggae. Having recently spent a month immersed in these cultural
+            influences, he is also exploring rhythms from North Africa and the
+            Middle East. Through these musical traditions, Jesse feels a
+            profound connection to the places, people, and the ancestors,
+            contributing to the perpetuation of their rich history.
+            <br />
+            <br />
+            In addition to his cultural exploration, Jesse is filling the
+            schedule with studio work, expanding his session work, and is keen
+            on collaborating with drum companies to further his impact in the
+            music industry.
           </Text>
         </section>
 
@@ -414,7 +579,7 @@ export default function Home() {
         <Spacer />
 
         <section className={styles.section8}>
-          <Text>
+          {/* <Text>
             Even with such significant accomplishments, Jesse has always
             remained humble about his journey, stating that he is just &apos;a
             very passionate and polite half Mauritian, half Lebanese kid from
@@ -427,6 +592,26 @@ export default function Home() {
             respected by all who encounter him. Soul and Funk pump through his
             veins while the laid back pure enjoyment of making music flows
             through his beats and musical talents.
+          </Text> */}
+
+          <Text>
+            Even with such remarkable achievements, Jesse remains humble about
+            his journey, describing himself as &apos;just a very passionate and
+            polite half Mauritian, half Lebanese kid from Doveton, with endless
+            amounts of drive and determination.&apos; He believes that&apos;s
+            all it takes to make dreams come true whilst declaring that
+            &apos;THE WORLD NEEDS MORE FUNK,&apos; celebrating the black music
+            style that promotes unity and oneness. Jesse expresses deep
+            gratitude for the music, considering it not just a genre but a
+            lifestyle. He is a true advocate, believing in its power to bring
+            people together and create solidarity through locked rhythms, where
+            all members contribute to a solid groove.
+            <br />
+            <br />
+            Jesse&apos;s enthusiasm and loving nature are highly contagious and
+            respected by all who encounter him. He radiates with the essence of
+            xxxxxxxxx while embodying a laid-back pure enjoyment in making music
+            that effortlessly channels his rhythmic spirit.
           </Text>
         </section>
 
