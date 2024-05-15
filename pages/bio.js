@@ -59,10 +59,10 @@ export default function Home() {
           </Heading3> */}
           <Text style={{ textAlign: "center" }}>Naarm/Melbourne</Text>
 
-          <div className={styles.introFlags}>
+          {/* <div className={styles.introFlags}>
             <SvgFlagMauritius />
             <SvgFlagLebanon />
-          </div>
+          </div> */}
 
           <p className={styles.introTextBody}>
             {/* JESSE &apos;REO&apos; REHAUT AKA (FUNK), the half Mauritian, half
