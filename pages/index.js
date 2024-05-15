@@ -14,6 +14,9 @@ import imgEpic from "../images/bio-epic9.webp";
 import Text from "../components/Text";
 import Pagination from "../components/Pagination";
 import Footer from "../components/Footer/Footer";
+import Hero from "../components/Hero";
+import VideoSvg from "../images/videos.svg";
+import img from "../images/hero-videos.jpg";
 
 export default function Home() {
   return (
@@ -27,7 +30,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
-      <HomeHero />
+      {/* <HomeHero /> */}
+
+      <Hero title="VideOS" titleImage={<VideoSvg />} backgroundImage={img} />
 
       <Main fullWidth>
         <div className={styles.introText}>

@@ -16,6 +16,7 @@ import Pagination from "../components/Pagination";
 import Footer from "../components/Footer";
 // import Spacer from "../components/Spacer";
 import Seperator from "../components/Seperator";
+import HomeHero from "../components/HomeHero";
 
 export default function Videos() {
   return (
@@ -26,7 +27,7 @@ export default function Videos() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
-      <Hero title="VideOS" titleImage={<VideoSvg />} backgroundImage={img} />
+      <HomeHero />
 
       <Main>
         <div className={styles.items}>
