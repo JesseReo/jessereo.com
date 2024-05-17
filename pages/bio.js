@@ -7,8 +7,6 @@ import Heading3 from "../components/Heading3";
 import Carousel, { CarouselImage } from "../components/Carousel";
 import Hero from "../components/Hero";
 import heroImg from "../images/hero-bio.jpg";
-import SvgFlagMauritius from "../images/flag-mauritius.svg";
-import SvgFlagLebanon from "../images/flag-lebanon.svg";
 import Seperator from "../components/Seperator/Seperator";
 import Main from "../components/Main";
 import BioSvg from "../images/bio.svg";
@@ -54,21 +52,9 @@ export default function Home() {
       <Main fullWidth>
         <div className={styles.intro}>
           <Heading2 style={{ textAlign: "center" }}>JESSE REO</Heading2>
-          {/* <Heading3 style={{ textAlign: "center" }}>
-            DRUMMER | DJ | ROOTS MUSICIAN
-          </Heading3> */}
           <Text style={{ textAlign: "center" }}>Naarm/Melbourne</Text>
 
-          {/* <div className={styles.introFlags}>
-            <SvgFlagMauritius />
-            <SvgFlagLebanon />
-          </div> */}
-
           <p className={styles.introTextBody}>
-            {/* JESSE &apos;REO&apos; REHAUT AKA (FUNK), the half Mauritian, half
-            Lebanese Drummer, DJ and Roots musician from Naarm/Melbourne, has
-            been dedicated to creating rhythms from the moment he received his
-            first drum kit from his father at age fourteen. */}
             Jesse Rehaut, is an Australian drummer, DJ, and audiophile, known
             professionally as JESSE R.E.O. His rhythmic journey began the moment
             he received his first drum kit as a teenager. He is now performing
@@ -83,36 +69,6 @@ export default function Home() {
           <a id="epic" />
           <div className={styles.section1item1}>
             <Text>
-              {/* Recognised as one-fifth of the Australian Funk band{" "}
-              <strong>
-                Jakubi—who was notably scouted in 2015 by American record
-                executive L.A. Reid
-              </strong>{" "}
-              (Epic Records CEO/TLC/Outkast/Usher)—Jesse has already made a
-              distinct mark on the global music scene.
-              <br />
-              <br />
-              He has worked closely with idols
-              <strong>Jimmy Jam & Terry Lewis</strong> (Michael Jackson/Janet
-              Jackson/Prince/Usher/The Time), recording artist Macy Gray and
-              Scott Storch (The Roots/Dr. Dre/ 50 Cent/Beyonce/Nas) and
-              supported legendary artists such as{" "}
-              <strong>
-                Sublime, Ska and Funk pioneers, Fishbone and eight-piece Gulf
-                Coast Soul band, The Suffers.
-              </strong>
-              <br />
-              <br />
-              With a career built on hard work, passion, and natural-born
-              talent, it is no surprise that Jesse has performed sold-out shows
-              around the world, playing at some of the most respected venues
-              (The Rock &amp;n&amp; Roll Hall of Fame/Super Bowl LII) and{" "}
-              <strong>
-                signing with major labels (Epic Records/Perspective Records)
-              </strong>
-              . Jesse is currently performing at arena show level, with
-              in-demand Australian acts Tash Sultana and Adrian Eagle, recently
-              playing on MTV Unplugged and Fender Sessions. */}
               Jesse is recognised as one-fifth of the Australian Funk band
               Jakubi who was notably scouted in 2015 by American record
               executive L.A. Reid. He has collaborated closely with idols such
@@ -157,31 +113,6 @@ export default function Home() {
                 <CarouselImage
                   key="perspective4"
                   src={bioPerspective4.src}
-                  alt="Perspective records"
-                />,
-                <CarouselImage
-                  key="perspective5"
-                  src={bioPerspective5.src}
-                  alt="Perspective records"
-                />,
-                <CarouselImage
-                  key="perspective6"
-                  src={bioPerspective6.src}
-                  alt="Perspective records"
-                />,
-                <CarouselImage
-                  key="perspective7"
-                  src={bioPerspective7.src}
-                  alt="Perspective records"
-                />,
-                <CarouselImage
-                  key="perspective8"
-                  src={bioPerspective8.src}
-                  alt="Perspective records"
-                />,
-                <CarouselImage
-                  key="perspective9"
-                  src={bioPerspective9.src}
                   alt="Perspective records"
                 />,
               ]}
@@ -246,25 +177,6 @@ export default function Home() {
         <Spacer />
 
         <section className={styles.section3}>
-          {/* <Text>
-            Rehaut&apos;s parents knew from a young age that music would be his
-            passion for life. Growing up in a family of singers and musicians,
-            his unwavering love for drums was observed early on. His father was
-            also a drummer, his mother a singer and grandmother a performer in
-            an eight-piece band consisting of Lebanese and Palestinian members.
-            <br />
-            <br />
-            Jesse&apos;s mother recalls her son working seven days a week just
-            to afford to pay for cymbals. He received his first drum lesson at
-            the age of seventeen, when he began private sessions with The Cat
-            Empire&apos;s Will Hull-Brown.
-            <br />
-            <br />
-            This period was a turning point for Jesse, being introduced to the
-            genres of Latin, Funk, Reggae, Soul, Roots & Jazz and taking his
-            musical talents to the next level.
-          </Text> */}
-
           <Text>
             <Heading3>Family</Heading3>
             <br />
@@ -306,32 +218,6 @@ export default function Home() {
         <section className={styles.section4}>
           <a id="perspective" />
           <div className={styles.section4item1}>
-            {/* <Text>
-              Jakubi—A collective of Melbourne musicians—was formed in 2012.
-              During this time, Jesse worked in cafes during the day and ran
-              events and DJed across Melbourne at night. He held residencies in
-              clubs and was heavily involved in Melbourne&apos;s live music
-              scene.
-              <br />
-              <br />
-              The band quickly built a loyal following, releasing their first
-              single, &apos;Can&apos;t Afford It&apos;, in 2013 and soon after
-              self funding their first US tour. Within no time, they were{" "}
-              <strong>
-                signing major record label deals, selling out 300-500 cap rooms
-                from New York City to Los Angeles
-              </strong>{" "}
-              and everywhere in-between, while sharing the stage with their
-              idols and other recognised music acts.
-              <br />
-              <br />
-              Notably, the band spent six months working intensely with Jimmy
-              Jam & Terry Lewis, spending 5-6 days a week in the studio, working
-              one-on-one, jamming together into the early hours of the morning,
-              writing songs and eating every meal together. This collaboration
-              was a significant experience in Jesse&apos;s music career.
-            </Text> */}
-
             <Text>
               <Heading3>Jakubi</Heading3>
               <br />
@@ -369,25 +255,6 @@ export default function Home() {
               DJs, musicians, film-makers, and dancers, focused on welcoming all
               cultures and celebrating differences within the crew,
               strengthening the arts community in the city.
-              <br />
-              <br />
-              In 2018, he received an advance from the label when signing to Jam
-              & Lewis&apos;s revived Perspective Records through Capitol
-              Records, allowing him to fund private lessons with Robi Parolin
-              while studying music at Drumtek, he performed his recital in front
-              of highly respected drum set educator Frank Corniola. He memorably
-              recalls Frank reciting to him a quote from Miles Davis, &apos;It
-              takes a long time to sound like yourself&apos;, igniting his own
-              pursuit to further craft his sound.
-              <br />
-              <br />
-              That year, Jesse traveled to Cuba to study and take one-on-one
-              lessons with Cuban multi-instrumentalist Redy Cobas in Havana.
-              Cobas would introduce a rhythm, and they would spend the entire
-              day jamming together, repeating these sessions throughout
-              Jesse&apos;s month-long stay. Despite the inability to communicate
-              verbally, they formed a deep connection through the language of
-              Afro-Cuban and Latin rhythms.
             </Text>
 
             <Spacer />
@@ -411,37 +278,73 @@ export default function Home() {
           </div>
         </section>
 
+        <section className={styles.section2}>
+          <Carousel
+            cycle
+            prevNextButtons
+            pagination
+            aspectRatio="16/9"
+            data={[
+              <CarouselImage
+                key="perspective5"
+                src={bioPerspective5.src}
+                alt="Perspective records"
+              />,
+              <CarouselImage
+                key="perspective6"
+                src={bioPerspective6.src}
+                alt="Perspective records"
+              />,
+              <CarouselImage
+                key="perspective7"
+                src={bioPerspective7.src}
+                alt="Perspective records"
+              />,
+              <CarouselImage
+                key="perspective8"
+                src={bioPerspective8.src}
+                alt="Perspective records"
+              />,
+              <CarouselImage
+                key="perspective9"
+                src={bioPerspective9.src}
+                alt="Perspective records"
+              />,
+            ]}
+          />
+        </section>
+
+        <Spacer />
+
+        <section className={styles.section3}>
+          <Text>
+            <Heading3>Family</Heading3>
+            <br />
+            <br />
+            In 2018, he received an advance from the label when signing to Jam &
+            Lewis&apos;s revived Perspective Records through Capitol Records,
+            allowing him to fund private lessons with Robi Parolin while
+            studying music at Drumtek, he performed his recital in front of
+            highly respected drum set educator Frank Corniola. He memorably
+            recalls Frank reciting to him a quote from Miles Davis, &apos;It
+            takes a long time to sound like yourself&apos;, igniting his own
+            pursuit to further craft his sound.
+            <br />
+            <br />
+            That year, Jesse traveled to Cuba to study and take one-on-one
+            lessons with Cuban multi-instrumentalist Redy Cobas in Havana. Cobas
+            would introduce a rhythm, and they would spend the entire day
+            jamming together, repeating these sessions throughout Jesse&apos;s
+            month-long stay. Despite the inability to communicate verbally, they
+            formed a deep connection through the language of Afro-Cuban and
+            Latin rhythms.
+          </Text>
+        </section>
+
         <Spacer />
 
         <section className={styles.section5}>
           <a id="cuba" />
-          {/* <Text>
-            In 2018 Jesse received an advance from the label, allowing him to
-            seek <strong>private lessons with Robi Parolin </strong> while
-            studying music at Drumtek, Northcote. Only learning to read music
-            for the first time,{" "}
-            <strong>
-              he performed his recital in front of highly respected drum set
-              educator Frank Corniola.
-            </strong>{" "}
-            He memorably recalls Frank telling him, &apos;It takes a long time
-            to sound like yourself,&apos; igniting his own pursuit to further
-            craft his sound.
-            <br />
-            <br />
-            The same year,{" "}
-            <strong>
-              he took one-on-one lessons with Cuban multi instrumentalist Redy
-              Cobas
-            </strong>
-            , learning Bembe / Merengue / Rumba / Son / Songo rhythms while
-            jamming together in a hot, sweaty room in Havana. Cobas would set up
-            one rhythm, and they would jam the whole day, repeating these
-            sessions every day throughout Jesse&apos;s month-long stay. While
-            learning the Afro Cuban and Latin rhythms, having not been able to
-            communicate verbally, they connected through the language of these
-            grooves.
-          </Text> */}
 
           <Text>
             <Heading3>Career Updates</Heading3>
@@ -514,25 +417,6 @@ export default function Home() {
         <Spacer />
 
         <section className={styles.section7}>
-          {/* <Text>
-            <strong>
-              Jesse continues to bring his soulful energy to venues worldwide
-              with artist Tash Sultana
-            </strong>{" "}
-            — Recently returning from her tour which is currently playing across
-            <strong>
-              13 countries, with 49 upcoming shows, across the US, Canada,
-              Europe, New Zealand, and Australia.
-            </strong>
-            <br />
-            <br />
-            When he is not on the road, he intends to continue DJing, creating,
-            crafting and merging his drumming, looping and DJ sensibilities
-            while expanding his knowledge of the traditional music styles of
-            Mauritius, Sega and Seggae—where he plans to spend a month or two
-            later this year.
-          </Text> */}
-
           <Text>
             <Heading3>Future Endeavours -</Heading3>
             <br />
@@ -579,21 +463,6 @@ export default function Home() {
         <Spacer />
 
         <section className={styles.section8}>
-          {/* <Text>
-            Even with such significant accomplishments, Jesse has always
-            remained humble about his journey, stating that he is just &apos;a
-            very passionate and polite half Mauritian, half Lebanese kid from
-            Doveton, with endless amounts of drive and determination.&apos;
-            Declaring that&apos;s all you need to make your dreams come true
-            while advocating that &apos;THE WORLD NEEDS MORE FUNK.&apos;
-            <br />
-            <br />
-            Jesse&apos;s enthusiasm and loving nature are highly contagious and
-            respected by all who encounter him. Soul and Funk pump through his
-            veins while the laid back pure enjoyment of making music flows
-            through his beats and musical talents.
-          </Text> */}
-
           <Text>
             Even with such remarkable achievements, Jesse remains humble about
             his journey, describing himself as &apos;just a very passionate and
@@ -610,8 +479,8 @@ export default function Home() {
             <br />
             Jesse&apos;s enthusiasm and loving nature are highly contagious and
             respected by all who encounter him. He radiates with the essence of
-            xxxxxxxxx while embodying a laid-back pure enjoyment in making music
-            that effortlessly channels his rhythmic spirit.
+            soul and funk while embodying a laid-back pure enjoyment in making
+            music that effortlessly channels his rhythmic spirit.
           </Text>
         </section>
 
