@@ -29,7 +29,8 @@ export default function HomeHero() {
             setMute(!mute);
           }}
         >
-          <source src="/videos/home-loop2.webm" type="video/mp4" />
+          {/* <source src="/videos/home-loop.mp4" type="video/mp4" /> */}
+          <source src="/videos/home-loop2.webm" type="video/webm" />
         </video>
 
         <div className={styles.logoContainer}>

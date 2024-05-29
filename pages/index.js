@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
@@ -14,6 +15,8 @@ import imgEpic from "../images/bio-epic9.webp";
 import Text from "../components/Text";
 import Pagination from "../components/Pagination";
 import Footer from "../components/Footer/Footer";
+import Logo from "../components/Logo";
+import ScrollH from "../components/ScrollH2/ScrollH";
 
 export default function Home() {
   return (
@@ -29,7 +32,9 @@ export default function Home() {
 
       <HomeHero />
 
-      <Main fullWidth>
+      <ScrollH />
+
+      {/* <Main fullWidth>
         <div className={styles.introText}>
           <Heading2>JESSE REO</Heading2>
           <Heading3>Touring and session drummer</Heading3>
@@ -159,7 +164,7 @@ export default function Home() {
 
           <Pagination id="home" className={styles.pagination} />
         </div>
-      </Main>
+      </Main> */}
       <Footer />
     </>
   );

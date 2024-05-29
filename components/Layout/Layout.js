@@ -59,7 +59,7 @@ export default function Layout({ children }) {
       <div
         className={`${styles.pageContainer} ${styles.parallaxScroll} ${
           menuIsActive ? styles.menuIsActive : ""
-        }`}
+        } scrollElem`}
         ref={pageContainerRef}
       >
         {children}
