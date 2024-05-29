@@ -653,5 +653,61 @@
     "city": "Auckland",
     "state": "",
     "country": "USA"
+  },
+  {
+    "date": "2024-06-15",
+    "venue": "The Toff in Town (DJ Set)",
+    "city": "Naarm",
+    "state": "MEL",
+    "country": "Australia"
+  },
+  {
+    "date": "2024-07-05",
+    "venue": "Rose on The River",
+    "city": "Chicago",
+    "state": "IL",
+    "country": "USA"
+  },
+  {
+    "date": "2024-07-06",
+    "venue": "Levitate Music and Arts Festival",
+    "city": "Marshfield",
+    "state": "MA",
+    "country": "USA"
+  },
+  {
+    "date": "2024-07-10",
+    "venue": "The Pacific Amphitheatre",
+    "city": "Costa Mesa",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "date": "2024-07-11",
+    "venue": "Blue Note Napa Summer Concert Series",
+    "city": "Napa",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "date": "2024-07-13",
+    "venue": "Grand Theatre at The Grand Theatre Resort",
+    "city": "Reno",
+    "state": "NV",
+    "country": "USA"
+  },
+  {
+    "date": "2024-07-14",
+    "venue": "The Chelsea at The Cosmopolitan",
+    "city": "Las Vegas",
+    "state": "NV",
+    "country": "USA"
+  },
+  {
+    "date": "2024-08-24",
+    "venue": "Hera Festival",
+    "city": "Mexico City",
+    "state": "",
+    "country": "Mexico"
   }
 ]
