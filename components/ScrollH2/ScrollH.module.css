@@ -48,7 +48,14 @@
   padding: 30px;
   width: 100%;
   max-width: 600px;
-  mrgin: 0 auto;
+  margin: 0 auto;
+}
+
+.imgContainer {
+  position: relative;
+  width: 80vw;
+  aspect-ratio: 16/9;
+  border: 10px solid red;
 }
 
 .img {

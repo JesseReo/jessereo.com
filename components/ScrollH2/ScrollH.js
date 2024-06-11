@@ -1,7 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useEffect, useRef } from "react";
+import Image from "next/image";
 import styles from "./ScrollH.module.css";
 import Text from "../Text";
+import imgProfile from "../../images/profile.png";
+import imgTash from "../../images/bio-tash5.webp";
+import imgPerspective from "../../images/bio-perspective9.webp";
+import imgEpic from "../../images/bio-epic9.webp";
 
 export default function ScrollH(props) {
   const contentElemRef = useRef();
@@ -18,14 +23,16 @@ export default function ScrollH(props) {
     scrollElem.addEventListener("scroll", scrollHandler);
 
     function scrollHandler() {
+      hElem.scrollLeft = scrollX();
+    }
+
+    function scrollX() {
       const scrollTop = scrollElem.scrollTop;
       const contentHeight = contentElem.scrollHeight;
       const percantageScrolled = (scrollTop / contentHeight) * 100;
       const hWidth = hElem.scrollWidth;
       const newH = (percantageScrolled / 100) * hWidth;
-      // hElem.scrollLeft = newH;
-
-      hElem.scrollLeft = newH;
+      return newH;
     }
 
     return () => {
@@ -58,32 +65,76 @@ export default function ScrollH(props) {
   return (
     <>
       <div ref={contentElemRef} className={styles.outer}>
-        {/* horizontal content*/}
+        {/* horizontal content */}
         <div ref={hElemRef} className={styles.h}>
           <div className={styles.hInner}>
-            <div
-              className={styles.fullScreenContainer}
-              style={{ width: "50vw" }}
-            >
-              fsc
+            <div className={styles.fullScreenContainer}></div>
+            <div className={styles.fullScreenContainer}></div>
+            <div className={styles.fullScreenContainer}>
+              <div className={styles.imgContainer}>
+                <Image
+                  className={styles.img}
+                  src={imgTash}
+                  alt="Tash tour"
+                  layout="fill"
+                  objectFit="cover"
+                />
+              </div>
             </div>
             <div className={styles.fullScreenContainer}>
-              <Img />
+              <div className={styles.imgContainer}>
+                <Image
+                  className={styles.img}
+                  src={imgTash}
+                  alt="Tash tour"
+                  layout="fill"
+                  objectFit="cover"
+                />
+              </div>
             </div>
             <div className={styles.fullScreenContainer}>
-              <Img />
+              <div className={styles.imgContainer}>
+                <Image
+                  className={styles.img}
+                  src={imgTash}
+                  alt="Tash tour"
+                  layout="fill"
+                  objectFit="cover"
+                />
+              </div>
             </div>
             <div className={styles.fullScreenContainer}>
-              <Img />
+              <div className={styles.imgContainer}>
+                <Image
+                  className={styles.img}
+                  src={imgTash}
+                  alt="Tash tour"
+                  layout="fill"
+                  objectFit="cover"
+                />
+              </div>
             </div>
             <div className={styles.fullScreenContainer}>
-              <Img />
+              <div className={styles.imgContainer}>
+                <Image
+                  className={styles.img}
+                  src={imgTash}
+                  alt="Tash tour"
+                  layout="fill"
+                  objectFit="cover"
+                />
+              </div>
             </div>
             <div className={styles.fullScreenContainer}>
-              <Img />
-            </div>
-            <div className={styles.fullScreenContainer}>
-              <Img />
+              <div className={styles.imgContainer}>
+                <Image
+                  className={styles.img}
+                  src={imgTash}
+                  alt="Tash tour"
+                  layout="fill"
+                  objectFit="cover"
+                />
+              </div>
             </div>
           </div>
         </div>
