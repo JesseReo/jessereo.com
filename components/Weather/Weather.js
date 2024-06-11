@@ -9,7 +9,7 @@ const Weather = (props) => {
 
   useEffect(() => {
     const key = "a7201973c629e23cc92a521ac75c7411";
-    const latlon = { lat: "37.8136", lon: "144.9631" };
+    const latlon = { lat: "-37.8136", lon: "144.9631" };
     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latlon.lat}&lon=${latlon.lon}&units=metric&appid=${key}`;
 
     fetch(apiUrl)
