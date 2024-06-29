@@ -68,8 +68,19 @@ export default function ScrollH(props) {
         {/* horizontal content */}
         <div ref={hElemRef} className={styles.h}>
           <div className={styles.hInner}>
+            {/* <div className={styles.fullScreenContainer}></div> */}
             <div className={styles.fullScreenContainer}></div>
-            <div className={styles.fullScreenContainer}></div>
+            <div className={styles.fullScreenContainer}>
+              <div className={styles.imgContainer}>
+                <Image
+                  className={styles.img}
+                  src={imgTash}
+                  alt="Tash tour"
+                  layout="fill"
+                  objectFit="cover"
+                />
+              </div>
+            </div>
             <div className={styles.fullScreenContainer}>
               <div className={styles.imgContainer}>
                 <Image
