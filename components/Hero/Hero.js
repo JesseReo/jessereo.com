@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./Hero.module.css";
-import ArrowDown from "../../images/arrow.svg";
-import arrowDown from "../../images/arrow.png";
+// import ArrowDown from "../../images/arrow.svg";
+// import arrowDown from "../../images/arrow.png";
 
 export default function Hero(props) {
   return (
@@ -13,17 +13,15 @@ export default function Hero(props) {
             .querySelector(".nextSection")
             .scrollIntoView({ behavior: "smooth" });
         }}
-        style={{ cursor: `url('${arrowDown.src}'), auto` }}
+        // style={{ cursor: `url('${arrowDown.src}'), auto` }}
       >
-        <div className={styles.content}>
+        {/* <div className={styles.content}>
           <div className={styles.titleImage}>{props.titleImage}</div>
           {props.children}
         </div>
-
         <div className={styles.downArrow}>
           <ArrowDown />
-        </div>
-
+        </div> */}
         <div className={`${styles.backgroundImage}`}>
           <Image
             src={props.backgroundImage}

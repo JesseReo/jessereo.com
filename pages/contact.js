@@ -13,6 +13,7 @@ import contact1 from "../images/contact1.jpg";
 import Pagination from "../components/Pagination";
 import Footer from "../components/Footer/Footer";
 import Seperator from "../components/Seperator";
+import Spacer from "../components/Spacer/Spacer";
 
 export default function Contact() {
   return (
@@ -21,29 +22,32 @@ export default function Contact() {
         <title>CONTACT - JESSE REO</title>
         <meta name="description" content="Contact details for Jesse Reo" />
       </Head>
-      <Hero title="CONtact" titleImage={<ContactSvg />} backgroundImage={img} />
+      <Hero backgroundImage={img} />
 
       <div className={styles.layout}>
         <div className={`${styles.layoutItem} ${styles.layoutContent}`}>
-          <div>
-            <Heading2 className={styles.title}>GET IN CONTACT</Heading2>
-            <Heading3 className={styles.subTitle}>
-              Accepting offers for solid grooves and peace.
-            </Heading3>
+          <div className={styles.titleImage}>
+            <ContactSvg />
           </div>
 
-          <Seperator />
+          <Spacer />
+
+          <Text>Accepting offers for solid grooves and peace.</Text>
+
+          <Spacer />
 
           <div>
             <Text>Email</Text>
-            <Text bold>
+            <Text>
               <EmailLink />
             </Text>
           </div>
 
-          <Seperator />
+          <Spacer />
 
           <ContactForm />
+
+          <Spacer />
         </div>
 
         <div className={`${styles.layoutItem} ${styles.layoutImage}`}>
@@ -54,8 +58,6 @@ export default function Contact() {
             objectPosition="top"
             alt="Jesse sitting on kick drum"
           />
-
-          <Pagination id="contact" className={styles.pagination} />
         </div>
       </div>
 

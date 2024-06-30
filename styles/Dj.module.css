@@ -3,3 +3,15 @@
   display: grid;
   place-items: center;
 }
+
+.titleImage {
+  position: relative;
+  width: 300px;
+  height: 100px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.titleImage svg {
+  fill: #fff;
+}

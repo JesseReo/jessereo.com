@@ -1,3 +1,15 @@
+.titleImage {
+  position: relative;
+  width: 300px;
+  height: 100px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.titleImage svg {
+  fill: #fff;
+}
+
 .items {
   display: flex;
   flex-direction: column;
@@ -16,16 +28,24 @@
 .videoContainer {
   position: relative;
   aspect-ratio: 16/9;
+  background-color: #000;
+  border: 0px solid #fff;
+  transition: border 200ms linear;
+}
+
+.videoContainer:not(.videoActive):hover {
+  border: 10px solid #fff;
+  transition: border 100ms linear;
+}
+
+.videoContainer:not(.videoActive):hover .videoOverlay div {
+  transform: scale(1.05);
+  transition: transform 300ms ease;
 }
 
 .iconPlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 1;
-  transform: translate3d(-50%, -50%, 0);
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
 }
 
 .videoPoster {
@@ -33,6 +53,24 @@
   width: 100%;
   height: 100%;
   cursor: pointer;
+}
+
+.videoOverlay {
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.videoOverlay div {
+  transform: scale(1);
+  transition: all 200ms linear;
 }
 
 .videoEmbed {

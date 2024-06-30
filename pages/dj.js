@@ -23,24 +23,28 @@ export default function Dj() {
         />
       </Head>
 
-      <Hero title="DJ" titleImage={<DjSvg />} backgroundImage={heroImg} />
+      <Hero backgroundImage={heroImg} />
 
       <Main>
         <div className={styles.content}>
           <Stack>
-            <Heading2 style={{ textAlign: "center" }}>
-              MIXES COMING SOON
-            </Heading2>
+            <div className={styles.titleImage}>
+              <DjSvg />
+            </div>
+            <br />
+            <br />
+
             <Text style={{ textAlign: "center" }}>
-              To make a booking, email: <br />
+              To make a booking, email <br />
               <EmailLink />
             </Text>
-            <Seperator />
+            <br />
+            <br />
+            <br />
+            <br />
           </Stack>
         </div>
       </Main>
-
-      <Pagination id="dj" className={styles.pagination} />
 
       <Footer />
     </>
