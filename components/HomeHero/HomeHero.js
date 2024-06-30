@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styles from "./HomeHero.module.css";
 import poster from "../../images/video-poster2.jpg";
 import Logo from "../Logo";
-import ArrowDown from "../../images/arrow.svg";
+// import ArrowDown from "../../images/arrow.svg";
 import MuteOn from "../../images/icon-mute-on.svg";
 import MuteOff from "../../images/icon-mute-off.svg";
 import muteOn from "../../images/icon-mute-on.png";
@@ -38,7 +38,7 @@ export default function HomeHero() {
 
         <Weather />
 
-        <div
+        {/* <div
           className={styles.downArrow}
           onClick={() => {
             document
@@ -47,7 +47,7 @@ export default function HomeHero() {
           }}
         >
           <ArrowDown />
-        </div>
+        </div> */}
 
         <button
           aria-label="mute"
