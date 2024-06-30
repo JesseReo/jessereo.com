@@ -71,8 +71,6 @@ export default function ScrollH(props) {
         {/* horizontal content */}
         <div ref={hElemRef} className={styles.h}>
           <div className={styles.hInner}>
-            {/* <div className={styles.fullScreenContainer}></div> */}
-            <div className={styles.fullScreenContainer}></div>
             <div className={styles.fullScreenContainer}></div>
             <div className={styles.fullScreenContainer}>
               <div className={styles.imgContainer}>
@@ -118,30 +116,11 @@ export default function ScrollH(props) {
                 <Spacer />
                 <Heading2>JESSE REO</Heading2>
                 <Heading3>Drummer, DJ, and Audiophile</Heading3>
-                <Spacer />
                 <div className={styles.imgProfile}>
                   <Image src={imgProfile} alt="profile" />
                 </div>
               </div>
               <Spacer />
-
-              {/* <Text>
-                With a career built on hard work, passion, and natural-born
-                talent, it is no surprise that Jesse has performed sold-out
-                shows around the world, playing at some of the most respected
-                venues and{" "}
-                <strong>
-                  signing with major labels Epic Records & Perspective Records.
-                </strong>{" "}
-                Jesse is currently performing at arena show level, with
-                in-demand Australian acts <strong>Tash Sultana</strong> and{" "}
-                <strong>Adrian Eagle</strong>, recently playing on MTV Unplugged
-                and Fender Sessions.
-              </Text> */}
-            </div>
-          </div>
-          <div className={styles.section}>
-            <div className={styles.sectionInner}>
               <Heading3>Currently on tour with Tash Sultana</Heading3>
               <br />
               <Text>
@@ -178,7 +157,7 @@ export default function ScrollH(props) {
               </Text>
             </div>
           </div>
-          <div className={styles.section}>
+          <div className={styles.section} style={{ height: "25vh" }}>
             <div className={styles.sectionInner}>
               <Text></Text>
             </div>
@@ -186,15 +165,5 @@ export default function ScrollH(props) {
         </div>
       </div>
     </>
-  );
-}
-
-function Img() {
-  return (
-    <img
-      className={styles.img}
-      src="https://images.unsplash.com/photo-1529467037979-99d067b7677d?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-      alt="puppy"
-    />
   );
 }
