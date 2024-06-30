@@ -2,19 +2,55 @@
   display: block;
   width: 100%;
   aspect-ratio: 16/11;
-  perspective: 400;
-  perspective-origin: 50% 50%;
 }
 
 .logo {
   width: 100%;
+  height: 100%;
   transform-style: preserve-3d;
-  animation: linear 5000ms infinite rotate;
+  animation: linear 4000ms infinite rotate;
+}
+
+.logo svg {
+  /* filter: drop-shadow(0 0 12px rgba(0, 0, 0, 0.3)); */
+  -webkit-transform: none;
 }
 
 .logo svg path {
   fill: #fff;
-  filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.3));
+  stroke: #6f6f6f;
+  stroke-width: 1px;
+}
+
+.logo svg:nth-child(1) {
+  transform: translateZ(0px);
+}
+.logo svg:nth-child(2) {
+  transform: translateZ(3px);
+}
+.logo svg:nth-child(3) {
+  transform: translateZ(6px);
+}
+.logo svg:nth-child(4) {
+  transform: translateZ(9px);
+}
+.logo svg:nth-child(5) {
+  transform: translateZ(12px);
+}
+.logo svg:nth-child(6) {
+  transform: translateZ(15px);
+}
+.logo svg:nth-child(7) {
+  transform: translateZ(18px);
+}
+.logo svg:nth-child(8) {
+  transform: translateZ(21px);
+}
+.logo svg:nth-child(9) {
+  transform: translateZ(24px);
+}
+.logo svg:nth-child(10) {
+  transform: translateZ(27px);
 }
 
 .svg {

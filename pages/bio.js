@@ -1,16 +1,13 @@
 import Head from "next/head";
 import Image from "next/image";
-import styles from "../styles/Bio.module.css";
+import styles from "../styles/Bio2.module.css";
 import Text from "../components/Text";
-import Heading2 from "../components/Heading2";
 import Heading3 from "../components/Heading3";
 import Carousel, { CarouselImage } from "../components/Carousel";
 import Hero from "../components/Hero";
 import heroImg from "../images/hero-bio.jpg";
-import Seperator from "../components/Seperator/Seperator";
 import Main from "../components/Main";
 import BioSvg from "../images/bio.svg";
-import Pagination from "../components/Pagination";
 import bioTash1 from "../images/bio-tash1.webp";
 import bioTash2 from "../images/bio-tash2.webp";
 import bioTash3 from "../images/bio-tash3.webp";
@@ -48,87 +45,140 @@ export default function Home() {
         <meta name="description" content="Biography for Jesse Reo" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <Hero title="bIO" titleImage={<BioSvg />} backgroundImage={heroImg} />
+      <Hero backgroundImage={heroImg} />
       <Main fullWidth>
-        <div className={styles.intro}>
-          <Heading2 style={{ textAlign: "center" }}>JESSE REO</Heading2>
-          <Text style={{ textAlign: "center" }}>Naarm/Melbourne</Text>
-
+        <section className={styles.sectionText}>
+          <div className={styles.titleImage}>
+            <BioSvg />
+          </div>
+          <Spacer />
           <p className={styles.introTextBody}>
             Jesse Rehaut, is an Australian drummer, DJ, and audiophile, known
             professionally as JESSE R.E.O. His rhythmic journey began the moment
             he received his first drum kit as a teenager. He is now performing
             at arena show level.
           </p>
-        </div>
-
-        <Seperator />
-        <Spacer />
-
-        <section className={styles.section1}>
-          <a id="epic" />
-          <div className={styles.section1item1}>
-            <Text>
-              Jesse is recognised as one-fifth of the Australian Funk band
-              Jakubi who was notably scouted in 2015 by American record
-              executive L.A. Reid. He has collaborated closely with idols such
-              as (could get rid of this “such as” or the second one in this
-              paragraph?) Jimmy Jam & Terry Lewis, recording artist Macy Gray,
-              and producer Scott Storch. He has also supported legendary artists
-              such as Coldplay, Jack Johnson, Fat Freddy&apos;s Drop, The
-              Suffers, and Ska music pioneers - Fishbone, Sublime,
-              <br />
-              <br />
-              With a career built on hard work, passion, and natural-born
-              talent, he has come up through the live space, with regular
-              appearances at major music festivals, theaters, and arenas all
-              over the world, with standout performances at the Seoul Jazz
-              Festival and Montreal Jazz Festival which drew a crowd of over
-              40,000 people.
-            </Text>
-
-            <Spacer />
-          </div>
-          <div className={styles.section1item2}>
-            <Carousel
-              cycle
-              prevNextButtons
-              pagination
-              data={[
-                <CarouselImage
-                  key="perspective1"
-                  src={bioPerspective1.src}
-                  alt="Perspective records"
-                />,
-                <CarouselImage
-                  key="perspective2"
-                  src={bioPerspective2.src}
-                  alt="Perspective records"
-                />,
-                <CarouselImage
-                  key="perspective3"
-                  src={bioPerspective3.src}
-                  alt="Perspective records"
-                />,
-                <CarouselImage
-                  key="perspective4"
-                  src={bioPerspective4.src}
-                  alt="Perspective records"
-                />,
-              ]}
-            />
-          </div>
         </section>
 
         <Spacer />
-
-        <Callout style={{ maxWidth: "613px" }}>
-          Jesse is currently performing at arena show level
-        </Callout>
-
         <Spacer />
 
-        <section className={styles.section2}>
+        <section className={styles.sectionText}>
+          <a id="epic" />
+
+          <Text>
+            Jesse is recognised as one-fifth of the Australian Funk band Jakubi
+            who was notably scouted in 2015 by American record executive L.A.
+            Reid. He has collaborated closely with idols Jimmy Jam & Terry
+            Lewis, recording artist Macy Gray, and producer Scott Storch. He has
+            also supported legendary artists such as Coldplay, Jack Johnson, Fat
+            Freddy&apos;s Drop, The Suffers, and Ska music pioneers - Fishbone,
+            Sublime.
+            <br />
+            <br />
+            With a career built on hard work, passion, and natural-born talent,
+            he has come up through the live space, with regular appearances at
+            major music festivals, theaters, and arenas all over the world, with
+            standout performances at the Seoul Jazz Festival and Montreal Jazz
+            Festival which drew a crowd of over 40,000 people.
+          </Text>
+        </section>
+
+        <Spacer />
+        <Spacer />
+
+        <section className={styles.sectionCarousel}>
+          <Carousel
+            cycle
+            prevNextButtons
+            pagination
+            data={[
+              <CarouselImage
+                key="perspective1"
+                src={bioPerspective1.src}
+                alt="Perspective records"
+              />,
+              <CarouselImage
+                key="perspective2"
+                src={bioPerspective2.src}
+                alt="Perspective records"
+              />,
+              <CarouselImage
+                key="perspective3"
+                src={bioPerspective3.src}
+                alt="Perspective records"
+              />,
+              <CarouselImage
+                key="perspective4"
+                src={bioPerspective4.src}
+                alt="Perspective records"
+              />,
+              <CarouselImage
+                key="perspective5"
+                src={bioPerspective5.src}
+                alt="Perspective records"
+              />,
+              <CarouselImage
+                key="perspective6"
+                src={bioPerspective6.src}
+                alt="Perspective records"
+              />,
+              <CarouselImage
+                key="perspective7"
+                src={bioPerspective7.src}
+                alt="Perspective records"
+              />,
+              <CarouselImage
+                key="perspective8"
+                src={bioPerspective8.src}
+                alt="Perspective records"
+              />,
+              <CarouselImage
+                key="perspective9"
+                src={bioPerspective9.src}
+                alt="Perspective records"
+              />,
+            ]}
+          />
+        </section>
+
+        <Spacer />
+        <Spacer />
+
+        <section className={styles.sectionText}>
+          <Heading3>Family</Heading3>
+          <br />
+          <br />
+          <Text>
+            Growing up in a family of singers and musicians, his profound
+            passion for rhythm became evident early on as he absorbed the beats
+            emanating from his father, a creole Mauritian and key musical
+            influence. As a dedicated drummer himself, Jesse would often observe
+            his father showcasing his skills over the years. He&apos;d
+            effortlessly transform any space into his drum set, crafting
+            impromptu solos that would captivate him and his brother. These
+            moments of spontaneous performances were his most accessible and
+            frequent encounters with live music during childhood.
+            <br />
+            <br />
+            This musical upbringing instilled in Jesse a deep appreciation for
+            diverse cultural influences, which continued to shape his journey.
+            His grandmother, Nadia Shahine, was a prominent figure in the
+            Australian Arabic music scene during the 70s and 80s.
+            <br />
+            <br />
+            Born in Melbourne&apos;s deep southeast, Jesse&apos;s mother recalls
+            her son working seven days a week just to afford cymbals. He
+            received his first formal drum lesson in his late teens with The Cat
+            Empire&apos;s master drummer Will Hull-Brown. This pivotal period
+            introduced Jesse to Jazz, Latin, Afro-Cuban.
+          </Text>
+        </section>
+
+        <Spacer />
+        <Spacer />
+
+        <section className={styles.sectionCarousel}>
           <Carousel
             cycle
             prevNextButtons
@@ -175,150 +225,48 @@ export default function Home() {
         </section>
 
         <Spacer />
-
-        <section className={styles.section3}>
-          <Text>
-            <Heading3>Family</Heading3>
-            <br />
-            <br />
-            Growing up in a family of singers and musicians, his profound
-            passion for rhythm became evident early on as he absorbed the beats
-            emanating from his father, a creole Mauritian and key musical
-            influence. As a dedicated drummer himself, Jesse would often observe
-            his father showcasing his skills over the years. He&apos;d
-            effortlessly transform any space into his drum set, crafting
-            impromptu solos that would captivate him and his brother. These
-            moments of spontaneous performances were his most accessible and
-            frequent encounters with live music during childhood.
-            <br />
-            <br />
-            This musical upbringing instilled in Jesse a deep appreciation for
-            diverse cultural influences, which continued to shape his journey
-            into adulthood. His grandmother, Nadia Shahine, was a prominent
-            figure in the Australian Arabic music scene during the 70s and 80s.
-            <br />
-            <br />
-            Born in Melbourne&apos;s deep southeast, Jesse&apos;s mother recalls
-            her son working seven days a week just to afford cymbals. He
-            received his first formal drum lesson in his late teens with The Cat
-            Empire&apos;s master drummer Will Hull-Brown. This pivotal period
-            introduced Jesse to Jazz, Latin, Afro-Cuban.
-          </Text>
-        </section>
-
         <Spacer />
 
-        <Callout style={{ maxWidth: "834px" }}>
-          This collaboration was a significant experience in Jesse&apos;s music
-          career.
-        </Callout>
-
-        <Spacer />
-
-        <section className={styles.section4}>
+        <section className={styles.sectionText}>
           <a id="perspective" />
-          <div className={styles.section4item1}>
-            <Text>
-              <Heading3>Jakubi</Heading3>
-              <br />
-              <br />
-              Jakubi—A collective of Naarm/Melbourne musicians—was formed in
-              2012. The band quickly built a loyal following, releasing their
-              first single, &apos;Can&apos;t Afford It All&apos; in 2013 and
-              soon after self-funding their first US tour. The band were selling
-              out 300-500 capacity rooms from New York City to Los Angeles and
-              everywhere in between, and within no time, they had caught the
-              attention of music mogul L.A Reid, signing their first major label
-              deal with Epic Records.
-              <br />
-              <br />
-              In the years that followed, the band worked primarily out of LA,
-              in studios such as Record Plant, Jim Henson, Paramount, and
-              Windmark. They became full-time musicians, writing and recording,
-              and working with different producers, all while maintaining a full
-              touring schedule. A standout moment was their six-month
-              collaboration with legends Jimmy Jam & Terry Lewis, they absorbed
-              invaluable knowledge and stories while working closely in the
-              studio,and sharing meals together. This collaboration marked a
-              significant milestone in Jesse&apos;s music career.
-              <br />
-              <br />
-              During this time, Jesse was a resident DJ at clubs across
-              Melbourne, including Southside&apos;s 161 and Northside&apos;s
-              Glamorama, and was deeply involved in the city&apos;s live music
-              scene. Additionally, he was part of the New York Cats, a
-              collective he formed with his two cousins in 2012. They aimed to
-              strengthen and sustain the arts movement and the diverse community
-              of like-minded creatives within the city. They achieved this goal
-              through weekly events held every Sunday for three years, supported
-              by the local community. The collective, consisting of artists,
-              DJs, musicians, film-makers, and dancers, focused on welcoming all
-              cultures and celebrating differences within the crew,
-              strengthening the arts community in the city.
-            </Text>
 
-            <Spacer />
-          </div>
-          <div className={styles.section4item2}>
-            <Carousel
-              cycle
-              prevNextButtons
-              pagination
-              data={[
-                <CarouselImage key="bioCuba1" src={bioCuba1.src} alt="cuba" />,
-                <CarouselImage key="bioCuba2" src={bioCuba2.src} alt="cuba" />,
-                <CarouselImage key="bioCuba3" src={bioCuba3.src} alt="cuba" />,
-                <CarouselImage
-                  key="bioDrumtek"
-                  src={bioDrumTek.src}
-                  alt="cuba"
-                />,
-              ]}
-            />
-          </div>
-        </section>
-
-        <section className={styles.section2}>
-          <Carousel
-            cycle
-            prevNextButtons
-            pagination
-            aspectRatio="16/9"
-            data={[
-              <CarouselImage
-                key="perspective5"
-                src={bioPerspective5.src}
-                alt="Perspective records"
-              />,
-              <CarouselImage
-                key="perspective6"
-                src={bioPerspective6.src}
-                alt="Perspective records"
-              />,
-              <CarouselImage
-                key="perspective7"
-                src={bioPerspective7.src}
-                alt="Perspective records"
-              />,
-              <CarouselImage
-                key="perspective8"
-                src={bioPerspective8.src}
-                alt="Perspective records"
-              />,
-              <CarouselImage
-                key="perspective9"
-                src={bioPerspective9.src}
-                alt="Perspective records"
-              />,
-            ]}
-          />
-        </section>
-
-        <Spacer />
-
-        <section className={styles.section3}>
+          <Heading3>Jakubi</Heading3>
+          <br />
+          <br />
           <Text>
-            <Heading3>Family</Heading3>
+            Jakubi—A collective of Naarm/Melbourne musicians—was formed in 2012.
+            The band quickly built a loyal following, releasing their first
+            single, &apos;Can&apos;t Afford It All&apos; in 2013 and soon after
+            self-funding their first US tour. The band were selling out 300-500
+            capacity rooms from New York City to Los Angeles and everywhere in
+            between, and within no time, they had caught the attention of music
+            mogul L.A Reid, signing their first major label deal with Epic
+            Records.
+            <br />
+            <br />
+            In the years that followed, the band worked primarily out of LA, in
+            studios such as Record Plant, Jim Henson, Paramount, and Windmark.
+            They became full-time musicians, writing and recording, and working
+            with different producers, all while maintaining a full touring
+            schedule. A standout moment was their six-month collaboration with
+            legends Jimmy Jam & Terry Lewis, they absorbed invaluable knowledge
+            and stories while working closely in the studio,and sharing meals
+            together. This collaboration marked a significant milestone in
+            Jesse&apos;s music career.
+            <br />
+            <br />
+            During this time, Jesse was a resident DJ at clubs across Melbourne,
+            including Southside&apos;s 161 and Northside&apos;s Glamorama, and
+            was deeply involved in the city&apos;s live music scene.
+            Additionally, he was part of the New York Cats, a collective he
+            formed with his two cousins in 2012. They aimed to strengthen and
+            sustain the arts movement and the diverse community of like-minded
+            creatives within the city. They achieved this goal through weekly
+            events held every Sunday for three years, supported by the local
+            community. The collective, consisting of artists, DJs, musicians,
+            film-makers, and dancers, focused on welcoming all cultures and
+            celebrating differences within the crew, strengthening the arts
+            community.
             <br />
             <br />
             In 2018, he received an advance from the label when signing to Jam &
@@ -342,14 +290,36 @@ export default function Home() {
         </section>
 
         <Spacer />
+        <Spacer />
 
-        <section className={styles.section5}>
+        <div className={styles.sectionCarousel}>
+          <Carousel
+            cycle
+            prevNextButtons
+            pagination
+            data={[
+              <CarouselImage key="bioCuba1" src={bioCuba1.src} alt="cuba" />,
+              <CarouselImage key="bioCuba2" src={bioCuba2.src} alt="cuba" />,
+              <CarouselImage key="bioCuba3" src={bioCuba3.src} alt="cuba" />,
+              <CarouselImage
+                key="bioDrumtek"
+                src={bioDrumTek.src}
+                alt="cuba"
+              />,
+            ]}
+          />
+        </div>
+
+        <Spacer />
+        <Spacer />
+
+        <section className={styles.sectionText}>
           <a id="cuba" />
+          <Heading3>Career Updates</Heading3>
 
+          <br />
+          <br />
           <Text>
-            <Heading3>Career Updates</Heading3>
-            <br />
-            <br />
             In 2019, Jakubi performed their final show supporting Tash Sultana
             at The Forum in Melbourne before disbanding.
             <br />
@@ -372,8 +342,9 @@ export default function Home() {
         </section>
 
         <Spacer />
+        <Spacer />
 
-        <section className={styles.section6}>
+        <section className={styles.sectionCarousel}>
           <Carousel
             cycle
             prevNextButtons
@@ -415,10 +386,11 @@ export default function Home() {
         </section>
 
         <Spacer />
+        <Spacer />
 
-        <section className={styles.section7}>
+        <section className={styles.sectionText}>
+          <Heading3>Future Endeavours</Heading3>
           <Text>
-            <Heading3>Future Endeavours -</Heading3>
             <br />
             <br />
             Jesse continues to bring his soulful energy to venues worldwide with
@@ -454,15 +426,24 @@ export default function Home() {
         </section>
 
         <Spacer />
-
-        <Callout style={{ maxWidth: "917px" }}>
-          Declaring that&apos;s all you need to make your dreams come true while
-          advocating that <br /> &apos;THE WORLD NEEDS MORE FUNK.&apos;
-        </Callout>
-
         <Spacer />
 
-        <section className={styles.section8}>
+        <section className={styles.sectionCarousel}>
+          <div className={styles.lastImage}>
+            <Image
+              src={bioFinal}
+              layout="fill"
+              objectFit="cover"
+              objectPosition="top"
+              alt="Jesse laughing"
+            />
+          </div>
+        </section>
+
+        <Spacer />
+        <Spacer />
+
+        <section className={styles.sectionText}>
           <Text>
             Even with such remarkable achievements, Jesse remains humble about
             his journey, describing himself as &apos;just a very passionate and
@@ -485,31 +466,12 @@ export default function Home() {
         </section>
 
         <Spacer />
+        <Spacer />
       </Main>
-
-      <section className={styles.section9}>
-        <Image
-          src={bioFinal}
-          layout="fill"
-          objectFit="cover"
-          objectPosition="top"
-          alt="Jesse laughing"
-        />
-
-        <Pagination id="bio" className={styles.pagination} />
-      </section>
 
       <Footer />
     </>
   );
 }
-
-const Callout = (props) => {
-  return (
-    <div className={styles.callout} style={props.style}>
-      {props.children}
-    </div>
-  );
-};
 
 const Spacer = () => <div className={styles.spacer} />;

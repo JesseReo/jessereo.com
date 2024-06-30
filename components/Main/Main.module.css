@@ -1,6 +1,8 @@
 .main {
   position: relative;
-  background-color: #1e1e1e;
+  background-color: #000000;
+  z-index: 2;
+  transform: translateZ(0);
 }
 
 .mainInner {

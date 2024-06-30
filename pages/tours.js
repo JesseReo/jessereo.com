@@ -4,7 +4,7 @@ import styles from "../styles/Tours.module.css";
 import eventData from "../content/event-data.json";
 import Hero from "../components/Hero";
 import Main from "../components/Main";
-import Heading2 from "../components/Heading2";
+import Heading3 from "../components/Heading3";
 import heroImg from "../images/hero-tours.jpg";
 import ToursSvg from "../images/tours.svg";
 import Text from "../components/Text";
@@ -25,24 +25,31 @@ export default function Tours() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
-      <Hero title="TOurs" titleImage={<ToursSvg />} backgroundImage={heroImg} />
+      <Hero backgroundImage={heroImg} />
 
       <Main>
-        <Heading2 className={styles.tabHeadings}>
+        <div className={styles.titleImage}>
+          <ToursSvg />
+        </div>
+
+        <br />
+        <br />
+
+        <Heading3 className={styles.tabHeadings}>
           <TabButton
             label="UPCOMING"
             value="future"
             active={active}
             setActive={setActive}
           />
-          <span>/</span>
+          <span></span>
           <TabButton
             label="PAST"
             value="past"
             active={active}
             setActive={setActive}
           />
-        </Heading2>
+        </Heading3>
 
         <div className={styles.eventList}>
           <EventList data={active === "future" ? futureEvents : pastEvents} />
@@ -50,10 +57,7 @@ export default function Tours() {
 
         <Spacer />
         <Spacer />
-        <Spacer />
       </Main>
-
-      <Pagination id="tours" className={styles.pagination} />
 
       <Footer />
     </>

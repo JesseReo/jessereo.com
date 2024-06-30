@@ -10,7 +10,7 @@ export default function Logo() {
           <LogoImg
             key={`logoImg${i}`}
             className={styles.svg}
-            style={{ transform: `translateZ(${i * 2}px)` }}
+            // style={{ transform: `translateZ(${i * 2}px)` }}
             alt="logo"
           />
         ))}

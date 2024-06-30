@@ -1,8 +1,10 @@
 .outer {
   position: relative;
   width: 100vw;
-  height: 100vh;
+  height: 70vh;
   overflow: hidden;
+  z-index: 1;
+  transform: translateZ(0);
 }
 
 .video {
@@ -19,6 +21,7 @@
   width: 100%;
   max-width: 400px;
   aspect-ratio: 16/11;
+  pointer-events: none;
 }
 
 .muteIcon {
@@ -54,7 +57,7 @@
   filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.2));
 }
 
-.downArrow {
+/* .downArrow {
   position: absolute;
   bottom: 0;
   left: calc(50% - 35px);
@@ -97,9 +100,10 @@
   60% {
     transform: translateY(-15px);
   }
-}
+} */
 
 .parallaxItem {
   transform-origin: 0 0;
   transform: translateZ(-1px) scale(2);
+  z-index: 1;
 }

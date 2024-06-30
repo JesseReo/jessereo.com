@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./Navigation.module.css";
@@ -48,7 +47,7 @@ export default function Navighation(props) {
         </ul>
 
         <div className={`${styles.listItem} ${styles.instagramLogo}`}>
-          <Link href="https://www.instagram.com/jesse.funk/" passHref>
+          <Link href="https://www.instagram.com/reo.sounds" passHref>
             <a target="_blank" aria-label="instagram">
               <InstagramLogo alt="instagram" />
             </a>

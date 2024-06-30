@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styles from "./HomeHero.module.css";
 import poster from "../../images/video-poster2.jpg";
 import Logo from "../Logo";
-import ArrowDown from "../../images/arrow.svg";
+// import ArrowDown from "../../images/arrow.svg";
 import MuteOn from "../../images/icon-mute-on.svg";
 import MuteOff from "../../images/icon-mute-off.svg";
 import muteOn from "../../images/icon-mute-on.png";
@@ -29,7 +29,8 @@ export default function HomeHero() {
             setMute(!mute);
           }}
         >
-          <source src="/videos/home-loop2.webm" type="video/mp4" />
+          {/* <source src="/videos/home-loop.mp4" type="video/mp4" /> */}
+          <source src="/videos/home-loop2.webm" type="video/webm" />
         </video>
 
         <div className={styles.logoContainer}>
@@ -38,7 +39,7 @@ export default function HomeHero() {
 
         <Weather />
 
-        <div
+        {/* <div
           className={styles.downArrow}
           onClick={() => {
             document
@@ -47,7 +48,7 @@ export default function HomeHero() {
           }}
         >
           <ArrowDown />
-        </div>
+        </div> */}
 
         <button
           aria-label="mute"
