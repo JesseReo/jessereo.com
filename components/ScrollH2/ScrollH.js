@@ -7,6 +7,9 @@ import imgProfile from "../../images/profile.png";
 import imgTash from "../../images/bio-tash5.webp";
 import imgPerspective from "../../images/bio-perspective9.webp";
 import imgEpic from "../../images/bio-epic9.webp";
+import Heading2 from "../Heading2";
+import Heading3 from "../Heading3";
+import Spacer from "../Spacer/Spacer";
 
 export default function ScrollH(props) {
   const contentElemRef = useRef();
@@ -70,6 +73,7 @@ export default function ScrollH(props) {
           <div className={styles.hInner}>
             {/* <div className={styles.fullScreenContainer}></div> */}
             <div className={styles.fullScreenContainer}></div>
+            <div className={styles.fullScreenContainer}></div>
             <div className={styles.fullScreenContainer}>
               <div className={styles.imgContainer}>
                 <Image
@@ -85,8 +89,8 @@ export default function ScrollH(props) {
               <div className={styles.imgContainer}>
                 <Image
                   className={styles.img}
-                  src={imgTash}
-                  alt="Tash tour"
+                  src={imgPerspective}
+                  alt="Perspective Records"
                   layout="fill"
                   objectFit="cover"
                 />
@@ -96,52 +100,8 @@ export default function ScrollH(props) {
               <div className={styles.imgContainer}>
                 <Image
                   className={styles.img}
-                  src={imgTash}
-                  alt="Tash tour"
-                  layout="fill"
-                  objectFit="cover"
-                />
-              </div>
-            </div>
-            <div className={styles.fullScreenContainer}>
-              <div className={styles.imgContainer}>
-                <Image
-                  className={styles.img}
-                  src={imgTash}
-                  alt="Tash tour"
-                  layout="fill"
-                  objectFit="cover"
-                />
-              </div>
-            </div>
-            <div className={styles.fullScreenContainer}>
-              <div className={styles.imgContainer}>
-                <Image
-                  className={styles.img}
-                  src={imgTash}
-                  alt="Tash tour"
-                  layout="fill"
-                  objectFit="cover"
-                />
-              </div>
-            </div>
-            <div className={styles.fullScreenContainer}>
-              <div className={styles.imgContainer}>
-                <Image
-                  className={styles.img}
-                  src={imgTash}
-                  alt="Tash tour"
-                  layout="fill"
-                  objectFit="cover"
-                />
-              </div>
-            </div>
-            <div className={styles.fullScreenContainer}>
-              <div className={styles.imgContainer}>
-                <Image
-                  className={styles.img}
-                  src={imgTash}
-                  alt="Tash tour"
+                  src={imgEpic}
+                  alt="Epic Records"
                   layout="fill"
                   objectFit="cover"
                 />
@@ -154,7 +114,18 @@ export default function ScrollH(props) {
         <div className={styles.vert}>
           <div className={styles.section}>
             <div className={styles.sectionInner}>
-              <Text>
+              <div className="" style={{ textAlign: "center" }}>
+                <Spacer />
+                <Heading2>JESSE REO</Heading2>
+                <Heading3>Drummer, DJ, and Audiophile</Heading3>
+                <Spacer />
+                <div className={styles.imgProfile}>
+                  <Image src={imgProfile} alt="profile" />
+                </div>
+              </div>
+              <Spacer />
+
+              {/* <Text>
                 With a career built on hard work, passion, and natural-born
                 talent, it is no surprise that Jesse has performed sold-out
                 shows around the world, playing at some of the most respected
@@ -166,20 +137,23 @@ export default function ScrollH(props) {
                 in-demand Australian acts <strong>Tash Sultana</strong> and{" "}
                 <strong>Adrian Eagle</strong>, recently playing on MTV Unplugged
                 and Fender Sessions.
-              </Text>
+              </Text> */}
             </div>
           </div>
           <div className={styles.section}>
             <div className={styles.sectionInner}>
+              <Heading3>Currently on tour with Tash Sultana</Heading3>
+              <br />
               <Text>
                 Most recently Jesse has been bringing his soulful energy touring
-                worldwide with Tash Sultana. So far they have played xx shows
-                across xx different countries.
+                worldwide with Tash Sultana.
               </Text>
             </div>
           </div>
           <div className={styles.section}>
             <div className={styles.sectionInner}>
+              <Heading3>Perspective Records / Jakubi U.S. Tour</Heading3>
+              <br />
               <Text>
                 In 2016, Jakubi Signs major recored label with Perspective
                 records.spent six months working intensely with Jimmy Jam &
@@ -191,6 +165,8 @@ export default function ScrollH(props) {
           </div>
           <div className={styles.section}>
             <div className={styles.sectionInner}>
+              <Heading3>Epic Records / Jakubi U.S. Tour</Heading3>
+              <br />
               <Text>
                 Jesse is a founding member of Jakubi and signs with major record
                 label deal with Epic Records. Scouted by LA Reid, Jakubi tours

@@ -3,6 +3,7 @@
   width: 100vw;
   background: black;
   transform: translateZ(0);
+  z-index: 2;
 }
 
 .h {
@@ -61,4 +62,17 @@
 
 .img:hover {
   filter: brightness(80%);
+}
+
+.imgProfile {
+  padding: 40px 0;
+  width: 50vw;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+@media (min-width: 992px) {
+  .imgProfile {
+    padding: 80px 0;
+  }
 }
