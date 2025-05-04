@@ -112,16 +112,17 @@ export default function ScrollH(props) {
         <div className={styles.vert}>
           <div className={styles.section}>
             <div className={styles.sectionInner}>
-              <div className="" style={{ textAlign: "center" }}>
-                <Spacer />
-                <Heading2>JESSE REO</Heading2>
-                <Heading3>Drummer, DJ, and Audiophile</Heading3>
-                <div className={styles.imgProfile}>
-                  <Image src={imgProfile} alt="profile" />
-                </div>
-              </div>
               <Spacer />
-              <Heading3>Currently on tour with Tash Sultana</Heading3>
+              <Heading2>JESSE REO</Heading2>
+              <Heading3>Drummer, DJ, and Audiophile</Heading3>
+              <div className={styles.imgProfile}>
+                <Image src={imgProfile} alt="profile" />
+              </div>
+
+              <Heading3 style={{ textWrap: "balance" }}>
+                Currently on tour with Tash Sultana
+              </Heading3>
+              <br />
               <br />
               <Text>
                 Most recently Jesse has been bringing his soulful energy touring
@@ -132,6 +133,7 @@ export default function ScrollH(props) {
           <div className={styles.section}>
             <div className={styles.sectionInner}>
               <Heading3>Perspective Records / Jakubi U.S. Tour</Heading3>
+              <br />
               <br />
               <Text>
                 In 2016, Jakubi Signs major recored label with Perspective
@@ -146,6 +148,7 @@ export default function ScrollH(props) {
             <div className={styles.sectionInner}>
               <Heading3>Epic Records / Jakubi U.S. Tour</Heading3>
               <br />
+              <br />
               <Text>
                 Jesse is a founding member of Jakubi and signs with major record
                 label deal with Epic Records. Scouted by LA Reid, Jakubi tours
@@ -155,11 +158,6 @@ export default function ScrollH(props) {
                 Beyonce / Nas) and supported legendary artists such as Sublime,
                 Fishbone, The Suffers.
               </Text>
-            </div>
-          </div>
-          <div className={styles.section} style={{ height: "25vh" }}>
-            <div className={styles.sectionInner}>
-              <Text></Text>
             </div>
           </div>
         </div>

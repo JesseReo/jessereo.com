@@ -1,4 +1,4 @@
-# Jesse Reo Website
+# JESSE REO
 
 This repo is for the website:
 **jessereo.com**
