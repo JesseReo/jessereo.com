@@ -709,5 +709,110 @@
     "city": "Mexico City",
     "state": "",
     "country": "Mexico"
+  },
+  {
+    "date": "2025-06-10",
+    "city": "San Diego",
+    "state": "CA",
+    "venue": "The Rady Shell at Jacobs Park",
+    "country": "USA"
+  },
+  {
+    "date": "2025-06-11",
+    "city": "Wheatland",
+    "state": "CA",
+    "venue": "Hard Rock Live",
+    "country": "USA"
+  },
+  {
+    "date": "2025-06-13",
+    "city": "San Francisco",
+    "state": "CA",
+    "venue": "The Masonic",
+    "country": "USA"
+  },
+  {
+    "date": "2025-06-14",
+    "city": "Los Angeles",
+    "state": "CA",
+    "venue": "Shrine Expo Hall",
+    "country": "USA"
+  },
+  {
+    "date": "2025-06-15",
+    "city": "Phoenix",
+    "state": "AZ",
+    "venue": "The Van Buren",
+    "country": "USA"
+  },
+  {
+    "date": "2025-06-17",
+    "city": "Irving",
+    "state": "TX",
+    "venue": "The Pavilion at Toyota Music Factory",
+    "country": "USA"
+  },
+  {
+    "date": "2025-06-18",
+    "city": "Houston",
+    "state": "TX",
+    "venue": "Bayou Music Center",
+    "country": "USA"
+  },
+  {
+    "date": "2025-06-20",
+    "city": "Morrison",
+    "state": "CO",
+    "venue": "Red Rocks Amphitheater",
+    "country": "USA"
+  },
+  {
+    "date": "2025-06-21",
+    "city": "Dillon",
+    "state": "CO",
+    "venue": "Dillon Amphitheater",
+    "country": "USA"
+  },
+  {
+    "date": "2025-06-22",
+    "city": "Salt Lake City",
+    "state": "UT",
+    "venue": "Red Butte Garden Outdoor Series",
+    "country": "USA"
+  },
+  {
+    "date": "2025-06-24",
+    "city": "Boise",
+    "state": "ID",
+    "venue": "Knitting Factory Concert House",
+    "country": "USA"
+  },
+  {
+    "date": "2025-06-25",
+    "city": "Spokane",
+    "state": "WA",
+    "venue": "Knitting Factory Concert House",
+    "country": "USA"
+  },
+  {
+    "date": "2025-06-27",
+    "city": "Troutdale",
+    "state": "OR",
+    "venue": "Edgefield Concerts on the Lawn",
+    "country": "USA"
+  },
+  {
+    "date": "2025-06-28",
+    "city": "Woodinville",
+    "state": "WA",
+    "venue": "Chateau Ste. Michelle Winery",
+    "country": "USA"
+  },
+  {
+    "date": "2025-06-29",
+    "city": "Jacksonville",
+    "state": "OR",
+    "venue": "Britt Festival Pavillion",
+    "country": "USA"
   }
 ]
