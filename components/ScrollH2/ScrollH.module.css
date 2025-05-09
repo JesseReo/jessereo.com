@@ -14,6 +14,15 @@
   height: 100vh;
   overflow-x: scroll;
   pointer-events: none;
+
+  /* try hide scrollbars */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.h::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 
 .hInner {
