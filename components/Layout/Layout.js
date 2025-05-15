@@ -2,8 +2,9 @@ import { useRef, useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import styles from "./Layout.module.css";
 import Navigation from "../Navigation";
-import Logo from "../Logo";
+// import Logo from "../Logo";
 import Link from "next/link";
+import LogoImg from "../../images/logo-5.svg";
 
 export default function Layout({ children }) {
   const router = useRouter();
@@ -51,7 +52,12 @@ export default function Layout({ children }) {
       >
         <Link href="/">
           <a className={styles.logoLink} aria-label="logo">
-            <Logo />
+            <LogoImg
+              key={`logoImg`}
+              className={styles.svg}
+              alt="logo"
+              style={{ fill: "white" }}
+            />
           </a>
         </Link>
       </div>

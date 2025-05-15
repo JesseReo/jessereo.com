@@ -30,7 +30,7 @@ export default function HomeHero() {
           }}
         >
           {/* <source src="/videos/home-loop.mp4" type="video/mp4" /> */}
-          <source src="/videos/home-loop2.webm" type="video/webm" />
+          <source src="/videos/home-loop3.webm" type="video/webm" />
         </video>
 
         <div className={styles.logoContainer}>
