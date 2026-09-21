@@ -89,11 +89,11 @@ const linksData = [
     label: "dj",
     image: <DjSvg />,
   },
-  {
-    path: "/tours",
-    label: "TOurs",
-    image: <ToursSvg />,
-  },
+  // {
+  //   path: "/tours",
+  //   label: "TOurs",
+  //   image: <ToursSvg />,
+  // },
   {
     path: "/contact",
     label: "COntact",
