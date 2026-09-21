@@ -16,7 +16,7 @@ export default function HomeHero() {
     <>
       <div
         className={`${styles.outer} ${styles.parallaxItem}`}
-        style={{ cursor: `url('${mute ? muteOn.src : muteOff.src}'), auto` }}
+        // style={{ cursor: `url('${mute ? muteOn.src : muteOff.src}'), auto` }}
       >
         <video
           className={styles.video}
@@ -24,10 +24,10 @@ export default function HomeHero() {
           playsInline
           poster={poster.src}
           autoPlay
-          muted={mute}
-          onClick={() => {
-            setMute(!mute);
-          }}
+          // muted={mute}
+          // onClick={() => {
+          //   setMute(!mute);
+          // }}
         >
           {/* <source src="/videos/home-loop.mp4" type="video/mp4" /> */}
           <source src="/videos/home-loop3.webm" type="video/webm" />
@@ -50,7 +50,7 @@ export default function HomeHero() {
           <ArrowDown />
         </div> */}
 
-        <button
+        {/* <button
           aria-label="mute"
           className={styles.muteIcon}
           onClick={(e) => {
@@ -59,7 +59,7 @@ export default function HomeHero() {
           }}
         >
           {mute ? <MuteOn /> : <MuteOff />}
-        </button>
+        </button> */}
       </div>
 
       <span className="nextSection" />
