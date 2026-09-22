@@ -24,6 +24,7 @@ export default function HomeHero() {
           playsInline
           poster={poster.src}
           autoPlay
+          muted={true}
           // muted={mute}
           // onClick={() => {
           //   setMute(!mute);
